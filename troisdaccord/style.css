@@ -732,6 +732,11 @@ textarea {
           flex: 1 0 50%;
 }
 
+/**************** HEADER ***************************************************************/
+.site-header {
+  background-color: black !important;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
