@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -734,7 +735,93 @@ textarea {
 
 /**************** HEADER ***************************************************************/
 .site-header {
-  background-color: black !important;
+  height: 100%;
+  padding-bottom: 8.3%;
+  background-color: #ECECE0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.site-header .header-wrapper {
+  padding-top: 3.5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header .header-wrapper h1 {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  height: 100%;
+  font-size: clamp(2.125rem, calc( 12px + 2.750vw), 2.875rem);
+  line-height: 1.1;
+  margin-left: 5%;
+  z-index: 999;
+}
+
+.site-header .header-wrapper .header-pic {
+  width: 30%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.site-header .header-wrapper .header-triangle {
+  z-index: 999;
+  width: 30vw;
+}
+
+.site-header .header-wrapper .header-grid {
+  position: absolute;
+  width: 45%;
+  left: 55%;
+}
+
+#primary-menu {
+  height: 4rem;
+}
+
+#primary-menu ul {
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+#primary-menu ul li {
+  font-size: 2vw;
+}
+
+#primary-menu ul li a {
+  color: black;
+}
+
+#primary-menu ul li a:visited {
+  color: black;
 }
 
 /* Posts and pages
@@ -966,9 +1053,5 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-}
-
-header {
-  background-color: aquamarine !important;
 }
 /*# sourceMappingURL=style.css.map */

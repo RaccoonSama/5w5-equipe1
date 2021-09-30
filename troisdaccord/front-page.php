@@ -1,11 +1,12 @@
 <?php get_header();
 
 
-
 $the_query = new WP_Query(array(
     'category_name' => 'categorie',
     'post_status' => 'publish',
     'posts_per_page' => 2,
+     'orderby' => 'date',
+     'order'   => 'ASC'
 ));
 
 
@@ -15,7 +16,7 @@ $the_query = new WP_Query(array(
        <?php the_post_thumbnail()?>
        <div class="titre-section-accueil"><?php the_title(); ?></div>
          <div class="content-section-accueil"><?php the_content(); ?></div>
-<?php
+    <?php
      endwhile; 
      wp_reset_postdata(); 
 
