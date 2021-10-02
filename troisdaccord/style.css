@@ -936,18 +936,118 @@ textarea {
   margin-bottom: 1.5em;
 }
 
-section.error-404.not-found {
+.error404.hfeed {
   width: 75vw;
   margin: auto;
-  margin-top: 10vw;
-  padding-bottom: 10vw;
-  border: solid 1px black;
+  margin-top: 30vh;
   font-size: 2rem;
   color: black;
+  background-color: #f8eee0;
 }
 
-section.error-404.not-found p, section.error-404.not-found h1 {
+.error404.hfeed #page p, .error404.hfeed #page h1 {
   text-align: center;
   font-size: 0.9em;
 }
-/*# sourceMappingURL=style.css.map */
+
+.cube-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(20vw) translateY(7vh) rotateZ(0deg) rotateX(-20deg) rotateY(-30deg);
+}
+
+#cube figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  background: rgba(221, 187, 113, 0.87);
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#cube .front {
+  transform: rotateY(0deg) translateZ(100px);
+  backface-visibility: hidden;
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+#cube .back {
+  transform: rotateX(180deg) translateZ(100px);
+}
+
+#cube .right {
+  transform: rotateY(90deg) translateZ(100px);
+  backface-visibility: hidden;
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+#cube .left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  box-shadow: 20px 2px 16px -5px #00000095;
+}
+
+#cercle {
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 30vh;
+  height: 30vh;
+  position: absolute;
+  top: -15vh;
+  left: -15vh;
+}
+
+#cercle1 {
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 60vh;
+  height: 60vh;
+  position: absolute;
+  top: -30vh;
+  left: -30vh;
+}
+
+#cercle2 {
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 90vh;
+  height: 90vh;
+  position: absolute;
+  top: -45vh;
+  left: -45vh;
+}
+
+#cercle3 {
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  top: -50vh;
+  left: -50vh;
+}
