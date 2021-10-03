@@ -46,10 +46,10 @@
 				<?php
 			endif;
 			
-			if ( $troisdaccord_description || is_customize_preview() ) :
-				?>
-				<!-- <p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
-			<?php endif; ?>
+			// if ( $troisdaccord_description || is_customize_preview() ) :
+			// 	?>
+			 	<!-- <p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
+			 <?php //endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
