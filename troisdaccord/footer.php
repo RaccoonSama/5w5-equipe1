@@ -8,22 +8,44 @@
  *
  * @package 3Daccord
  */
+$the_query = new WP_Query(array(
+    'category_name' => 'footer',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+));
 
+$the_query2 = new WP_Query(array(
+    'category_name' => 'footer-2',
+    'post_status' => 'publish',
+    'posts_per_page' => 5,
+));
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'troisdaccord' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				//printf( esc_html__( 'Proudly powered by %s', 'troisdaccord' ), 'WordPress' );
-				?>
-			</a>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'troisdaccord' ), 'troisdaccord', '<a href="http://underscores.me/">les 3D daccord</a>' );
-				?>
-		</div><!-- .site-info -->
+	<?php if ($the_query->have_posts()) : 
+     while ($the_query->have_posts()) : $the_query->the_post(); ?>
+        <div class="section-footer-wrapper">
+         <div class="content-section-footer"><?php the_content(); ?></div>
+         </div>
+    <?php
+     endwhile; 
+     wp_reset_postdata(); 
+	endif;
+?>
+ <div class="section-footer-wrapper2">
+<?php if ($the_query2->have_posts()) : 
+     while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
+       
+         <div class="content-section-footer2"><div class="border-dot"></div><?php the_content(); ?></div>
+         
+    <?php
+     endwhile; 
+     wp_reset_postdata(); 
+	endif;
+?>
+</div>
+
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

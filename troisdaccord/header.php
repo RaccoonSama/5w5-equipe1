@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="stylesheet" href="sass/style.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -28,20 +28,27 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
+			// the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-			
+				<div class="header-wrapper">
+				<img src="<?php echo get_bloginfo('template_url')?>/media/logo-tim.svg" alt="logo-tim" class="header-pic">
+				<h1 class="site-title">Techniques <br> D’intégration <br> Multimédia </h1>
+				<img src="<?php echo get_bloginfo('template_url')?>/media/triangle-header.svg" alt="logo-triangle" class="header-triangle">
+				<img src="<?php echo get_bloginfo('template_url')?>/media/grille.svg" alt="logo-triangle" class="header-grid">
+
+
+				</div>
 				<?php
 			else :
 				?>
-			
+				<!-- <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
 				<?php
 			endif;
 			
 			if ( $troisdaccord_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<!-- <p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

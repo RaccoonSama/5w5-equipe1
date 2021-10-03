@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -717,6 +718,138 @@ textarea {
   flex: 1 0 50%;
 }
 
+/**************** HEADER ***************************************************************/
+.site-header {
+  height: 100%;
+  padding-bottom: 8.3%;
+  background-color: #ECECE0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.site-header .header-wrapper {
+  padding-top: 3.5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-header .header-wrapper h1 {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  height: 100%;
+  font-size: clamp(2.125rem, calc( 12px + 2.750vw), 2.875rem);
+  line-height: 1.1;
+  margin-left: 5%;
+  z-index: 999;
+}
+
+.site-header .header-wrapper .header-pic {
+  width: 30%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.site-header .header-wrapper .header-triangle {
+  z-index: 999;
+  width: 30vw;
+}
+
+.site-header .header-wrapper .header-grid {
+  position: absolute;
+  width: 45%;
+  left: 55%;
+}
+
+#primary-menu {
+  height: 4rem;
+}
+
+#primary-menu ul {
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#primary-menu ul li {
+  font-size: 2vw;
+}
+
+#primary-menu ul li a {
+  color: black;
+}
+
+#primary-menu ul li a:visited {
+  color: black;
+}
+
+/*********FOOOTER *********************/
+footer {
+  background-color: #ECECE0;
+}
+
+footer .info-college {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+footer .info-college img {
+  height: 64px;
+  padding-right: 40px;
+  border-right: 1px solid #343434;
+}
+
+footer .info-college .adresse {
+  padding: 20px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 3vw;
+  border-right: 1px solid #343434;
+}
+
+footer .info-college .tel {
+  padding-left: 20px;
+}
+
+footer .section-footer-wrapper2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #343434;
+  height: 58px;
+  width: 58px;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2 .border-dot {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  left: -10px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px dashed black;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1050,4 +1183,160 @@ textarea {
   position: absolute;
   top: -50vh;
   left: -50vh;
+}
+
+.section-accueil-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section-accueil-wrapper button {
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+}
+
+.section-accueil-wrapper button:hover {
+  background-color: #4712C9;
+  color: white;
+}
+
+.section-accueil-wrapper:first-of-type {
+  height: 40rem;
+  background-color: #BACCBA;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section-accueil-wrapper:first-of-type p {
+  width: 70%;
+  margin-left: 5%;
+}
+
+@media only screen and (min-width: 54.25em) {
+  .section-accueil-wrapper:first-of-type p {
+    line-height: 1.8rem;
+  }
+}
+
+.section-accueil-wrapper:first-of-type button {
+  margin-left: 5%;
+}
+
+.section-accueil-wrapper:first-of-type img {
+  width: 50%;
+  height: 50%;
+  box-shadow: -16px 16px 0px 5px #4A524A;
+  margin-top: 2%;
+  transition: 0.5s ease;
+}
+
+.section-accueil-wrapper:first-of-type img:hover {
+  box-shadow: 0px 0px 0px 0px #4A524A;
+}
+
+.section-accueil-wrapper:nth-of-type(2) {
+  background-color: #EECABA;
+  padding: 30px;
+  height: 52rem;
+}
+
+.section-accueil-wrapper:nth-of-type(2) img {
+  position: relative;
+  z-index: 9999;
+  box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+  transition: 0.5s ease;
+}
+
+.section-accueil-wrapper:nth-of-type(2) img:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.561);
+}
+
+.section-accueil-wrapper:nth-of-type(2) .content-section-accueil {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.section-accueil-wrapper:nth-of-type(2) .content-section-accueil ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-accueil-wrapper:nth-of-type(2) .content-section-accueil ul li {
+  margin: 0;
+  width: 100%;
+}
+
+.section-accueil-wrapper:nth-of-type(2) .content-section-accueil .txt-title-accueil {
+  width: 70%;
+  text-align: right;
+  height: 40%;
+}
+
+.section-accueil-wrapper:nth-of-type(2) .content-section-accueil .txt-title-accueil p {
+  width: 80%;
+  float: right;
+  margin-right: 5%;
+}
+
+@media only screen and (min-width: 54.25em) {
+  .section-accueil-wrapper:nth-of-type(2) .content-section-accueil .txt-title-accueil p {
+    line-height: 1.8rem;
+  }
+}
+
+.section-accueil-wrapper:nth-of-type(2) .btn-placer {
+  position: relative;
+  height: 52rem;
+  top: -89%;
+  z-index: 999;
+}
+
+.section-accueil-wrapper:nth-of-type(2) .btn-placer button {
+  position: absolute;
+  right: 50px;
+  top: 80%;
+}
+
+@media only screen and (min-width: 69.5em) {
+  .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
+    top: 45%;
+  }
+}
+
+.bg-section2 {
+  position: relative;
+  width: 100%;
+  height: 52rem;
+  top: -104rem;
+  margin-bottom: -104rem;
+}
+
+.bg-section2 img {
+  position: absolute;
+  right: 0;
+  width: 55%;
+  bottom: 0;
+}
+
+.bg-section1 {
+  position: relative;
+  width: 100%;
+  height: 52rem;
+  top: -104rem;
+}
+
+.bg-section1 img {
+  position: absolute;
+  width: 55%;
+  right: 5%;
+  bottom: 10%;
+}
+
+@media only screen and (min-width: 61.875em) {
+  .bg-section1 img {
+    right: 25%;
+    bottom: 10%;
+  }
 }
