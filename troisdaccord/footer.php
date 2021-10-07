@@ -45,7 +45,7 @@ $the_query2 = new WP_Query(array(
 ?>
 </div>
 
-
+     <div class="footer-wave"><img src="<?php echo get_bloginfo('template_url')?>/media/wave-footer.svg" alt="wave-footer"></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

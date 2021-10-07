@@ -16,6 +16,10 @@
         background-color: #BACCBA;
         padding-left: 30px;
         padding-right:30px;
+        .txt-btn-accueil {
+            position: relative;
+            z-index: 999;
+        }
         p {
             width: 70%;
             margin-left: 5%;
@@ -28,6 +32,8 @@
             margin-left: 5%;
         }
         img {
+            position: relative;
+            z-index: 999;
             width: 50%;
             height: 50%;
             box-shadow: -16px 16px 0px 5px #4A524A;
