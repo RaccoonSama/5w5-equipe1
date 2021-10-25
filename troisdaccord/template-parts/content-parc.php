@@ -114,7 +114,6 @@ if ($the_query2->have_posts()) :
 </article>
 <div class="cours-ate">
         <div class="ate-wrap">
-            <div class="ate-text">Stage en avance ? - ></div>
-            <div class="logo"> ?</div>
+            <div class="logo">Stage en avance ?</div>
         </div>
     </div>

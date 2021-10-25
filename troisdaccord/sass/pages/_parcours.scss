@@ -38,7 +38,8 @@
     .progress-bar {
         box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
         border: 1px solid red;
-        width: 100vw;
+        width: 91.7vw;
+        margin: 0 auto;
         border-radius: 10px;
         height: 15px;
         margin-top: 10px;
@@ -54,24 +55,28 @@
         .cours-ate {
             border: 1px solid red;
             position: relative;
-            
+            top: -60px;
             .ate-wrap {
                 position: absolute;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                right: 4.5vw;
                 .logo {
-                    width: 70px;
-                    height: 70px;
-                    border: 2px solid orange;
-                    border-radius: 50%;
-                    background-color: rgb(207, 135, 2);
+                    width: 150px;
+                    height: 23px;
+                    border: 2px solid black;
+                    border-radius: 10px;       
+                    background-color: white;      
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    font-size: 45px;
-                    font-weight: bolder;
                     justify-content: center;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #4712C9;
+                        color: white;
+                    }
                 }
             }
         }

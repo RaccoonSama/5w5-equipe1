@@ -10,10 +10,10 @@ scrollContainer.addEventListener("wheel", (evt) => {
         nb = 0;
     }
         
-        if (nb <= 0) {
+        if (nb <= 0 && nb >= -2500) {
         newWidth ++;
         scrollContainer.style.transform = "translateX(" + nb/5 + "vw)";
-        scrollPoint.style.width = "" + -1*(nb/30) + "vw";
+        scrollPoint.style.width = "" + -1*(nb/27.3) + "vw";
         console.log(nb);
     }
 
