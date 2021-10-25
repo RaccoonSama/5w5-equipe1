@@ -32,4 +32,4 @@ echo $pageTitleCut;
 	</main><!-- #main -->
 
 <?php
-//get_footer();
+get_footer();

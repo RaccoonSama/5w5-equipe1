@@ -19,9 +19,17 @@ $the_query2 = new WP_Query(array(
     'post_status' => 'publish',
     'posts_per_page' => 5,
 ));
-?>
 
-	<footer id="colophon" class="site-footer">
+?>
+     
+	<footer id="colophon" class="site-footer 
+     <?php 
+     if (home_url() != home_url($wp->request)) {
+         ?>
+         not-home
+         <?php
+     }
+     ?>">
 	<?php if ($the_query->have_posts()) : 
      while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="section-footer-wrapper">
