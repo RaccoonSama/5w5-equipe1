@@ -31,7 +31,7 @@ var index = -1;
 var index2 = 0;
 
 
-for(a = 1; a < 3; a++) { 
+for(a = 1; a < 7; a++) { 
     window['var_'+a] = document.querySelectorAll('.cours-session-' + a); 
     coursObj.push(window['var_'+a] = document.querySelectorAll('.cours-session-' + a) );
     window['var2_'+a] = document.querySelectorAll('.cours-session-' + a); 
@@ -49,8 +49,24 @@ for(a = 1; a < 3; a++) {
                 textCour.style.opacity = "0";
             }
             textObj[index2][i].style.opacity = "1"; 
-            if (nb <= -400) {
+            if (nb <= -400 && nb > -899) {
                 index2=1;
+                console.log('fonctionne');
+              }
+              else if (nb <= -900 && nb > -1399) {
+                index2=2;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1400 && nb > -1899) {
+                index2=3;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1900 && nb > -2399) {
+                index2=4;
+                console.log('fonctionne');
+              }
+              else if (nb <= -2400) {
+                index2=5;
                 console.log('fonctionne');
               }
             else {
