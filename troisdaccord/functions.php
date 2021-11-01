@@ -142,8 +142,11 @@ add_action( 'widgets_init', 'troisdaccord_widgets_init' );
 function troisdaccord_scripts() {
 	wp_enqueue_style( 'troisdaccord-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'troisdaccord-style', 'rtl', 'replace' );
+	
 
 	wp_enqueue_script( 'troisdaccord-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'troisdaccord-parcours', get_template_directory_uri() . '/js/parcours.js', array('jquery'), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

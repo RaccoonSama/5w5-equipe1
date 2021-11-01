@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
 .main-navigation {
 	display: block;
 	width: 100%;
@@ -105,5 +108,140 @@
 	.nav-next {
 		text-align: end;
 		flex: 1 0 50%;
+	}
+}
+
+
+/**************** HEADER ***************************************************************/
+
+.site-header {
+	height:100%;
+	padding-bottom: 8.3%;
+	background-color: #ECECE0;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+
+	.header-wrapper {
+		padding-top:3.5% ; 
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		h1 {
+			font-family: 'Libre Baskerville', serif;
+			margin: 0;
+			height: 100%;
+			font-size: 3.5vw;
+			line-height: 1.1;
+			margin-left: 5%;
+			z-index: 999;
+		}
+		.header-pic {
+			width: 30%;
+			height: 100%;
+			margin-left: 5%;
+		}
+		.header-triangle {
+			z-index: 999;
+			width: 30vw;
+		}
+
+		.header-grid {
+			position: absolute;
+			width: 45%;
+			left: 55%;
+		}
+	}
+}
+#primary-menu {
+	height: 4rem;
+	ul {
+height: 100%;
+margin: 0 auto;
+width: 90%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+li {
+	font-size: 2vw;
+	a {
+		color: black;
+	}
+	a:visited {
+		color: black;
+	}
+}
+}
+}
+
+/*********FOOOTER *********************/
+
+footer 
+{
+	background-color: #ECECE0;
+	.info-college {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 5%;
+		display: flex;
+		align-items: center;
+		img {
+			height: 64px;
+			padding-right: 40px;
+			border-right: 1px solid #343434;
+		}
+		.adresse {
+			padding: 20px;
+			height: 100%;
+			padding-left: 20px;
+			padding-right: 3vw;
+			border-right: 1px solid #343434;
+		}
+		.tel {
+			padding-left: 20px;
+		}
+	}
+	.section-footer-wrapper2 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		width: 70%;
+		padding-bottom: 20px;
+		.content-section-footer2 {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			padding: 10px;
+			background-color: #343434;
+			height: 58px;
+			width: 58px;
+			.border-dot {
+				z-index: 999;
+				width: 100%;
+				height: 100%;
+				left: -10px;
+				border-radius: 50%;
+				position: absolute;
+				border: 2px dashed black;
+			}
+		}
+	}
+
+	.footer-wave{
+		position: relative;
+		height: 10rem;
+		margin-top: -11rem;
+		width: 350px;
+		float: right;
+		img {
+			right: 0;
+			height: 100%;
+			width: 350px;
+			position: absolute;
+		}
 	}
 }
