@@ -1363,23 +1363,23 @@ footer .footer-wave img {
 }
 
 @media screen and (min-width: 600px) {
-  .session-1, .session-2 {
+  .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
     width: 100vw;
     border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .session-1 .text-cours1, .session-1 .text-cours2, .session-2 .text-cours1, .session-2 .text-cours2 {
+  .session-1 .text-cours1, .session-1 .text-cours2, .session-1 .text-cours3, .session-1 .text-cours4, .session-1 .text-cours5, .session-1 .text-cours6, .session-2 .text-cours1, .session-2 .text-cours2, .session-2 .text-cours3, .session-2 .text-cours4, .session-2 .text-cours5, .session-2 .text-cours6, .session-3 .text-cours1, .session-3 .text-cours2, .session-3 .text-cours3, .session-3 .text-cours4, .session-3 .text-cours5, .session-3 .text-cours6, .session-4 .text-cours1, .session-4 .text-cours2, .session-4 .text-cours3, .session-4 .text-cours4, .session-4 .text-cours5, .session-4 .text-cours6, .session-5 .text-cours1, .session-5 .text-cours2, .session-5 .text-cours3, .session-5 .text-cours4, .session-5 .text-cours5, .session-5 .text-cours6, .session-6 .text-cours1, .session-6 .text-cours2, .session-6 .text-cours3, .session-6 .text-cours4, .session-6 .text-cours5, .session-6 .text-cours6 {
     width: 50%;
     position: relative;
   }
-  .session-1 .text-cours1 .text-session-1, .session-1 .text-cours1 .text-session-2, .session-1 .text-cours2 .text-session-1, .session-1 .text-cours2 .text-session-2, .session-2 .text-cours1 .text-session-1, .session-2 .text-cours1 .text-session-2, .session-2 .text-cours2 .text-session-1, .session-2 .text-cours2 .text-session-2 {
+  .session-1 .text-cours1 .text-session-1, .session-1 .text-cours1 .text-session-2, .session-1 .text-cours1 .text-session-3, .session-1 .text-cours1 .text-session-4, .session-1 .text-cours1 .text-session-5, .session-1 .text-cours1 .text-session-6, .session-1 .text-cours2 .text-session-1, .session-1 .text-cours2 .text-session-2, .session-1 .text-cours2 .text-session-3, .session-1 .text-cours2 .text-session-4, .session-1 .text-cours2 .text-session-5, .session-1 .text-cours2 .text-session-6, .session-1 .text-cours3 .text-session-1, .session-1 .text-cours3 .text-session-2, .session-1 .text-cours3 .text-session-3, .session-1 .text-cours3 .text-session-4, .session-1 .text-cours3 .text-session-5, .session-1 .text-cours3 .text-session-6, .session-1 .text-cours4 .text-session-1, .session-1 .text-cours4 .text-session-2, .session-1 .text-cours4 .text-session-3, .session-1 .text-cours4 .text-session-4, .session-1 .text-cours4 .text-session-5, .session-1 .text-cours4 .text-session-6, .session-1 .text-cours5 .text-session-1, .session-1 .text-cours5 .text-session-2, .session-1 .text-cours5 .text-session-3, .session-1 .text-cours5 .text-session-4, .session-1 .text-cours5 .text-session-5, .session-1 .text-cours5 .text-session-6, .session-1 .text-cours6 .text-session-1, .session-1 .text-cours6 .text-session-2, .session-1 .text-cours6 .text-session-3, .session-1 .text-cours6 .text-session-4, .session-1 .text-cours6 .text-session-5, .session-1 .text-cours6 .text-session-6, .session-2 .text-cours1 .text-session-1, .session-2 .text-cours1 .text-session-2, .session-2 .text-cours1 .text-session-3, .session-2 .text-cours1 .text-session-4, .session-2 .text-cours1 .text-session-5, .session-2 .text-cours1 .text-session-6, .session-2 .text-cours2 .text-session-1, .session-2 .text-cours2 .text-session-2, .session-2 .text-cours2 .text-session-3, .session-2 .text-cours2 .text-session-4, .session-2 .text-cours2 .text-session-5, .session-2 .text-cours2 .text-session-6, .session-2 .text-cours3 .text-session-1, .session-2 .text-cours3 .text-session-2, .session-2 .text-cours3 .text-session-3, .session-2 .text-cours3 .text-session-4, .session-2 .text-cours3 .text-session-5, .session-2 .text-cours3 .text-session-6, .session-2 .text-cours4 .text-session-1, .session-2 .text-cours4 .text-session-2, .session-2 .text-cours4 .text-session-3, .session-2 .text-cours4 .text-session-4, .session-2 .text-cours4 .text-session-5, .session-2 .text-cours4 .text-session-6, .session-2 .text-cours5 .text-session-1, .session-2 .text-cours5 .text-session-2, .session-2 .text-cours5 .text-session-3, .session-2 .text-cours5 .text-session-4, .session-2 .text-cours5 .text-session-5, .session-2 .text-cours5 .text-session-6, .session-2 .text-cours6 .text-session-1, .session-2 .text-cours6 .text-session-2, .session-2 .text-cours6 .text-session-3, .session-2 .text-cours6 .text-session-4, .session-2 .text-cours6 .text-session-5, .session-2 .text-cours6 .text-session-6, .session-3 .text-cours1 .text-session-1, .session-3 .text-cours1 .text-session-2, .session-3 .text-cours1 .text-session-3, .session-3 .text-cours1 .text-session-4, .session-3 .text-cours1 .text-session-5, .session-3 .text-cours1 .text-session-6, .session-3 .text-cours2 .text-session-1, .session-3 .text-cours2 .text-session-2, .session-3 .text-cours2 .text-session-3, .session-3 .text-cours2 .text-session-4, .session-3 .text-cours2 .text-session-5, .session-3 .text-cours2 .text-session-6, .session-3 .text-cours3 .text-session-1, .session-3 .text-cours3 .text-session-2, .session-3 .text-cours3 .text-session-3, .session-3 .text-cours3 .text-session-4, .session-3 .text-cours3 .text-session-5, .session-3 .text-cours3 .text-session-6, .session-3 .text-cours4 .text-session-1, .session-3 .text-cours4 .text-session-2, .session-3 .text-cours4 .text-session-3, .session-3 .text-cours4 .text-session-4, .session-3 .text-cours4 .text-session-5, .session-3 .text-cours4 .text-session-6, .session-3 .text-cours5 .text-session-1, .session-3 .text-cours5 .text-session-2, .session-3 .text-cours5 .text-session-3, .session-3 .text-cours5 .text-session-4, .session-3 .text-cours5 .text-session-5, .session-3 .text-cours5 .text-session-6, .session-3 .text-cours6 .text-session-1, .session-3 .text-cours6 .text-session-2, .session-3 .text-cours6 .text-session-3, .session-3 .text-cours6 .text-session-4, .session-3 .text-cours6 .text-session-5, .session-3 .text-cours6 .text-session-6, .session-4 .text-cours1 .text-session-1, .session-4 .text-cours1 .text-session-2, .session-4 .text-cours1 .text-session-3, .session-4 .text-cours1 .text-session-4, .session-4 .text-cours1 .text-session-5, .session-4 .text-cours1 .text-session-6, .session-4 .text-cours2 .text-session-1, .session-4 .text-cours2 .text-session-2, .session-4 .text-cours2 .text-session-3, .session-4 .text-cours2 .text-session-4, .session-4 .text-cours2 .text-session-5, .session-4 .text-cours2 .text-session-6, .session-4 .text-cours3 .text-session-1, .session-4 .text-cours3 .text-session-2, .session-4 .text-cours3 .text-session-3, .session-4 .text-cours3 .text-session-4, .session-4 .text-cours3 .text-session-5, .session-4 .text-cours3 .text-session-6, .session-4 .text-cours4 .text-session-1, .session-4 .text-cours4 .text-session-2, .session-4 .text-cours4 .text-session-3, .session-4 .text-cours4 .text-session-4, .session-4 .text-cours4 .text-session-5, .session-4 .text-cours4 .text-session-6, .session-4 .text-cours5 .text-session-1, .session-4 .text-cours5 .text-session-2, .session-4 .text-cours5 .text-session-3, .session-4 .text-cours5 .text-session-4, .session-4 .text-cours5 .text-session-5, .session-4 .text-cours5 .text-session-6, .session-4 .text-cours6 .text-session-1, .session-4 .text-cours6 .text-session-2, .session-4 .text-cours6 .text-session-3, .session-4 .text-cours6 .text-session-4, .session-4 .text-cours6 .text-session-5, .session-4 .text-cours6 .text-session-6, .session-5 .text-cours1 .text-session-1, .session-5 .text-cours1 .text-session-2, .session-5 .text-cours1 .text-session-3, .session-5 .text-cours1 .text-session-4, .session-5 .text-cours1 .text-session-5, .session-5 .text-cours1 .text-session-6, .session-5 .text-cours2 .text-session-1, .session-5 .text-cours2 .text-session-2, .session-5 .text-cours2 .text-session-3, .session-5 .text-cours2 .text-session-4, .session-5 .text-cours2 .text-session-5, .session-5 .text-cours2 .text-session-6, .session-5 .text-cours3 .text-session-1, .session-5 .text-cours3 .text-session-2, .session-5 .text-cours3 .text-session-3, .session-5 .text-cours3 .text-session-4, .session-5 .text-cours3 .text-session-5, .session-5 .text-cours3 .text-session-6, .session-5 .text-cours4 .text-session-1, .session-5 .text-cours4 .text-session-2, .session-5 .text-cours4 .text-session-3, .session-5 .text-cours4 .text-session-4, .session-5 .text-cours4 .text-session-5, .session-5 .text-cours4 .text-session-6, .session-5 .text-cours5 .text-session-1, .session-5 .text-cours5 .text-session-2, .session-5 .text-cours5 .text-session-3, .session-5 .text-cours5 .text-session-4, .session-5 .text-cours5 .text-session-5, .session-5 .text-cours5 .text-session-6, .session-5 .text-cours6 .text-session-1, .session-5 .text-cours6 .text-session-2, .session-5 .text-cours6 .text-session-3, .session-5 .text-cours6 .text-session-4, .session-5 .text-cours6 .text-session-5, .session-5 .text-cours6 .text-session-6, .session-6 .text-cours1 .text-session-1, .session-6 .text-cours1 .text-session-2, .session-6 .text-cours1 .text-session-3, .session-6 .text-cours1 .text-session-4, .session-6 .text-cours1 .text-session-5, .session-6 .text-cours1 .text-session-6, .session-6 .text-cours2 .text-session-1, .session-6 .text-cours2 .text-session-2, .session-6 .text-cours2 .text-session-3, .session-6 .text-cours2 .text-session-4, .session-6 .text-cours2 .text-session-5, .session-6 .text-cours2 .text-session-6, .session-6 .text-cours3 .text-session-1, .session-6 .text-cours3 .text-session-2, .session-6 .text-cours3 .text-session-3, .session-6 .text-cours3 .text-session-4, .session-6 .text-cours3 .text-session-5, .session-6 .text-cours3 .text-session-6, .session-6 .text-cours4 .text-session-1, .session-6 .text-cours4 .text-session-2, .session-6 .text-cours4 .text-session-3, .session-6 .text-cours4 .text-session-4, .session-6 .text-cours4 .text-session-5, .session-6 .text-cours4 .text-session-6, .session-6 .text-cours5 .text-session-1, .session-6 .text-cours5 .text-session-2, .session-6 .text-cours5 .text-session-3, .session-6 .text-cours5 .text-session-4, .session-6 .text-cours5 .text-session-5, .session-6 .text-cours5 .text-session-6, .session-6 .text-cours6 .text-session-1, .session-6 .text-cours6 .text-session-2, .session-6 .text-cours6 .text-session-3, .session-6 .text-cours6 .text-session-4, .session-6 .text-cours6 .text-session-5, .session-6 .text-cours6 .text-session-6 {
     position: absolute;
     transition: 0.5s ease;
     opacity: 0;
   }
-  .session-1 .text-cours1 .opactiy-text, .session-1 .text-cours2 .opactiy-text, .session-2 .text-cours1 .opactiy-text, .session-2 .text-cours2 .opactiy-text {
+  .session-1 .text-cours1 .opactiy-text, .session-1 .text-cours2 .opactiy-text, .session-1 .text-cours3 .opactiy-text, .session-1 .text-cours4 .opactiy-text, .session-1 .text-cours5 .opactiy-text, .session-1 .text-cours6 .opactiy-text, .session-2 .text-cours1 .opactiy-text, .session-2 .text-cours2 .opactiy-text, .session-2 .text-cours3 .opactiy-text, .session-2 .text-cours4 .opactiy-text, .session-2 .text-cours5 .opactiy-text, .session-2 .text-cours6 .opactiy-text, .session-3 .text-cours1 .opactiy-text, .session-3 .text-cours2 .opactiy-text, .session-3 .text-cours3 .opactiy-text, .session-3 .text-cours4 .opactiy-text, .session-3 .text-cours5 .opactiy-text, .session-3 .text-cours6 .opactiy-text, .session-4 .text-cours1 .opactiy-text, .session-4 .text-cours2 .opactiy-text, .session-4 .text-cours3 .opactiy-text, .session-4 .text-cours4 .opactiy-text, .session-4 .text-cours5 .opactiy-text, .session-4 .text-cours6 .opactiy-text, .session-5 .text-cours1 .opactiy-text, .session-5 .text-cours2 .opactiy-text, .session-5 .text-cours3 .opactiy-text, .session-5 .text-cours4 .opactiy-text, .session-5 .text-cours5 .opactiy-text, .session-5 .text-cours6 .opactiy-text, .session-6 .text-cours1 .opactiy-text, .session-6 .text-cours2 .opactiy-text, .session-6 .text-cours3 .opactiy-text, .session-6 .text-cours4 .opactiy-text, .session-6 .text-cours5 .opactiy-text, .session-6 .text-cours6 .opactiy-text {
     opacity: 1;
   }
   article {
@@ -1530,3 +1530,123 @@ body {
     height: 100%;
   }
 }
+
+.prof-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.prof-wrapper .prof-wrap {
+  display: inherit;
+  flex-direction: row !important;
+  display: none;
+}
+
+.prof-wrapper .prof-wrap:first-of-type {
+  display: flex;
+}
+
+.prof-wrapper .prof-wrap .prof-img {
+  margin-right: 0 !important;
+  width: 80rem;
+}
+
+.prof-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.prof-row .prof-img-bas {
+  width: 30rem;
+  height: 15rem;
+}
+
+.prof-row .prof-img-bas:hover {
+  transition: all 0.3s ease;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
+}
+
+.prof {
+  background-color: #F9F6D7;
+}
+
+.prof-row .prof-img-bas {
+  height: 4rem;
+}
+
+.prof-row .prof-img-bas:hover {
+  margin-right: 10px;
+}
+
+.prof {
+  height: 65vh;
+}
+
+.prof-img img {
+  height: 400px;
+  max-width: 666.66667px;
+}
+
+.prof-content {
+  margin: 0 2vw;
+}
+
+.prof-wrap {
+  margin-bottom: 2vh;
+}
+
+.futur {
+  display: flex;
+  flex-direction: row;
+  background-color: #CCE2E0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.futur .metier-wrapper {
+  display: grid;
+  width: 50vw;
+  height: 30rem;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+}
+
+.futur .metier-wrapper .metier-wrap {
+  background-color: rgba(0, 0, 0, 0.267);
+  padding-left: 10px;
+  margin: 20px;
+}
+
+.futur .metier-wrapper .metier-wrap:hover {
+  transition: all 0.3s ease;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
+}
+
+/* texte de younes */
+.proj-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 5vw;
+}
+
+.proj-wrapper img {
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease transform;
+}
+
+.proj-wrapper img:hover {
+  transform: rotateY(180deg);
+}
+
+.proj-content h1 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.proj-content p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
