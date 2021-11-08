@@ -1,11 +1,10 @@
 @media screen and (min-width: 600px) {
     .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
-        border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: #baccba;
+        background-color: $vert;
         
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
             width: 50%;
@@ -36,24 +35,19 @@
         display: none;
     }
     .progress-bar {
-        box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
-  
-        width: 91.7vw;
+        background-color: $beige;
+        width: 100vw;
         margin: 0 auto;
-        border-radius: 10px;
         height: 15px;
         margin-top: 10px;
         .progress-point {
             position: relative;
-            z-index: -999;
-            background-color: orange;
+            background-color: $accent_orange_fonce;
             width: 3.33vw;
             height:100%;
-            border-radius: inherit;
         }
     }
         .cours-ate {
-            border: 1px solid red;
             position: relative;
             top: -60px;
             .ate-wrap {
@@ -63,10 +57,10 @@
                 align-items: center;
                 right: 4.5vw;
                 .logo {
-                    width: 150px;
-                    height: 23px;
+                    width: 170px;
+                    height: 30px;
                     border: 2px solid black;
-                    border-radius: 10px;       
+                    border-radius: 50px;       
                     background-color: white;      
                     display: flex;
                     flex-direction: row;
@@ -74,7 +68,7 @@
                     justify-content: center;
                     transition: 0.3s ease;
                     &:hover {
-                        background-color: #4712C9;
+                        background-color: $accent_mauve;
                         color: white;
                         cursor: pointer;
                     }
@@ -89,8 +83,10 @@
             
         }
         .bouton-cours{
+            width: 160px;
+            height: 60px;
             align-items: center;
-            background-color: #ecece0;
+            background-color: $beige;
             cursor: pointer;
             font-family: 'Libre Baskerville', serif;
             padding-left: 20px;
@@ -98,9 +94,22 @@
             border: 1px solid black;
             -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43); 
             box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43);
+            transition: 0.5s ease-in-out;
+        }
+
+        .bouton-cours:hover {
+            background-color: $accent_mauve;
+            color: white;
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.43); 
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.43);
+
+            svg {
+                fill: white;
+            }
         }
 
         .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5, .sigle-cours6{
+            height: 30rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
