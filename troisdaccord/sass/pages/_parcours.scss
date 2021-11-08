@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: #baccba;
         
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
             width: 50%;
@@ -17,7 +18,6 @@
             }
             .opactiy-text {
                 opacity: 1;
-
             }
         }
     }
@@ -76,8 +76,34 @@
                     &:hover {
                         background-color: #4712C9;
                         color: white;
+                        cursor: pointer;
                     }
                 }
             }
         }
+
+        .wp-block-columns {
+            margin-bottom: 0px;
+            align-items: center;
+            
+            
+        }
+        .bouton-cours{
+            align-items: center;
+            background-color: #ecece0;
+            cursor: pointer;
+            font-family: 'Libre Baskerville', serif;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid black;
+            -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43); 
+            box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43);
+        }
+
+        .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5, .sigle-cours6{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2% 0% 2% 0%;
+        } 
   }  
