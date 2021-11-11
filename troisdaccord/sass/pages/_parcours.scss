@@ -1,15 +1,15 @@
 @media screen and (min-width: 600px) {
-    .session-1, .session-2 {
+    .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
         border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         
-        .text-cours1, .text-cours2 {
+        .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
             width: 50%;
             position: relative;
-            .text-session-1, .text-session-2 {
+            .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
                 position: absolute;
                 transition: 0.5s ease;
                 opacity: 0;
