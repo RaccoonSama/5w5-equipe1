@@ -16,7 +16,6 @@ scrollContainer.addEventListener("wheel", (evt) => {
         scrollPoint.style.width = "" + -1*(nb/25) + "vw";
         console.log(nb);
     }
-
 });
 
 

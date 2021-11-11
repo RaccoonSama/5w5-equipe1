@@ -1,0 +1,1 @@
+document.getElementsByClassName("prof-row").style.transform = "translateX(-100vw)";
