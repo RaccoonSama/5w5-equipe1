@@ -1199,6 +1199,10 @@ footer .footer-wave img {
   left: -50vh;
 }
 
+ul li {
+  z-index: 3;
+}
+
 .section-accueil-wrapper {
   display: flex;
   flex-direction: row-reverse;
