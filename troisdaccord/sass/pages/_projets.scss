@@ -1,0 +1,27 @@
+/* texte de younes */
+
+.proj-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 5vw;
+    img {
+        width: 250px;
+        height: 250px;
+        transition: 0.5s ease transform; 
+    }
+}
+
+.proj-wrapper img:hover {
+	transform: rotateY(180deg);
+}
+
+.proj-content {
+    h1 {
+    font-size: 1.3em;
+	text-align: center;
+    }
+    p {
+    margin: 0;
+    }
+}
