@@ -65,7 +65,7 @@ if ($the_query->have_posts()) : ?>
     endif; ?>
     </div>
     <div class="proj-carou2">
-    <?php
+    <?php 
 if ($the_query3->have_posts()) : ?>
     <div class="proj-wrapper"> 
     <?php
