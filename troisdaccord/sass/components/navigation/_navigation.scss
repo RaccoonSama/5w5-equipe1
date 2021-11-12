@@ -209,12 +209,16 @@ width: 10rem;
 			margin: 0 !important;
 		}
 		position: fixed !important;
+		z-index: 99999;
 		left: 0 !important;
 		.nav-menu {
 			height: 35rem;
 			margin: 0;
 			display: flex !important;
 			flex-direction: column !important;
+			li  {
+				font-size: 16px !important;
+			}
 		}
 	}
 }
@@ -230,6 +234,8 @@ footer
 		padding-left: 5%;
 		display: flex;
 		align-items: center;
+		position: relative;
+		z-index: 99;
 		img {
 			height: 64px;
 			padding-right: 40px;
@@ -252,6 +258,8 @@ footer
 		justify-content: space-around;
 		width: 70%;
 		padding-bottom: 20px;
+		position: relative;
+		z-index: 99;
 		.content-section-footer2 {
 			position: relative;
 			display: flex;
@@ -280,11 +288,28 @@ footer
 		margin-top: -11rem;
 		width: 350px;
 		float: right;
+	//	z-index: -2;
 		img {
 			right: 0;
 			height: 100%;
 			width: 350px;
 			position: absolute;
 		}
+	}
+}
+
+@include phone {
+	.info-college {
+		flex-direction: column !important;
+	}
+	.section-footer-wrapper2 {
+		width: 100% !important;
+	}
+	.adresse {
+		border: none !important;
+		text-align: center;
+	}
+	img {
+		border: none !important;
 	}
 }

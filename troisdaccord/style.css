@@ -818,6 +818,7 @@ textarea {
   }
   #site-navigation {
     position: fixed !important;
+    z-index: 99999;
     left: 0 !important;
   }
   #site-navigation button {
@@ -828,6 +829,9 @@ textarea {
     margin: 0;
     display: flex !important;
     flex-direction: column !important;
+  }
+  #site-navigation .nav-menu li {
+    font-size: 16px !important;
   }
 }
 
@@ -842,6 +846,8 @@ footer .info-college {
   padding-left: 5%;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 99;
 }
 
 footer .info-college img {
@@ -868,6 +874,8 @@ footer .section-footer-wrapper2 {
   justify-content: space-around;
   width: 70%;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 99;
 }
 
 footer .section-footer-wrapper2 .content-section-footer2 {
@@ -905,6 +913,22 @@ footer .footer-wave img {
   height: 100%;
   width: 350px;
   position: absolute;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .info-college {
+    flex-direction: column !important;
+  }
+  .section-footer-wrapper2 {
+    width: 100% !important;
+  }
+  .adresse {
+    border: none !important;
+    text-align: center;
+  }
+  img {
+    border: none !important;
+  }
 }
 
 /* Posts and pages
@@ -1462,7 +1486,7 @@ footer .footer-wave img {
     margin: 0 !important;
   }
   .section-accueil-wrapper:nth-of-type(2) {
-    height: 130vh !important;
+    height: 140vh !important;
   }
   .section-accueil-wrapper:nth-of-type(2) .content-section-accueil {
     flex-direction: column !important;
@@ -1717,4 +1741,3 @@ body {
   transform: translate(10px, -10px);
   box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
 }
-/*# sourceMappingURL=style.css.map */
