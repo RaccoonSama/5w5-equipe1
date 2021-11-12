@@ -6,13 +6,13 @@
  *
  * @package 3Daccord
  */
-// $the_query = new WP_Query(array(
-//     'category_name' => 'proj-etudiant1',
-//     'post_status' => 'publish',
-//     'posts_per_page' => 4,
-//      'orderby' => 'date',
-//      'order'   => 'ASC'
-// ));
+$the_query = new WP_Query(array(
+    'category_name' => 'proj-etudiant1',
+    'post_status' => 'publish',
+    'posts_per_page' => 4,
+     'orderby' => 'date',
+     'order'   => 'ASC'
+));
 
 ?>
 

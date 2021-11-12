@@ -789,6 +789,48 @@ textarea {
   color: black;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .header-wrapper {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .header-wrapper img:nth-of-type(2) {
+    display: none !important;
+  }
+  .header-wrapper img:nth-of-type(1) {
+    width: 60% !important;
+    z-index: 9999 !important;
+  }
+  .header-wrapper h1 {
+    text-align: center !important;
+    font-size: 7vw !important;
+    z-index: 9999 !important;
+  }
+  .header-wrapper .header-grid {
+    width: 80% !important;
+    left: 10% !important;
+  }
+  header {
+    position: relative !important;
+  }
+  .main-navigation {
+    width: 10rem;
+  }
+  #site-navigation {
+    position: fixed !important;
+    left: 0 !important;
+  }
+  #site-navigation button {
+    margin: 0 !important;
+  }
+  #site-navigation .nav-menu {
+    height: 35rem;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
 /*********FOOOTER *********************/
 footer {
   background-color: #ECECE0;
@@ -1228,8 +1270,40 @@ footer .footer-wave img {
   z-index: 999;
 }
 
+.section-accueil-wrapper:first-of-type .wp-block-columns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column !important;
+}
+
+.section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image {
+  display: flex;
+  justify-content: end;
+}
+
+.section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
+  margin-top: 10%;
+  width: 40vw;
+}
+
+@media only screen and (min-width: 54.25em) {
+  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
+    margin-top: 2%;
+  }
+}
+
+.section-accueil-wrapper:first-of-type .wp-block-columns svg {
+  position: absolute;
+  bottom: 10px;
+  width: 80vw;
+  left: 7%;
+}
+
 .section-accueil-wrapper:first-of-type p {
-  width: 70%;
+  width: 50%;
   margin-left: 5%;
 }
 
@@ -1248,19 +1322,19 @@ footer .footer-wave img {
   z-index: 999;
   width: 50%;
   height: 50%;
-  box-shadow: -16px 16px 0px 5px #4A524A;
+  box-shadow: -16px 16px 0px 5px #00000088;
   margin-top: 2%;
   transition: 0.5s ease;
 }
 
 .section-accueil-wrapper:first-of-type img:hover {
-  box-shadow: 0px 0px 0px 0px #4A524A;
+  box-shadow: 0px 0px 0px 0px #00000088;
 }
 
 .section-accueil-wrapper:nth-of-type(2) {
   background-color: #EECABA;
   padding: 30px;
-  height: 52rem;
+  height: 50rem;
 }
 
 .section-accueil-wrapper:nth-of-type(2) img {
@@ -1277,16 +1351,6 @@ footer .footer-wave img {
 .section-accueil-wrapper:nth-of-type(2) .content-section-accueil {
   display: flex;
   flex-direction: row-reverse;
-}
-
-.section-accueil-wrapper:nth-of-type(2) .content-section-accueil ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-accueil-wrapper:nth-of-type(2) .content-section-accueil ul li {
-  margin: 0;
-  width: 100%;
 }
 
 .section-accueil-wrapper:nth-of-type(2) .content-section-accueil .txt-title-accueil {
@@ -1309,7 +1373,7 @@ footer .footer-wave img {
 
 .section-accueil-wrapper:nth-of-type(2) .btn-placer {
   position: relative;
-  height: 52rem;
+  height: 100%;
   top: -89%;
   z-index: 999;
 }
@@ -1324,21 +1388,6 @@ footer .footer-wave img {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
     top: 45%;
   }
-}
-
-.bg-section2 {
-  position: relative;
-  width: 100%;
-  height: 52rem;
-  top: -104rem;
-  margin-bottom: -104rem;
-}
-
-.bg-section2 img {
-  position: absolute;
-  right: 0;
-  width: 55%;
-  bottom: 0;
 }
 
 .bg-section1 {
@@ -1359,6 +1408,77 @@ footer .footer-wave img {
   .bg-section1 img {
     right: 25%;
     bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-accueil-wrapper:first-of-type {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: start;
+    height: 110vh !important;
+  }
+  .section-accueil-wrapper:first-of-type h1 {
+    text-align: center;
+  }
+  .section-accueil-wrapper:first-of-type .wp-block-columns {
+    position: static !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-column:nth-of-type(2) {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image {
+    justify-content: center !important;
+  }
+  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
+    width: 80% !important;
+    margin: 25px 0 !important;
+  }
+  .section-accueil-wrapper:first-of-type .wp-block-columns svg {
+    position: static !important;
+  }
+  .section-accueil-wrapper:first-of-type img {
+    width: 20rem !important;
+    height: 25% !important;
+    margin-bottom: 10rem;
+  }
+  .section-accueil-wrapper:first-of-type .txt-btn-accueil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section-accueil-wrapper:first-of-type .txt-btn-accueil p {
+    margin: 35px 0 35px !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  .section-accueil-wrapper:first-of-type .txt-btn-accueil:first-of-type button {
+    margin: 0 !important;
+  }
+  .section-accueil-wrapper:nth-of-type(2) {
+    height: 130vh !important;
+  }
+  .section-accueil-wrapper:nth-of-type(2) .content-section-accueil {
+    flex-direction: column !important;
+  }
+  .section-accueil-wrapper:nth-of-type(2) .content-section-accueil .txt-title-accueil {
+    width: 100%;
+    text-align: center;
+  }
+  .section-accueil-wrapper:nth-of-type(2) .btn-placer {
+    position: static;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .section-accueil-wrapper:nth-of-type(2) .btn-placer .btn-section {
+    position: static;
   }
 }
 
@@ -1597,3 +1717,4 @@ body {
   transform: translate(10px, -10px);
   box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
 }
+/*# sourceMappingURL=style.css.map */

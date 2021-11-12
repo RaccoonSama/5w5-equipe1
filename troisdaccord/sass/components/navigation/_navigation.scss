@@ -175,6 +175,49 @@ li {
 }
 }
 }
+@include phone {
+	.header-wrapper {
+		display: flex;
+		flex-direction: column !important;
+		img:nth-of-type(2) {
+			display: none !important;
+		}
+		img:nth-of-type(1) {
+				width: 60% !important;
+				z-index: 9999 !important;
+		}
+		h1 {
+			text-align: center !important;
+			font-size: 7vw !important;
+			z-index: 9999 !important;
+		}
+		.header-grid {
+		
+			width: 80% !important;
+			left: 10% !important;
+		
+		}
+	}
+	header {
+		position: relative !important;
+	}
+.main-navigation {
+width: 10rem;
+}
+	#site-navigation {
+		button {
+			margin: 0 !important;
+		}
+		position: fixed !important;
+		left: 0 !important;
+		.nav-menu {
+			height: 35rem;
+			margin: 0;
+			display: flex !important;
+			flex-direction: column !important;
+		}
+	}
+}
 
 /*********FOOOTER *********************/
 
