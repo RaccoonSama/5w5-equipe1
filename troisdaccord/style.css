@@ -763,11 +763,11 @@ textarea {
   left: 55%;
 }
 
-#primary-menu {
+.menu-menu-1-container {
   height: 4rem;
 }
 
-#primary-menu ul {
+.menu-menu-1-container ul {
   height: 100%;
   margin: 0 auto;
   width: 90%;
@@ -777,15 +777,15 @@ textarea {
   font-weight: bold;
 }
 
-#primary-menu ul li {
+.menu-menu-1-container ul li {
   font-size: 2vw;
 }
 
-#primary-menu ul li a {
+.menu-menu-1-container ul li a {
   color: black;
 }
 
-#primary-menu ul li a:visited {
+.menu-menu-1-container ul li a:visited {
   color: black;
 }
 
