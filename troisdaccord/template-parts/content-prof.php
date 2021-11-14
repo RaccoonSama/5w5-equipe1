@@ -36,20 +36,7 @@ if ($the_query->have_posts()) : ?>
     endif; ?>
     </div> 
 
-    <button onclick="ScrollGauche()">Arrière</button>
-    <button onclick="ScrollDroit()">Avant</button>
-    
-    <script>
-    function ScrollDroit() {
-    document.getElementById("caroussel").style.transform = "translateX(-100vw)";
-    }
-
-    function ScrollGauche() {
-    document.getElementById("caroussel").style.transform = "translateX(0vw)";
-    }
- </script>
-
-    <div class="prof-row" id="caroussel">
+    <div class="prof-row">
     <?php
     if ($the_query->have_posts()) : ?>
     <?php
@@ -63,6 +50,5 @@ if ($the_query->have_posts()) : ?>
         <?php 
     endif; ?>
     </div>
-</div>
  
 </article>
