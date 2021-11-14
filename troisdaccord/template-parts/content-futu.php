@@ -45,11 +45,12 @@ if ($the_query->have_posts()) : ?>
     <?php
 if ($the_query2->have_posts()) : ?>
     <ul class="emploi-wrapper"> 
+        <h1 class="emploi-titre">Entreprises en multimédia</h1>
     <?php
-        while ($the_query->have_posts()) : $the_query->the_post(); ?>
+        while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
         <li class="emploi-wrap">
            
-            <div class="empoi-content"><h1><?php the_title();?></h1></div>
+            <div class="empoi-content"><h2><?php the_title();?></h2></div>
 </li>
             <?php
         endwhile; 

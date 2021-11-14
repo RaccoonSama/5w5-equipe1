@@ -9,7 +9,7 @@
 $the_query = new WP_Query(array(
     'category_name' => 'professeurs',
     'post_status' => 'publish',
-    'posts_per_page' => 8,
+    'posts_per_page' => 16,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
@@ -36,7 +36,20 @@ if ($the_query->have_posts()) : ?>
     endif; ?>
     </div> 
 
-    <div class="prof-row">
+    <button onclick="ScrollGauche()">Arrière</button>
+    <button onclick="ScrollDroit()">Avant</button>
+    
+    <script>
+    function ScrollDroit() {
+    document.getElementById("caroussel").style.transform = "translateX(-100vw)";
+    }
+
+    function ScrollGauche() {
+    document.getElementById("caroussel").style.transform = "translateX(0vw)";
+    }
+ </script>
+
+    <div class="prof-row" id="caroussel">
     <?php
     if ($the_query->have_posts()) : ?>
     <?php
@@ -50,5 +63,6 @@ if ($the_query->have_posts()) : ?>
         <?php 
     endif; ?>
     </div>
+</div>
  
 </article>

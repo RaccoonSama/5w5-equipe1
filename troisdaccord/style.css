@@ -722,7 +722,7 @@ textarea {
 .site-header {
   height: 100%;
   padding-bottom: 8.3%;
-  background-color: #ECECE0;
+  background-color: #FFF3E8;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -791,7 +791,7 @@ textarea {
 
 /*********FOOOTER *********************/
 footer {
-  background-color: #ECECE0;
+  background-color: #E9E9E9;
 }
 
 footer .info-college {
@@ -1199,6 +1199,10 @@ footer .footer-wave img {
   left: -50vh;
 }
 
+ul li {
+  z-index: 3;
+}
+
 .section-accueil-wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -1212,7 +1216,7 @@ footer .footer-wave img {
 }
 
 .section-accueil-wrapper button:hover {
-  background-color: #4712C9;
+  background-color: #22489F;
   color: white;
 }
 
@@ -1258,7 +1262,7 @@ footer .footer-wave img {
 }
 
 .section-accueil-wrapper:nth-of-type(2) {
-  background-color: #EECABA;
+  background-color: #FFE8E8;
   padding: 30px;
   height: 52rem;
 }
@@ -1363,23 +1367,23 @@ footer .footer-wave img {
 }
 
 @media screen and (min-width: 600px) {
-  .session-1, .session-2 {
+  .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
     width: 100vw;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #BACCBA;
   }
-  .session-1 .text-cours1, .session-1 .text-cours2, .session-2 .text-cours1, .session-2 .text-cours2 {
+  .session-1 .text-cours1, .session-1 .text-cours2, .session-1 .text-cours3, .session-1 .text-cours4, .session-1 .text-cours5, .session-1 .text-cours6, .session-2 .text-cours1, .session-2 .text-cours2, .session-2 .text-cours3, .session-2 .text-cours4, .session-2 .text-cours5, .session-2 .text-cours6, .session-3 .text-cours1, .session-3 .text-cours2, .session-3 .text-cours3, .session-3 .text-cours4, .session-3 .text-cours5, .session-3 .text-cours6, .session-4 .text-cours1, .session-4 .text-cours2, .session-4 .text-cours3, .session-4 .text-cours4, .session-4 .text-cours5, .session-4 .text-cours6, .session-5 .text-cours1, .session-5 .text-cours2, .session-5 .text-cours3, .session-5 .text-cours4, .session-5 .text-cours5, .session-5 .text-cours6, .session-6 .text-cours1, .session-6 .text-cours2, .session-6 .text-cours3, .session-6 .text-cours4, .session-6 .text-cours5, .session-6 .text-cours6 {
     width: 50%;
     position: relative;
   }
-  .session-1 .text-cours1 .text-session-1, .session-1 .text-cours1 .text-session-2, .session-1 .text-cours2 .text-session-1, .session-1 .text-cours2 .text-session-2, .session-2 .text-cours1 .text-session-1, .session-2 .text-cours1 .text-session-2, .session-2 .text-cours2 .text-session-1, .session-2 .text-cours2 .text-session-2 {
+  .session-1 .text-cours1 .text-session-1, .session-1 .text-cours1 .text-session-2, .session-1 .text-cours1 .text-session-3, .session-1 .text-cours1 .text-session-4, .session-1 .text-cours1 .text-session-5, .session-1 .text-cours1 .text-session-6, .session-1 .text-cours2 .text-session-1, .session-1 .text-cours2 .text-session-2, .session-1 .text-cours2 .text-session-3, .session-1 .text-cours2 .text-session-4, .session-1 .text-cours2 .text-session-5, .session-1 .text-cours2 .text-session-6, .session-1 .text-cours3 .text-session-1, .session-1 .text-cours3 .text-session-2, .session-1 .text-cours3 .text-session-3, .session-1 .text-cours3 .text-session-4, .session-1 .text-cours3 .text-session-5, .session-1 .text-cours3 .text-session-6, .session-1 .text-cours4 .text-session-1, .session-1 .text-cours4 .text-session-2, .session-1 .text-cours4 .text-session-3, .session-1 .text-cours4 .text-session-4, .session-1 .text-cours4 .text-session-5, .session-1 .text-cours4 .text-session-6, .session-1 .text-cours5 .text-session-1, .session-1 .text-cours5 .text-session-2, .session-1 .text-cours5 .text-session-3, .session-1 .text-cours5 .text-session-4, .session-1 .text-cours5 .text-session-5, .session-1 .text-cours5 .text-session-6, .session-1 .text-cours6 .text-session-1, .session-1 .text-cours6 .text-session-2, .session-1 .text-cours6 .text-session-3, .session-1 .text-cours6 .text-session-4, .session-1 .text-cours6 .text-session-5, .session-1 .text-cours6 .text-session-6, .session-2 .text-cours1 .text-session-1, .session-2 .text-cours1 .text-session-2, .session-2 .text-cours1 .text-session-3, .session-2 .text-cours1 .text-session-4, .session-2 .text-cours1 .text-session-5, .session-2 .text-cours1 .text-session-6, .session-2 .text-cours2 .text-session-1, .session-2 .text-cours2 .text-session-2, .session-2 .text-cours2 .text-session-3, .session-2 .text-cours2 .text-session-4, .session-2 .text-cours2 .text-session-5, .session-2 .text-cours2 .text-session-6, .session-2 .text-cours3 .text-session-1, .session-2 .text-cours3 .text-session-2, .session-2 .text-cours3 .text-session-3, .session-2 .text-cours3 .text-session-4, .session-2 .text-cours3 .text-session-5, .session-2 .text-cours3 .text-session-6, .session-2 .text-cours4 .text-session-1, .session-2 .text-cours4 .text-session-2, .session-2 .text-cours4 .text-session-3, .session-2 .text-cours4 .text-session-4, .session-2 .text-cours4 .text-session-5, .session-2 .text-cours4 .text-session-6, .session-2 .text-cours5 .text-session-1, .session-2 .text-cours5 .text-session-2, .session-2 .text-cours5 .text-session-3, .session-2 .text-cours5 .text-session-4, .session-2 .text-cours5 .text-session-5, .session-2 .text-cours5 .text-session-6, .session-2 .text-cours6 .text-session-1, .session-2 .text-cours6 .text-session-2, .session-2 .text-cours6 .text-session-3, .session-2 .text-cours6 .text-session-4, .session-2 .text-cours6 .text-session-5, .session-2 .text-cours6 .text-session-6, .session-3 .text-cours1 .text-session-1, .session-3 .text-cours1 .text-session-2, .session-3 .text-cours1 .text-session-3, .session-3 .text-cours1 .text-session-4, .session-3 .text-cours1 .text-session-5, .session-3 .text-cours1 .text-session-6, .session-3 .text-cours2 .text-session-1, .session-3 .text-cours2 .text-session-2, .session-3 .text-cours2 .text-session-3, .session-3 .text-cours2 .text-session-4, .session-3 .text-cours2 .text-session-5, .session-3 .text-cours2 .text-session-6, .session-3 .text-cours3 .text-session-1, .session-3 .text-cours3 .text-session-2, .session-3 .text-cours3 .text-session-3, .session-3 .text-cours3 .text-session-4, .session-3 .text-cours3 .text-session-5, .session-3 .text-cours3 .text-session-6, .session-3 .text-cours4 .text-session-1, .session-3 .text-cours4 .text-session-2, .session-3 .text-cours4 .text-session-3, .session-3 .text-cours4 .text-session-4, .session-3 .text-cours4 .text-session-5, .session-3 .text-cours4 .text-session-6, .session-3 .text-cours5 .text-session-1, .session-3 .text-cours5 .text-session-2, .session-3 .text-cours5 .text-session-3, .session-3 .text-cours5 .text-session-4, .session-3 .text-cours5 .text-session-5, .session-3 .text-cours5 .text-session-6, .session-3 .text-cours6 .text-session-1, .session-3 .text-cours6 .text-session-2, .session-3 .text-cours6 .text-session-3, .session-3 .text-cours6 .text-session-4, .session-3 .text-cours6 .text-session-5, .session-3 .text-cours6 .text-session-6, .session-4 .text-cours1 .text-session-1, .session-4 .text-cours1 .text-session-2, .session-4 .text-cours1 .text-session-3, .session-4 .text-cours1 .text-session-4, .session-4 .text-cours1 .text-session-5, .session-4 .text-cours1 .text-session-6, .session-4 .text-cours2 .text-session-1, .session-4 .text-cours2 .text-session-2, .session-4 .text-cours2 .text-session-3, .session-4 .text-cours2 .text-session-4, .session-4 .text-cours2 .text-session-5, .session-4 .text-cours2 .text-session-6, .session-4 .text-cours3 .text-session-1, .session-4 .text-cours3 .text-session-2, .session-4 .text-cours3 .text-session-3, .session-4 .text-cours3 .text-session-4, .session-4 .text-cours3 .text-session-5, .session-4 .text-cours3 .text-session-6, .session-4 .text-cours4 .text-session-1, .session-4 .text-cours4 .text-session-2, .session-4 .text-cours4 .text-session-3, .session-4 .text-cours4 .text-session-4, .session-4 .text-cours4 .text-session-5, .session-4 .text-cours4 .text-session-6, .session-4 .text-cours5 .text-session-1, .session-4 .text-cours5 .text-session-2, .session-4 .text-cours5 .text-session-3, .session-4 .text-cours5 .text-session-4, .session-4 .text-cours5 .text-session-5, .session-4 .text-cours5 .text-session-6, .session-4 .text-cours6 .text-session-1, .session-4 .text-cours6 .text-session-2, .session-4 .text-cours6 .text-session-3, .session-4 .text-cours6 .text-session-4, .session-4 .text-cours6 .text-session-5, .session-4 .text-cours6 .text-session-6, .session-5 .text-cours1 .text-session-1, .session-5 .text-cours1 .text-session-2, .session-5 .text-cours1 .text-session-3, .session-5 .text-cours1 .text-session-4, .session-5 .text-cours1 .text-session-5, .session-5 .text-cours1 .text-session-6, .session-5 .text-cours2 .text-session-1, .session-5 .text-cours2 .text-session-2, .session-5 .text-cours2 .text-session-3, .session-5 .text-cours2 .text-session-4, .session-5 .text-cours2 .text-session-5, .session-5 .text-cours2 .text-session-6, .session-5 .text-cours3 .text-session-1, .session-5 .text-cours3 .text-session-2, .session-5 .text-cours3 .text-session-3, .session-5 .text-cours3 .text-session-4, .session-5 .text-cours3 .text-session-5, .session-5 .text-cours3 .text-session-6, .session-5 .text-cours4 .text-session-1, .session-5 .text-cours4 .text-session-2, .session-5 .text-cours4 .text-session-3, .session-5 .text-cours4 .text-session-4, .session-5 .text-cours4 .text-session-5, .session-5 .text-cours4 .text-session-6, .session-5 .text-cours5 .text-session-1, .session-5 .text-cours5 .text-session-2, .session-5 .text-cours5 .text-session-3, .session-5 .text-cours5 .text-session-4, .session-5 .text-cours5 .text-session-5, .session-5 .text-cours5 .text-session-6, .session-5 .text-cours6 .text-session-1, .session-5 .text-cours6 .text-session-2, .session-5 .text-cours6 .text-session-3, .session-5 .text-cours6 .text-session-4, .session-5 .text-cours6 .text-session-5, .session-5 .text-cours6 .text-session-6, .session-6 .text-cours1 .text-session-1, .session-6 .text-cours1 .text-session-2, .session-6 .text-cours1 .text-session-3, .session-6 .text-cours1 .text-session-4, .session-6 .text-cours1 .text-session-5, .session-6 .text-cours1 .text-session-6, .session-6 .text-cours2 .text-session-1, .session-6 .text-cours2 .text-session-2, .session-6 .text-cours2 .text-session-3, .session-6 .text-cours2 .text-session-4, .session-6 .text-cours2 .text-session-5, .session-6 .text-cours2 .text-session-6, .session-6 .text-cours3 .text-session-1, .session-6 .text-cours3 .text-session-2, .session-6 .text-cours3 .text-session-3, .session-6 .text-cours3 .text-session-4, .session-6 .text-cours3 .text-session-5, .session-6 .text-cours3 .text-session-6, .session-6 .text-cours4 .text-session-1, .session-6 .text-cours4 .text-session-2, .session-6 .text-cours4 .text-session-3, .session-6 .text-cours4 .text-session-4, .session-6 .text-cours4 .text-session-5, .session-6 .text-cours4 .text-session-6, .session-6 .text-cours5 .text-session-1, .session-6 .text-cours5 .text-session-2, .session-6 .text-cours5 .text-session-3, .session-6 .text-cours5 .text-session-4, .session-6 .text-cours5 .text-session-5, .session-6 .text-cours5 .text-session-6, .session-6 .text-cours6 .text-session-1, .session-6 .text-cours6 .text-session-2, .session-6 .text-cours6 .text-session-3, .session-6 .text-cours6 .text-session-4, .session-6 .text-cours6 .text-session-5, .session-6 .text-cours6 .text-session-6 {
     position: absolute;
     transition: 0.5s ease;
     opacity: 0;
   }
-  .session-1 .text-cours1 .opactiy-text, .session-1 .text-cours2 .opactiy-text, .session-2 .text-cours1 .opactiy-text, .session-2 .text-cours2 .opactiy-text {
+  .session-1 .text-cours1 .opactiy-text, .session-1 .text-cours2 .opactiy-text, .session-1 .text-cours3 .opactiy-text, .session-1 .text-cours4 .opactiy-text, .session-1 .text-cours5 .opactiy-text, .session-1 .text-cours6 .opactiy-text, .session-2 .text-cours1 .opactiy-text, .session-2 .text-cours2 .opactiy-text, .session-2 .text-cours3 .opactiy-text, .session-2 .text-cours4 .opactiy-text, .session-2 .text-cours5 .opactiy-text, .session-2 .text-cours6 .opactiy-text, .session-3 .text-cours1 .opactiy-text, .session-3 .text-cours2 .opactiy-text, .session-3 .text-cours3 .opactiy-text, .session-3 .text-cours4 .opactiy-text, .session-3 .text-cours5 .opactiy-text, .session-3 .text-cours6 .opactiy-text, .session-4 .text-cours1 .opactiy-text, .session-4 .text-cours2 .opactiy-text, .session-4 .text-cours3 .opactiy-text, .session-4 .text-cours4 .opactiy-text, .session-4 .text-cours5 .opactiy-text, .session-4 .text-cours6 .opactiy-text, .session-5 .text-cours1 .opactiy-text, .session-5 .text-cours2 .opactiy-text, .session-5 .text-cours3 .opactiy-text, .session-5 .text-cours4 .opactiy-text, .session-5 .text-cours5 .opactiy-text, .session-5 .text-cours6 .opactiy-text, .session-6 .text-cours1 .opactiy-text, .session-6 .text-cours2 .opactiy-text, .session-6 .text-cours3 .opactiy-text, .session-6 .text-cours4 .opactiy-text, .session-6 .text-cours5 .opactiy-text, .session-6 .text-cours6 .opactiy-text {
     opacity: 1;
   }
   article {
@@ -1396,23 +1400,19 @@ footer .footer-wave img {
     display: none;
   }
   .progress-bar {
-    box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
-    width: 91.7vw;
+    background-color: #FFF3E8;
+    width: 100vw;
     margin: 0 auto;
-    border-radius: 10px;
     height: 15px;
     margin-top: 10px;
   }
   .progress-bar .progress-point {
     position: relative;
-    z-index: -999;
-    background-color: orange;
+    background-color: #D87225;
     width: 3.33vw;
     height: 100%;
-    border-radius: inherit;
   }
   .cours-ate {
-    border: 1px solid red;
     position: relative;
     top: -60px;
   }
@@ -1424,10 +1424,10 @@ footer .footer-wave img {
     right: 4.5vw;
   }
   .cours-ate .ate-wrap .logo {
-    width: 150px;
-    height: 23px;
+    width: 170px;
+    height: 30px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -1436,8 +1436,41 @@ footer .footer-wave img {
     transition: 0.3s ease;
   }
   .cours-ate .ate-wrap .logo:hover {
-    background-color: #4712C9;
+    background-color: #22489F;
     color: white;
+    cursor: pointer;
+  }
+  .wp-block-columns {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .bouton-cours {
+    width: 160px;
+    height: 60px;
+    align-items: center;
+    background-color: #FFF3E8;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.43);
+    transition: 0.5s ease-in-out;
+  }
+  .bouton-cours:hover {
+    background-color: #22489F;
+    color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.43);
+  }
+  .bouton-cours:hover svg {
+    fill: white;
+  }
+  .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5, .sigle-cours6 {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 0% 2% 0%;
   }
 }
 
@@ -1496,7 +1529,7 @@ footer .footer-wave img {
 
 .vie-wrap .vie-img-wrap .vie-ombre {
   position: absolute;
-  background-color: #00000057;
+  background-color: rgba(0, 0, 0, 0.384);
 }
 
 .vie-wrap .vie-content {
@@ -1512,7 +1545,9 @@ footer .footer-wave img {
 .vie {
   padding-right: 20px;
   height: 43rem;
-  background-color: rgba(128, 128, 128, 0.363);
+  background-color: #FFE8E8;
+  position: relative;
+  z-index: -999;
 }
 
 body {
@@ -1529,4 +1564,134 @@ body {
   .vie-wrap:nth-of-type(2) {
     height: 100%;
   }
+}
+
+.prof-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7vh;
+}
+
+.prof-wrapper .prof-wrap {
+  display: inherit;
+  flex-direction: row !important;
+  display: none;
+}
+
+.prof-wrapper .prof-wrap:first-of-type {
+  display: flex;
+}
+
+.prof-wrapper .prof-wrap .prof-img {
+  margin-right: 5vw !important;
+  margin-top: 5vh;
+  width: 30vw;
+}
+
+.prof-wrapper .prof-wrap .prof-img img {
+  box-shadow: 16px 16px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prof-row {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  height: 20vh;
+}
+
+.prof-row .prof-img-bas {
+  width: 20rem;
+}
+
+.prof-row .prof-img-bas img:hover {
+  transition: all 0.3s ease;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
+  margin-right: 10px;
+}
+
+.prof {
+  background-color: #c3e478;
+}
+
+.prof .prof-haut {
+  margin: 0 5vw;
+}
+
+li.page_item.page-item-14.current_page_item a {
+  border: #343434 dashed 2px;
+  padding: 5px;
+}
+
+.prof-content {
+  padding: 1vh;
+  width: 50vw;
+  text-align: justify;
+}
+
+.prof-content h1 {
+  margin: 0 0;
+  position: relative;
+  bottom: 3.5vh;
+  font-size: 4rem;
+  text-align: right;
+  width: 100%;
+}
+
+#caroussel {
+  transition: 1s all ease;
+}
+
+.futur {
+  display: flex;
+  flex-direction: row;
+  background-color: #B8D3D0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.futur .metier-wrapper {
+  display: grid;
+  width: 50vw;
+  height: 30rem;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+}
+
+.futur .metier-wrapper .metier-wrap {
+  background-color: rgba(0, 0, 0, 0.267);
+  padding-left: 10px;
+  margin: 20px;
+}
+
+.futur .metier-wrapper .metier-wrap:hover {
+  transition: all 0.3s ease;
+  transform: translate(10px, -10px);
+  box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
+}
+
+/* texte de younes */
+.proj-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 5vw;
+}
+
+.proj-wrapper img {
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease transform;
+}
+
+.proj-wrapper img:hover {
+  transform: rotateY(180deg);
+}
+
+.proj-content h1 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.proj-content p {
+  margin: 0;
 }
