@@ -41,7 +41,7 @@
     }
 }
 .prof {
-    background-color: rgb(195, 228, 120);
+    background-color: #f8f6da;
     .prof-haut {
         margin: 0 5vw;
     }
@@ -56,6 +56,8 @@ li.page_item.page-item-14.current_page_item a {
     padding: 1vh; 
     width: 50vw;
     text-align: justify;
+    font-size: 18px;
+    margin: auto;
     h1 {
         margin: 0 0;
         position: relative;
@@ -63,6 +65,7 @@ li.page_item.page-item-14.current_page_item a {
         font-size: 4rem;
         text-align: right;
         width: 100%;
+        color: black;
     }
 }
 

@@ -1611,7 +1611,7 @@ body {
 }
 
 .prof {
-  background-color: #c3e478;
+  background-color: #f8f6da;
 }
 
 .prof .prof-haut {
@@ -1627,6 +1627,8 @@ li.page_item.page-item-14.current_page_item a {
   padding: 1vh;
   width: 50vw;
   text-align: justify;
+  font-size: 18px;
+  margin: auto;
 }
 
 .prof-content h1 {
@@ -1636,6 +1638,7 @@ li.page_item.page-item-14.current_page_item a {
   font-size: 4rem;
   text-align: right;
   width: 100%;
+  color: black;
 }
 
 #caroussel {
