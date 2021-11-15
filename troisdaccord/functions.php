@@ -148,6 +148,8 @@ function troisdaccord_scripts() {
 
 	wp_enqueue_script( 'troisdaccord-parcours', get_template_directory_uri() . '/js/parcours.js', array('jquery'), false, true );
 
+	wp_enqueue_script( 'troisdaccord-light-box', get_template_directory_uri() . '/js/light-box.js', array('jquery'), false, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
     .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
@@ -7,13 +11,17 @@
         justify-content: space-around;
         
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
-            width: 50%;
+            width: 60%;
             position: relative;
+            
             .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
                 position: absolute;
                 transition: 0.5s ease;
                 opacity: 0;
-
+                
+                p {
+                    margin-left: 10%;
+                }
             }
             .opactiy-text {
                 opacity: 1;
@@ -21,9 +29,14 @@
             }
         }
     }
-    article {
+
+    .article-parcours {
         overflow-x: hidden;
+        height: 700px;
+        z-index: 999;
+        background-color: $vert;
     }
+
     .parcours-container-full {
         display: flex;
         flex-direction: row;
@@ -55,7 +68,7 @@
         .cours-ate {
             border: 1px solid red;
             position: relative;
-            top: -60px;
+            top: -32.5vh;
             .ate-wrap {
                 position: absolute;
                 display: flex;
@@ -79,5 +92,61 @@
                     }
                 }
             }
+        }
+
+        .wp-block-columns {
+            margin-bottom: 0px;
+            align-items: center;
+            
+            
+        }
+        .bouton-cours{
+            width: 160px;
+            height: 60px;
+            align-items: center;
+            background-color: $beige;
+            cursor: pointer;
+            font-family: 'Libre Baskerville', serif;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1px solid black;
+            -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43); 
+            box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43);
+            transition: 0.25s ease-in-out;
+        }
+
+        .bouton-cours:hover {
+            background-color: $accent_mauve;
+            color: white;
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.43); 
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.43);
+
+            svg {
+                fill: white;
+            }
+        }
+
+        .bouton-cours:active{
+            transition: none;
+            background-color: $accent_orange;
+            
+        }
+
+        .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5{
+            height: 30rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2% 0% 2% 0%;
+        }
+
+        .sigle-cours6 {
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 2% 0% 2% 0%;
         }
   }  
