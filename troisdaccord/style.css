@@ -1435,7 +1435,6 @@ footer .footer-wave img {
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 37.5em) {
   .section-accueil-wrapper:first-of-type {
     display: flex;
@@ -1505,10 +1504,10 @@ footer .footer-wave img {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer .btn-section {
     position: static;
   }
-=======
+}
+
 ::-webkit-scrollbar {
   display: none;
->>>>>>> tristan
 }
 
 @media screen and (min-width: 600px) {
@@ -1591,13 +1590,8 @@ footer .footer-wave img {
     transition: 0.3s ease;
   }
   .cours-ate .ate-wrap .logo:hover {
-<<<<<<< HEAD
     background-color: #4712C9;
     color: white;
-=======
-    background-color: #22489F;
-    color: white;
-    cursor: pointer;
   }
   .wp-block-columns {
     margin-bottom: 0px;
@@ -1634,7 +1628,6 @@ footer .footer-wave img {
     flex-direction: column;
     justify-content: space-between;
     padding: 2% 0% 2% 0%;
->>>>>>> main
   }
   .sigle-cours6 {
     height: 20rem;
@@ -1806,9 +1799,6 @@ body {
 .futur .metier-wrapper .metier-wrap:hover {
   transition: all 0.3s ease;
   transform: translate(10px, -10px);
-<<<<<<< HEAD
-  box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
-=======
   box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
   cursor: pointer;
 }
@@ -1895,5 +1885,5 @@ body {
 #conteneur-light-box #light-box #bouton-fermer:hover {
   cursor: pointer;
   background-color: #ED7B1D;
->>>>>>> main
 }
+/*# sourceMappingURL=style.css.map */
