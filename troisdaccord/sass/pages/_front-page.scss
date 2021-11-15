@@ -10,12 +10,12 @@
         transition: 0.3s ease;
     }
     button:hover {
-        background-color: $accent_mauve;
+        background-color: #4712C9;
         color: white;
     }
     &:first-of-type {
         height: 40rem;
-        background-color: $vert;
+        background-color: #BACCBA;
         padding-left: 30px;
         padding-right:30px;
         .txt-btn-accueil {
@@ -75,7 +75,7 @@
         }
     }
     &:nth-of-type(2) {
-        background-color: $rose;
+        background-color: #EECABA;
        padding: 30px;
        height: 50rem;
        img {

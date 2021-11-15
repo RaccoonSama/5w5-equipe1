@@ -117,7 +117,7 @@
 .site-header {
 	height:100%;
 	padding-bottom: 8.3%;
-	background-color: $beige;
+	background-color: #ECECE0;
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
@@ -227,7 +227,7 @@ width: 10rem;
 
 footer 
 {
-	background-color: $gris_pale;
+	background-color: #ECECE0;
 	.info-college {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -239,14 +239,14 @@ footer
 		img {
 			height: 64px;
 			padding-right: 40px;
-			border-right: 1px solid $charcoal;
+			border-right: 1px solid #343434;
 		}
 		.adresse {
 			padding: 20px;
 			height: 100%;
 			padding-left: 20px;
 			padding-right: 3vw;
-			border-right: 1px solid $charcoal;
+			border-right: 1px solid #343434;
 		}
 		.tel {
 			padding-left: 20px;
@@ -267,7 +267,7 @@ footer
 			align-items: center;
 			border-radius: 50%;
 			padding: 10px;
-			background-color: $charcoal;
+			background-color: #343434;
 			height: 58px;
 			width: 58px;
 			.border-dot {
