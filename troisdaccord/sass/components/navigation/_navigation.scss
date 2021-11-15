@@ -111,72 +111,7 @@
 	}
 }
 
-
-/**************** HEADER ***************************************************************/
-
-.site-header {
-	height:100%;
-	padding-bottom: 8.3%;
-	background-color: $beige;
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: flex-end;
-
-	.header-wrapper {
-		padding-top:3.5% ; 
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		h1 {
-			font-family: 'Libre Baskerville', serif;
-			margin: 0;
-			height: 100%;
-			font-size: 3.5vw;
-			line-height: 1.1;
-			margin-left: 5%;
-			z-index: 999;
-		}
-		.header-pic {
-			width: 30%;
-			height: 100%;
-			margin-left: 5%;
-		}
-		.header-triangle {
-			z-index: 999;
-			width: 30vw;
-		}
-
-		.header-grid {
-			position: absolute;
-			width: 45%;
-			left: 55%;
-		}
-	}
-}
-#primary-menu {
-	height: 4rem;
-	ul {
-height: 100%;
-margin: 0 auto;
-width: 90%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-weight: bold;
-li {
-	font-size: 2vw;
-	a {
-		color: black;
-	}
-	a:visited {
-		color: black;
-	}
-}
-}
-}
-
-/*********FOOOTER *********************/
+/*********FOOTER *********************/
 
 footer 
 {

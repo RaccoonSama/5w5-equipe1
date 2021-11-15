@@ -39,11 +39,17 @@
 
 
 				</div>
-				<?php
+				<?php 
 			else :
 				?>
-				<!-- <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
-				<?php
+				<div class="header-not-main">
+					<div class="title">
+						<h1>Titre</h1>
+					</div>
+       				<div class="img-subtitle">
+                        <!-- contenu du post -->
+       				</div>
+				</div> <?php
 			endif;
 			
 			// if ( $troisdaccord_description || is_customize_preview() ) :
