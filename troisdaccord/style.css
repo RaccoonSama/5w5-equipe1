@@ -722,7 +722,7 @@ textarea {
 .site-header {
   height: 100%;
   padding-bottom: 8.3%;
-  background-color: #FFF3E8;
+  background-color: #ECECE0;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -837,7 +837,7 @@ textarea {
 
 /*********FOOOTER *********************/
 footer {
-  background-color: #E9E9E9;
+  background-color: #ECECE0;
 }
 
 footer .info-college {
@@ -1278,7 +1278,7 @@ footer .footer-wave img {
 }
 
 .section-accueil-wrapper button:hover {
-  background-color: #22489F;
+  background-color: #4712C9;
   color: white;
 }
 
@@ -1356,7 +1356,7 @@ footer .footer-wave img {
 }
 
 .section-accueil-wrapper:nth-of-type(2) {
-  background-color: #FFE8E8;
+  background-color: #EECABA;
   padding: 30px;
   height: 50rem;
 }
@@ -1405,12 +1405,12 @@ footer .footer-wave img {
 .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
   position: absolute;
   right: 50px;
-  top: 80%;
+  top: 100%;
 }
 
 @media only screen and (min-width: 69.5em) {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
-    top: 45%;
+    top: 55%;
   }
 }
 
@@ -1435,7 +1435,6 @@ footer .footer-wave img {
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 37.5em) {
   .section-accueil-wrapper:first-of-type {
     display: flex;
@@ -1505,15 +1504,16 @@ footer .footer-wave img {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer .btn-section {
     position: static;
   }
-=======
+}
+
 ::-webkit-scrollbar {
   display: none;
->>>>>>> tristan
 }
 
 @media screen and (min-width: 600px) {
   .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
     width: 100vw;
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1550,19 +1550,23 @@ footer .footer-wave img {
     display: none;
   }
   .progress-bar {
-    background-color: #FFF3E8;
-    width: 100vw;
+    box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
+    width: 91.7vw;
     margin: 0 auto;
+    border-radius: 10px;
     height: 15px;
     margin-top: 10px;
   }
   .progress-bar .progress-point {
     position: relative;
-    background-color: #D87225;
+    z-index: -999;
+    background-color: orange;
     width: 3.33vw;
     height: 100%;
+    border-radius: inherit;
   }
   .cours-ate {
+    border: 1px solid red;
     position: relative;
     top: -32.5vh;
   }
@@ -1574,10 +1578,10 @@ footer .footer-wave img {
     right: 4.5vw;
   }
   .cours-ate .ate-wrap .logo {
-    width: 170px;
-    height: 30px;
+    width: 150px;
+    height: 23px;
     border: 2px solid black;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -1586,11 +1590,10 @@ footer .footer-wave img {
     transition: 0.3s ease;
   }
   .cours-ate .ate-wrap .logo:hover {
-    background-color: #22489F;
+    background-color: #4712C9;
     color: white;
-    cursor: pointer;
   }
-  .wp-block-columns {
+  .cours-ate .wp-block-columns {
     margin-bottom: 0px;
     align-items: center;
   }
@@ -1641,6 +1644,7 @@ footer .footer-wave img {
   display: flex;
   overflow: hidden;
   width: 85%;
+  height: auto;
   margin-left: 10vw;
 }
 
@@ -1692,7 +1696,7 @@ footer .footer-wave img {
 
 .vie-wrap .vie-img-wrap .vie-ombre {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: #00000057;
 }
 
 .vie-wrap .vie-content {
@@ -1706,11 +1710,8 @@ footer .footer-wave img {
 }
 
 .vie {
-  padding-right: 20px;
   height: 43rem;
-  background-color: #FFE8E8;
-  position: relative;
-  z-index: -999;
+  background-color: rgba(128, 128, 128, 0.363);
 }
 
 body {
@@ -1719,14 +1720,63 @@ body {
 
 @media (max-width: 1172px) {
   .vie-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
     flex-direction: column !important;
+    height: auto !important;
   }
-  .vie-wrap:nth-of-type(2) {
-    height: 100%;
+  .vie-wrapper {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .vie-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+  }
+  .vie-haut {
+    overflow: visible !important;
+  }
+  .vie-wrap {
+    width: 100% !important;
+    position: static;
+    margin: 25px 0  !important;
+    display: flex !important;
+    justify-content: center !important;
+    height: auto !important;
+    flex-direction: column !important;
+    position: relative !important;
+  }
+  .vie-wrap .vie-img {
+    position: relative !important;
+    clip-path: none !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .vie-wrap .vie-ombre {
+    display: none;
+  }
+  .vie-wrap .vie-content {
+    width: 80% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+  .vie-wrap .vie-content p {
+    margin: 0 !important;
+  }
+  .not-home {
+    display: none;
+  }
+}
+
+.vie {
+  height: auto !important;
+  width: auto !important;
 }
 
 .prof-wrapper {
@@ -1762,17 +1812,17 @@ body {
 .prof-row .prof-img-bas:hover {
   transition: all 0.3s ease;
   transform: translate(10px, -10px);
-  box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
+  box-shadow: -1px 1px 0px #D89444, -2px 2px 0px #D89444, -3px 3px 0px #D89444, -4px 4px 0px #D89444, -5px 5px 0px #D89444, -6px 6px 0px #D89444, -7px 7px 0px #D89444, -8px 8px 0px #D89444, -9px 9px 0px #D89444, -10px 10px 0px #D89444, -11px 11px 0px #D89444, -12px 12px 0px #D89444;
 }
 
 .prof {
-  background-color: #FFF3E8;
+  background-color: #F9F6D7;
 }
 
 .futur {
   display: flex;
   flex-direction: row;
-  background-color: #B8D3D0;
+  background-color: #CCE2E0;
   justify-content: space-around;
   color: #000;
   flex-wrap: wrap;

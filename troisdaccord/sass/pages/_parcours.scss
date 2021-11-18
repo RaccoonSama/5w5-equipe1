@@ -5,6 +5,7 @@
 @media screen and (min-width: 600px) {
     .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
+        border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -24,6 +25,7 @@
             }
             .opactiy-text {
                 opacity: 1;
+
             }
         }
     }
@@ -47,19 +49,24 @@
         display: none;
     }
     .progress-bar {
-        background-color: $beige;
-        width: 100vw;
+        box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
+  
+        width: 91.7vw;
         margin: 0 auto;
+        border-radius: 10px;
         height: 15px;
         margin-top: 10px;
         .progress-point {
             position: relative;
-            background-color: $accent_orange_fonce;
+            z-index: -999;
+            background-color: orange;
             width: 3.33vw;
             height:100%;
+            border-radius: inherit;
         }
     }
         .cours-ate {
+            border: 1px solid red;
             position: relative;
             top: -32.5vh;
             .ate-wrap {
@@ -69,10 +76,10 @@
                 align-items: center;
                 right: 4.5vw;
                 .logo {
-                    width: 170px;
-                    height: 30px;
+                    width: 150px;
+                    height: 23px;
                     border: 2px solid black;
-                    border-radius: 50px;       
+                    border-radius: 10px;       
                     background-color: white;      
                     display: flex;
                     flex-direction: row;
@@ -80,20 +87,20 @@
                     justify-content: center;
                     transition: 0.3s ease;
                     &:hover {
-                        background-color: $accent_mauve;
+                        background-color: #4712C9;
                         color: white;
-                        cursor: pointer;
                     }
                 }
             }
+            .wp-block-columns {
+                margin-bottom: 0px;
+                align-items: center;
+                
+                
+            }
         }
 
-        .wp-block-columns {
-            margin-bottom: 0px;
-            align-items: center;
-            
-            
-        }
+       
         .bouton-cours{
             width: 160px;
             height: 60px;

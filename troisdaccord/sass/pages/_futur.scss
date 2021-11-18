@@ -1,10 +1,11 @@
 .futur {
     display: flex;
     flex-direction: row;
-    background-color: $bleu_fonce;
+    background-color: #CCE2E0;
     justify-content: space-around;
     color: $noir;
     
+   
     flex-wrap: wrap;
     .metier-wrapper {
             display: grid;
@@ -26,9 +27,8 @@
             cursor: pointer;
         }
 
-        .metier-content{
-
-        }
+        
     }
 }
 }
+
