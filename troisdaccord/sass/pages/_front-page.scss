@@ -8,9 +8,17 @@
         border-radius: 25px;
         background-color: rgba(0, 0, 0, 0);
         transition: 0.3s ease;
+
+        a {
+            width: 100% !important;
+            height: 100% !important;
+            text-decoration: none;
+            z-index: 99999;
+        }
     }
     button:hover {
-        background-color: #4712C9;
+        background-color: $accent_mauve;
+        cursor: pointer;
         color: white;
     }
     &:first-of-type {
@@ -54,8 +62,7 @@
             margin-left: 5%;
             @media only screen and (min-width:54.25em) { 
                 line-height: 1.8rem;
-            }
-           
+            } 
         }
         button {
             margin-left: 5%;
@@ -101,13 +108,9 @@
                     margin-right: 5%;
                     @media only screen and (min-width:54.25em) { 
                         line-height: 1.8rem;
-                    }
-                   
-                  
+                    } 
                 }
-            }
-           
-           
+            } 
         }
         .btn-placer {
             position: relative;
@@ -124,7 +127,6 @@
 
             }
         }
-   
     }
 }
 

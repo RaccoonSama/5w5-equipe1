@@ -1277,8 +1277,16 @@ footer .footer-wave img {
   transition: 0.3s ease;
 }
 
+.section-accueil-wrapper button a {
+  width: 100% !important;
+  height: 100% !important;
+  text-decoration: none;
+  z-index: 99999;
+}
+
 .section-accueil-wrapper button:hover {
-  background-color: #4712C9;
+  background-color: #128282;
+  cursor: pointer;
   color: white;
 }
 
@@ -1611,7 +1619,7 @@ footer .footer-wave img {
     transition: 0.25s ease-in-out;
   }
   .bouton-cours:hover {
-    background-color: #22489F;
+    background-color: #128282;
     color: white;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.43);
   }
@@ -1918,7 +1926,7 @@ body {
   padding: 25px;
   border-radius: 50px;
   text-align: center;
-  background-color: #22489F;
+  background-color: #128282;
   border: 1px solid #000;
   display: flex;
   justify-content: center;
@@ -1935,3 +1943,98 @@ body {
   cursor: pointer;
   background-color: #ED7B1D;
 }
+
+/**************** HEADER ***************************************************************/
+/*.site-branding {
+    .header-not-main {
+        background: rgb(236,236,224);
+        background: linear-gradient(90deg, rgba(236,236,224,1) 0%, rgba(221,227,221,1) 100%);
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .title {
+        position: relative;
+        height: 30vh;
+        h1 {
+            margin: 0;
+            position: absolute;
+            font-size: 11vw;
+            bottom: -3.5vw;
+            margin-left: 10%;
+            color: $noir;
+        }
+    }
+}*/
+.site-header {
+  height: 100%;
+  background: #ecece0;
+  background: linear-gradient(90deg, #ecece0 0%, #dde3dd 100%);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.site-header .header-wrapper {
+  padding-bottom: 10%;
+  padding-top: 3.5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-header .header-wrapper h1 {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  height: 100%;
+  font-size: 3.5vw;
+  line-height: 1.1;
+  margin-left: 5%;
+  z-index: 999;
+}
+
+.site-header .header-wrapper .header-pic {
+  width: 30%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.site-header .header-wrapper .header-triangle {
+  z-index: 999;
+  width: 30vw;
+}
+
+.site-header .header-wrapper .header-grid {
+  position: absolute;
+  width: 45%;
+  left: 55%;
+}
+
+#primary-menu {
+  height: 4rem;
+}
+
+#primary-menu ul {
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#primary-menu ul li {
+  font-size: 2vw;
+}
+
+#primary-menu ul li a {
+  color: #000;
+}
+
+#primary-menu ul li a:visited {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
