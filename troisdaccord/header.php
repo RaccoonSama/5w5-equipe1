@@ -61,10 +61,10 @@ $the_query = new WP_Query(array(
 				
 				<div class="header-not-main">
 					<div class="title">
-						<h1><?php wp_title("");?></h1>
+						<h1><?php// wp_title("");?></h1>
 					</div>
 					<div class="img-subtitle"> 
-					<?php  the_content();?>
+					<?php // the_content();?>
 					</div>
 				</div>
 				<?php

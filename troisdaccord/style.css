@@ -1405,12 +1405,12 @@ footer .footer-wave img {
 .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
   position: absolute;
   right: 50px;
-  top: 80%;
+  top: 100%;
 }
 
 @media only screen and (min-width: 69.5em) {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
-    top: 45%;
+    top: 55%;
   }
 }
 
@@ -1593,7 +1593,7 @@ footer .footer-wave img {
     background-color: #4712C9;
     color: white;
   }
-  .wp-block-columns {
+  .cours-ate .wp-block-columns {
     margin-bottom: 0px;
     align-items: center;
   }
@@ -1644,6 +1644,7 @@ footer .footer-wave img {
   display: flex;
   overflow: hidden;
   width: 85%;
+  height: auto;
   margin-left: 10vw;
 }
 
@@ -1709,7 +1710,6 @@ footer .footer-wave img {
 }
 
 .vie {
-  padding-right: 20px;
   height: 43rem;
   background-color: rgba(128, 128, 128, 0.363);
 }
@@ -1720,14 +1720,63 @@ body {
 
 @media (max-width: 1172px) {
   .vie-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
     flex-direction: column !important;
+    height: auto !important;
   }
-  .vie-wrap:nth-of-type(2) {
-    height: 100%;
+  .vie-wrapper {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .vie-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+  }
+  .vie-haut {
+    overflow: visible !important;
+  }
+  .vie-wrap {
+    width: 100% !important;
+    position: static;
+    margin: 25px 0  !important;
+    display: flex !important;
+    justify-content: center !important;
+    height: auto !important;
+    flex-direction: column !important;
+    position: relative !important;
+  }
+  .vie-wrap .vie-img {
+    position: relative !important;
+    clip-path: none !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .vie-wrap .vie-ombre {
+    display: none;
+  }
+  .vie-wrap .vie-content {
+    width: 80% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+  .vie-wrap .vie-content p {
+    margin: 0 !important;
+  }
+  .not-home {
+    display: none;
+  }
+}
+
+.vie {
+  height: auto !important;
+  width: auto !important;
 }
 
 .prof-wrapper {
@@ -1886,4 +1935,3 @@ body {
   cursor: pointer;
   background-color: #ED7B1D;
 }
-/*# sourceMappingURL=style.css.map */
