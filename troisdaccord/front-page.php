@@ -16,7 +16,7 @@ $the_query = new WP_Query(array(
       
         <div class="txt-btn-accueil">
          <div class="content-section-accueil"><?php the_content(); ?></div>
-         <div class="btn-placer"><button class="btn-section">Section <?php the_title(); ?> </button></div>
+         <div class="btn-placer"><button class="btn-section"><a href="<?php get_template_directory_uri() . the_title();?>">Section <?php the_title(); ?> </a> </button></div>
          </div>
          </div>
     <?php
