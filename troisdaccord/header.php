@@ -10,9 +10,8 @@
  */
 global $post;
 $post_slug = $post->post_name;
-echo $post_slug;
 $the_query = new WP_Query(array(
-	'category_name'
+	
 	'name' => $post_slug,
     'post_status' => 'publish',
     'posts_per_page' => 1,
@@ -59,14 +58,14 @@ $the_query = new WP_Query(array(
 					?>
 				
 				
-				<div class="header-not-main">
+				<!-- <div class="header-not-main">
 					<div class="title">
 						<h1><?php// wp_title("");?></h1>
 					</div>
 					<div class="img-subtitle"> 
 					<?php // the_content();?>
 					</div>
-				</div>
+				</div> -->
 				<?php
 				 endwhile; 
 				 wp_reset_postdata(); 
