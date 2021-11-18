@@ -12,6 +12,7 @@ global $post;
 $post_slug = $post->post_name;
 echo $post_slug;
 $the_query = new WP_Query(array(
+	'category_name'
 	'name' => $post_slug,
     'post_status' => 'publish',
     'posts_per_page' => 1,
