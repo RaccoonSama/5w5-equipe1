@@ -1,24 +1,36 @@
+
 const scrollContainer = document.getElementById('cours-vertical');
 const scrollPoint = document.getElementById('scrollPoint');
 var nb =0;
 var newWidth = 16.6;
 
+  
+
 scrollContainer.addEventListener("wheel", (evt) => {
+  nb += evt.deltaY;
+  console.log(nb);
+
+  if (window.screen.width >= 1016) {
     evt.preventDefault();
-    nb += evt.deltaY;
     if (nb > 0) {
-        nb = 0;
-    }
+      nb = 0;
+  }
+   
         
         if (nb <= 0 && nb >= -2500) {
         newWidth ++;
         scrollContainer.style.transform = "translateX(" + nb/5 + "vw)";
         scrollPoint.style.width = "" + -1*(nb/27.3) + "vw";
-        console.log(nb);
+        
     }
-
+  }else {
+    if (nb <= 0) {
+      nb = 0;
+  } else if (nb >= 4600) {
+    nb = 4600;
+  }
+  }
 });
-
 
 
 var coursObj = [];
@@ -39,7 +51,7 @@ for(a = 1; a < 7; a++) {
 
     index++;
     
-
+ 
        
     for (let i = 0; i < coursObj[index].length; i++) {
        console.log(coursObj[index])
@@ -49,7 +61,8 @@ for(a = 1; a < 7; a++) {
                 textCour.style.opacity = "0";
             }
             textObj[index2][i].style.opacity = "1"; 
-            if (nb <= -400 && nb > -899) {
+            if (window.screen.width >= 1016) {
+            if ((nb <= -400 && nb > -899)) {
                 index2=1;
                 console.log('fonctionne');
               }
@@ -71,7 +84,32 @@ for(a = 1; a < 7; a++) {
               }
             else {
                 index2=0;
-              }    
+              }
+            } else {
+              if ((nb <= -113 && nb < 568)) {
+                index2=1;
+                console.log('fonctionne');
+              }
+              else if (nb <= -900 && nb > -1399) {
+                index2=2;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1400 && nb > -1899) {
+                index2=3;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1900 && nb > -2399) {
+                index2=4;
+                console.log('fonctionne');
+              }
+              else if (nb <= -2400) {
+                index2=5;
+                console.log('fonctionne');
+              }
+            else {
+                index2=0;
+              }
+            }    
               console.log(index2);
         });
        

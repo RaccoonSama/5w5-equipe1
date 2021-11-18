@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+
     .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
         display: flex;
@@ -143,4 +143,22 @@
             margin-bottom: auto;
             padding: 2% 0% 2% 0%;
         }
-  }  
+  @include tablet {
+.progress-bar {
+    display: none !important;
+}
+#cours-vertical {
+    flex-direction: column !important;
+}
+.bouton-cours {
+    p {
+        display: none;
+    }
+}
+.sessions {
+    height: 100vh !important;
+}
+#primary-menu {
+    display: none !important;
+}
+  }

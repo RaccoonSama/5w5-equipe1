@@ -9,14 +9,14 @@
 $the_query = new WP_Query(array(
     'category_name' => 'session-1',
     'post_status' => 'publish',
-    'posts_per_page' => 4,
+    'posts_per_page' => 7,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 $the_query2 = new WP_Query(array(
     'category_name' => 'cours-text-session-1',
     'post_status' => 'publish',
-    'posts_per_page' => 4,
+    'posts_per_page' => 7,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
@@ -52,7 +52,7 @@ foreach ($countchildren as $key => $child) {
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-         <div class="cours-session-<?=$noClass;?>"><?php the_content(); ?></div>
+         <div class="cours-session-<?=$noClass;?> bouton-cours"><?php the_content(); ?></div>
 
             <?php
         endwhile; 
@@ -87,14 +87,14 @@ if ($the_query2->have_posts()) :
     $the_query = new WP_Query(array(
         'category_name' => 'session-' . $noClass+1,
         'post_status' => 'publish',
-        'posts_per_page' => 4,
+        'posts_per_page' => 7,
          'orderby' => 'date',
          'order'   => 'ASC'
     ));
     $the_query2 = new WP_Query(array(
         'category_name' => 'cours-text-session-' . $noClass+1,
         'post_status' => 'publish',
-        'posts_per_page' => 4,
+        'posts_per_page' => 7,
          'orderby' => 'date',
          'order'   => 'ASC'
     ));
