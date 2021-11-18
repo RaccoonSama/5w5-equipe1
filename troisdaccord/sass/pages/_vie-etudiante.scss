@@ -1,7 +1,8 @@
 .vie-wrap{
     display: flex;
-    overflow: hidden;
+    //overflow: hidden;
    width:85%;
+   height: auto;
    margin-left: 10vw;
    &:first-of-type {
 
@@ -19,7 +20,7 @@
     }
    }
    &:nth-of-type(2) {
- height: 20rem;
+    height: 20rem;
 
        justify-content: left;
    
@@ -60,7 +61,6 @@ position: relative;
 }
 
 .vie {
-    padding-right: 20px;
     height: 43rem;
     background-color: $rose;
     position: relative;
@@ -71,13 +71,64 @@ body {
     margin: 0 !important;
 }
 @media (max-width: 1172px) {
-    .vie-wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column !important;
-        &:nth-of-type(2) { 
-            height: 100%;
+   .vie-wrap {
+       display: flex !important;
+       flex-direction: column !important;
+       height: auto !important;
+   }
+   .vie-wrapper {
+       display: flex;
+       flex-direction: column !important;
+       justify-content: center !important;
+       align-items: center !important;
+   }
+}
+@include phone {
+    .vie-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column;
+    }
+ .vie-haut{
+    overflow: visible !important;
+ }  
+ .vie-wrap {
+     width: 100% !important;
+    position: static;
+     margin: 25px 0  !important;
+     display: flex !important;
+     justify-content: center !important;
+    height: auto !important;
+     flex-direction: column !important;
+     position: relative !important;
+    .vie-img {
+        position: relative !important;
+        clip-path: none !important;
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .vie-ombre {
+        display: none;
+    }
+    .vie-content {
+        
+        width: 80% !important;
+        margin: 0 auto!important;
+        position: relative !important;
+       
+        p {
+            margin: 0 !important;
         }
     }
+ } 
+ 
+ .not-home {
+     display: none;
+ }
+ 
+}
+.vie {
+    height: auto !important;
+    width: auto !important;
 }
