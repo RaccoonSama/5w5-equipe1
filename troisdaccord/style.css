@@ -1610,11 +1610,6 @@ footer .footer-wave img {
   cursor: pointer;
 }
 
-.wp-block-columns {
-  margin-bottom: 0px;
-  align-items: center;
-}
-
 .bouton-cours {
   width: 160px;
   height: 60px;
@@ -1627,6 +1622,11 @@ footer .footer-wave img {
   border: 1px solid black;
   box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.43);
   transition: 0.25s ease-in-out;
+}
+
+.bouton-cours .wp-block-columns {
+  margin-bottom: 0px;
+  align-items: center;
 }
 
 .bouton-cours:hover {
@@ -2069,4 +2069,3 @@ body {
 #primary-menu ul li a:visited {
   color: #000;
 }
-/*# sourceMappingURL=style.css.map */

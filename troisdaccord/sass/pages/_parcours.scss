@@ -88,12 +88,7 @@
             }
         }
 
-        .wp-block-columns {
-            margin-bottom: 0px;
-            align-items: center;
-            
-            
-        }
+       
         .bouton-cours{
             width: 160px;
             height: 60px;
@@ -107,6 +102,12 @@
             -webkit-box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43); 
             box-shadow: 15px 15px 0px 0px rgba(0,0,0,0.43);
             transition: 0.25s ease-in-out;
+            .wp-block-columns {
+                margin-bottom: 0px;
+                align-items: center;
+                
+                
+            }
         }
 
         .bouton-cours:hover {
