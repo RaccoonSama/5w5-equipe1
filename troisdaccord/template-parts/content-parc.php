@@ -30,7 +30,7 @@ $args = array(
     ); 
 ?>
 
-<article>
+<article class="article-parcours">
     <div class="parcours-container-full" id="cours-vertical">
     
       
@@ -52,7 +52,7 @@ foreach ($countchildren as $key => $child) {
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-         <div class="cours-session-<?=$noClass;?> bouton-cours"><?php the_content(); ?></div>
+         <div class="cours-session-<?=$noClass;?>"><?php the_content(); ?></div>
 
             <?php
         endwhile; 

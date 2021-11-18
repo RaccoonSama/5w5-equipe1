@@ -1,6 +1,6 @@
 .vie-wrap{
     display: flex;
-    //overflow: hidden;
+    overflow: hidden;
    width:85%;
    height: auto;
    margin-left: 10vw;
@@ -47,7 +47,7 @@ position: relative;
     }
     .vie-ombre {
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.384);
+        background-color: #00000057;
     } 
 }
     .vie-content {
@@ -62,11 +62,8 @@ position: relative;
 
 .vie {
     height: 43rem;
-    background-color: $rose;
-    position: relative;
-    z-index: -999;
+    background-color: rgba(128, 128, 128, 0.363);
 }
-
 body {
     margin: 0 !important;
 }

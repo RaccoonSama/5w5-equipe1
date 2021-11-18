@@ -1,0 +1,86 @@
+#conteneur-light-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $noir;
+
+    #light-box {
+        position: relative;
+        background-color: $blanc;
+        width: 65vw;
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.65); 
+        box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.65);
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin: 0;
+            height: 10rem;
+            position: relative;
+
+            background: rgb(236,236,224);
+            background: linear-gradient(90deg, rgba(236,236,224,1) 0%, rgba(221,227,221,1) 100%);
+        }
+
+        .texte-titre {
+            position: absolute;
+            font-size: 50px;
+            bottom: -17px;
+            margin-left: 10%;
+        }
+
+        .contenu-lightbox {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 5%;
+        }
+
+        .barres {
+            position: relative;
+            height: auto;
+            
+            svg {
+                position: absolute;
+                opacity: 0.5;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        #bouton-fermer {
+            position: absolute;
+            top:-25px;
+            right:-25px;
+            width: 55px;
+            height: 55px;
+            padding: 25px;
+            border-radius: 50px;
+            text-align: center;
+            background-color: $accent_mauve;
+            border: 1px solid $noir;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+
+            h2 {
+                color: $blanc;
+                margin: 0;
+            }
+        }
+
+        #bouton-fermer:hover {
+            cursor: pointer;
+            background-color: $accent_orange;
+        }
+    }
+
+   
+}
