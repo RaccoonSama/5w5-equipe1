@@ -1521,7 +1521,6 @@ footer .footer-wave img {
 @media screen and (min-width: 600px) {
   .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
     width: 100vw;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1558,23 +1557,19 @@ footer .footer-wave img {
     display: none;
   }
   .progress-bar {
-    box-shadow: inset 1px 1px 9px 0.1px rgba(0, 0, 0, 0.356);
-    width: 91.7vw;
+    background-color: #FFF3E8;
+    width: 100vw;
     margin: 0 auto;
-    border-radius: 10px;
     height: 15px;
     margin-top: 10px;
   }
   .progress-bar .progress-point {
     position: relative;
-    z-index: -999;
-    background-color: orange;
+    background-color: #D87225;
     width: 3.33vw;
     height: 100%;
-    border-radius: inherit;
   }
   .cours-ate {
-    border: 1px solid red;
     position: relative;
     top: -32.5vh;
   }
@@ -1586,10 +1581,10 @@ footer .footer-wave img {
     right: 4.5vw;
   }
   .cours-ate .ate-wrap .logo {
-    width: 150px;
-    height: 23px;
+    width: 170px;
+    height: 30px;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -1598,10 +1593,11 @@ footer .footer-wave img {
     transition: 0.3s ease;
   }
   .cours-ate .ate-wrap .logo:hover {
-    background-color: #4712C9;
+    background-color: #128282;
     color: white;
+    cursor: pointer;
   }
-  .cours-ate .wp-block-columns {
+  .wp-block-columns {
     margin-bottom: 0px;
     align-items: center;
   }
