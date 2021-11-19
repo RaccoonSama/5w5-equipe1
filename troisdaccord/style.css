@@ -1678,6 +1678,22 @@ footer .footer-wave img {
   #primary-menu {
     display: none !important;
   }
+  .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5 {
+    height: 80% !important;
+  }
+  .sigle-cours6 {
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .sigle-cours6 .bouton-cours {
+    margin-top: 40px;
+  }
+  .text-cours1, .text-cours2, .text-cours3, .text-cours4, .text-cours5, .text-cours6 {
+    line-height: 1.1 !important;
+  }
+  .menu-menu-1-container {
+    display: none !important;
+  }
 }
 
 .vie-wrap {
