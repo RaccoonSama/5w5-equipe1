@@ -9,7 +9,7 @@
 $the_query = new WP_Query(array(
     'category_name' => 'proj-etudiant1',
     'post_status' => 'publish',
-    'posts_per_page' => 4,
+    'posts_per_page' => 2,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));

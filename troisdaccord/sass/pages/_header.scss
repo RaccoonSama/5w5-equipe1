@@ -29,9 +29,10 @@
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
-
+	position: relative;
+	z-index: 999;
 	.header-wrapper {
-        padding-bottom: 10%;
+        //padding-bottom: 10%;
 		padding-top:3.5% ; 
 		position: relative;
 		display: flex;

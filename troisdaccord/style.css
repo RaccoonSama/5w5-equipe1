@@ -1270,6 +1270,11 @@ footer .footer-wave img {
   flex-direction: row-reverse;
 }
 
+.section-accueil-wrapper .btn-placer {
+  position: relative;
+  z-index: 99999;
+}
+
 .section-accueil-wrapper button {
   border: 2px solid black;
   border-radius: 25px;
@@ -1282,11 +1287,15 @@ footer .footer-wave img {
   height: 100% !important;
   text-decoration: none;
   z-index: 99999;
+  color: black;
 }
 
 .section-accueil-wrapper button:hover {
   background-color: #128282;
   cursor: pointer;
+}
+
+.section-accueil-wrapper button:hover a {
   color: white;
 }
 
@@ -1557,6 +1566,8 @@ footer .footer-wave img {
   overflow: auto;
   width: 600vw;
   transition: 0.5s ease;
+  position: relative;
+  z-index: 999;
 }
 
 .not-home {
@@ -1581,6 +1592,7 @@ footer .footer-wave img {
 .cours-ate {
   position: relative;
   top: -32.5vh;
+  z-index: 1000;
 }
 
 .cours-ate .ate-wrap {
@@ -1884,6 +1896,11 @@ body {
   flex-wrap: wrap;
 }
 
+.futur .metier, .futur .employeur {
+  position: relative;
+  z-index: 999;
+}
+
 .futur .metier-wrapper {
   display: grid;
   width: 50vw;
@@ -1908,7 +1925,7 @@ body {
   cursor: pointer;
 }
 
-#conteneur-light-box {
+.conteneur-light-box {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -1919,18 +1936,22 @@ body {
   justify-content: center;
   align-items: center;
   color: #000;
+  transition: 0.3s ease;
+  opacity: 0;
+  z-index: 998;
 }
 
-#conteneur-light-box #light-box {
+.conteneur-light-box .light-box {
   position: relative;
   background-color: #FFF;
   width: 65vw;
+  height: 55vh;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.65);
   display: flex;
   flex-direction: column;
 }
 
-#conteneur-light-box #light-box h1 {
+.conteneur-light-box .light-box h1 {
   margin: 0;
   height: 10rem;
   position: relative;
@@ -1938,25 +1959,31 @@ body {
   background: linear-gradient(90deg, #ecece0 0%, #dde3dd 100%);
 }
 
-#conteneur-light-box #light-box .texte-titre {
+.conteneur-light-box .light-box .texte-titre {
   position: absolute;
   font-size: 50px;
   bottom: -17px;
   margin-left: 10%;
 }
 
-#conteneur-light-box #light-box .contenu-lightbox {
+.conteneur-light-box .light-box .contenu-lightbox {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 5%;
+  width: 80%;
 }
 
-#conteneur-light-box #light-box .barres {
+.conteneur-light-box .light-box p {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.conteneur-light-box .light-box .barres {
   position: relative;
   height: auto;
 }
 
-#conteneur-light-box #light-box .barres svg {
+.conteneur-light-box .light-box .barres svg {
   position: absolute;
   opacity: 0.5;
   bottom: 0;
@@ -1965,7 +1992,7 @@ body {
   height: 300px;
 }
 
-#conteneur-light-box #light-box #bouton-fermer {
+.conteneur-light-box .light-box .bouton-fermer {
   position: absolute;
   top: -25px;
   right: -25px;
@@ -1982,12 +2009,12 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-#conteneur-light-box #light-box #bouton-fermer h2 {
+.conteneur-light-box .light-box .bouton-fermer h2 {
   color: #FFF;
   margin: 0;
 }
 
-#conteneur-light-box #light-box #bouton-fermer:hover {
+.conteneur-light-box .light-box .bouton-fermer:hover {
   cursor: pointer;
   background-color: #ED7B1D;
 }
@@ -2022,10 +2049,11 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
+  position: relative;
+  z-index: 999;
 }
 
 .site-header .header-wrapper {
-  padding-bottom: 10%;
   padding-top: 3.5%;
   position: relative;
   display: flex;

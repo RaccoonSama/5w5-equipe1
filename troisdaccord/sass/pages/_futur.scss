@@ -4,9 +4,12 @@
     background-color: #CCE2E0;
     justify-content: space-around;
     color: $noir;
-    
-   
     flex-wrap: wrap;
+    .metier, .employeur {
+        position: relative;
+        z-index: 999;
+    }
+    
     .metier-wrapper {
             display: grid;
             width: 50vw;

@@ -41,6 +41,8 @@
         overflow: auto;
         width: 600vw;
         transition: 0.5s ease;
+        position: relative;
+        z-index: 999;
     }
 
     .not-home {
@@ -62,6 +64,7 @@
         .cours-ate {
             position: relative;
             top: -32.5vh;
+            z-index: 1000;
             .ate-wrap {
                 position: absolute;
                 display: flex;

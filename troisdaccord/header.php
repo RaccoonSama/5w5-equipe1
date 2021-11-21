@@ -8,17 +8,17 @@
  *
  * @package 3Daccord
  */
-global $post;
-$post_slug = $post->post_name;
-$the_query = new WP_Query(array(
+// global $post;
+// $post_slug = $post->post_name;
+// $the_query = new WP_Query(array(
 	
-	'name' => $post_slug,
-    'post_status' => 'publish',
-    'posts_per_page' => 1,
-     'orderby' => 'date',
-     'order'   => 'ASC',
-	 'post_type' => 'post'
-));
+// 	'name' => $post_slug,
+//     'post_status' => 'publish',
+//     'posts_per_page' => 1,
+//      'orderby' => 'date',
+//      'order'   => 'ASC',
+// 	 'post_type' => 'post'
+// ));
 
 ?>
 <!doctype html>
@@ -52,8 +52,8 @@ $the_query = new WP_Query(array(
 				</div>
 				<?php 
 			else :
-				if ($the_query->have_posts()) :
-					while ($the_query->have_posts()) : $the_query->the_post(); 
+				// if ($the_query->have_posts()) :
+				// 	while ($the_query->have_posts()) : $the_query->the_post(); 
 				
 					?>
 				
@@ -67,9 +67,9 @@ $the_query = new WP_Query(array(
 					</div>
 				</div> -->
 				<?php
-				 endwhile; 
-				 wp_reset_postdata(); 
-				endif;
+				//  endwhile; 
+				//  wp_reset_postdata(); 
+				// endif;
 			endif;
 			
 			// if ( $troisdaccord_description || is_customize_preview() ) :

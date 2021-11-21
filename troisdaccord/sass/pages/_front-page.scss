@@ -3,6 +3,10 @@
 .section-accueil-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    .btn-placer {
+        position: relative;
+        z-index: 99999;
+    }
     button {
         border: 2px solid black;
         border-radius: 25px;
@@ -14,12 +18,15 @@
             height: 100% !important;
             text-decoration: none;
             z-index: 99999;
+            color: black;
         }
     }
     button:hover {
         background-color: $accent_mauve;
         cursor: pointer;
-        color: white;
+        a {
+            color: white;
+        }
     }
     &:first-of-type {
         height: 40rem;
