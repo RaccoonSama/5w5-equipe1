@@ -9,7 +9,7 @@
 $the_query = new WP_Query(array(
     'category_name' => 'professeurs',
     'post_status' => 'publish',
-    'posts_per_page' => 8,
+    'posts_per_page' => 16,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
