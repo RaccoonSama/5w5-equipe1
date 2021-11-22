@@ -5,6 +5,7 @@
     justify-content: space-around;
     color: $noir;
     flex-wrap: wrap;
+
     .metier, .employeur {
         position: relative;
         z-index: 999;
@@ -15,23 +16,48 @@
             width: 50vw;
             height: 30rem;
             grid-template-columns: repeat(auto-fill,minmax(20vw, 1fr));
-    .metier-wrap {
-        background-color: rgba(0, 0, 0, 0.267);
-        padding-left: 10px;
-        height: auto;
-        min-height: 80px;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        &:hover {
-            transition: all 0.3s ease;
-            transform: translate(10px, -10px);
-            box-shadow: -1px 1px 0px $accent_orange, -2px 2px 0px $accent_orange, -3px 3px 0px $accent_orange, -4px 4px 0px $accent_orange, -5px 5px 0px $accent_orange, -6px 6px 0px $accent_orange, -7px 7px 0px $accent_orange, -8px 8px 0px $accent_orange, -9px 9px 0px $accent_orange, -10px 10px 0px $accent_orange, -11px 11px 0px $accent_orange, -12px 12px 0px $accent_orange;
+        .metier-wrap {
+            background-color: rgba(0, 0, 0, 0.267);
+            padding-left: 10px;
+            height: auto;
+            min-height: 80px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                transition: all 0.3s ease;
+                transform: translate(10px, -10px);
+                box-shadow: -1px 1px 0px $accent_orange, -2px 2px 0px $accent_orange, -3px 3px 0px $accent_orange, -4px 4px 0px $accent_orange, -5px 5px 0px $accent_orange, -6px 6px 0px $accent_orange, -7px 7px 0px $accent_orange, -8px 8px 0px $accent_orange, -9px 9px 0px $accent_orange, -10px 10px 0px $accent_orange, -11px 11px 0px $accent_orange, -12px 12px 0px $accent_orange;
+                cursor: pointer;
+            }   
+        }
+    }
+
+    .emploi-wrapper {
+        li {
             cursor: pointer;
+            list-style-type: square;
+        }
+        h2 {
+            display: inline-block;
+            color: $accent_mauve;
+            padding: 0;
+            margin: 0;
+            margin-top: 5px;
+            transition: 0.1s all ease;
+
+            a {
+                color: inherit;
+            }
         }
 
-        
+        h2:active{
+            color: $accent_orange;
+        }
+
+        h1{
+            margin-left: -75px;
+        }
     }
-}
 }
 

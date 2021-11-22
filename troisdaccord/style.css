@@ -1948,6 +1948,32 @@ body {
   cursor: pointer;
 }
 
+.futur .emploi-wrapper li {
+  cursor: pointer;
+  list-style-type: square;
+}
+
+.futur .emploi-wrapper h2 {
+  display: inline-block;
+  color: #128282;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  transition: 0.1s all ease;
+}
+
+.futur .emploi-wrapper h2 a {
+  color: inherit;
+}
+
+.futur .emploi-wrapper h2:active {
+  color: #ED7B1D;
+}
+
+.futur .emploi-wrapper h1 {
+  margin-left: -75px;
+}
+
 .conteneur-light-box {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
