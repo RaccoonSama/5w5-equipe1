@@ -8,6 +8,17 @@
  *
  * @package 3Daccord
  */
+// global $post;
+// $post_slug = $post->post_name;
+// $the_query = new WP_Query(array(
+	
+// 	'name' => $post_slug,
+//     'post_status' => 'publish',
+//     'posts_per_page' => 1,
+//      'orderby' => 'date',
+//      'order'   => 'ASC',
+// 	 'post_type' => 'post'
+// ));
 
 ?>
 <!doctype html>
@@ -28,7 +39,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			// the_custom_logo();
+			
 			if ( is_front_page() && is_home() ) :
 				?>
 				<div class="header-wrapper">
@@ -39,11 +50,26 @@
 
 
 				</div>
-				<?php
+				<?php 
 			else :
-				?>
-				<!-- <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
+				// if ($the_query->have_posts()) :
+				// 	while ($the_query->have_posts()) : $the_query->the_post(); 
+				
+					?>
+				
+				
+				<!-- <div class="header-not-main">
+					<div class="title">
+						<h1><?php// wp_title("");?></h1>
+					</div>
+					<div class="img-subtitle"> 
+					<?php // the_content();?>
+					</div>
+				</div> -->
 				<?php
+				//  endwhile; 
+				//  wp_reset_postdata(); 
+				// endif;
 			endif;
 			
 			// if ( $troisdaccord_description || is_customize_preview() ) :
@@ -52,7 +78,7 @@
 			 <?php //endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<div id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'troisdaccord' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -62,5 +88,5 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</div><!-- #site-navigation -->
 	</header><!-- #masthead -->
