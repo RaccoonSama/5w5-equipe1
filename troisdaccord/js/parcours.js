@@ -33,6 +33,9 @@ scrollContainer.addEventListener("wheel", (evt) => {
 });
 
 
+
+
+
 var coursObj = [];
 var textObj = [];
 
@@ -42,6 +45,27 @@ const sessions = document.querySelectorAll('.sessions');
 var index = -1;
 var index2 = 0;
 
+const gauche = document.getElementById("<-");
+const droite = document.getElementById("->");
+var valDebut = 0;
+gauche.addEventListener("click", ()=> {
+  if (index2 > 0) {
+    valDebut += 100;
+    scrollContainer.style.transform = "translateX(" + valDebut +"vw)";
+    index2--;
+    console.log("gauche");
+    console.log(valDebut);
+  }
+});
+droite.addEventListener("click", ()=> {
+  if (index2 < 6) {
+    valDebut -= 100;
+    scrollContainer.style.transform = "translateX(" + valDebut +"vw)";
+    index2++;
+    console.log("droite");
+    console.log(valDebut);
+  }
+});
 
 for(a = 1; a < 7; a++) { 
     window['var_'+a] = document.querySelectorAll('.cours-session-' + a); 
@@ -51,10 +75,10 @@ for(a = 1; a < 7; a++) {
 
     index++;
     
- 
+  
        
     for (let i = 0; i < coursObj[index].length; i++) {
-       console.log(coursObj[index])
+     
        textObj[index][0].style.opacity = "1";
         coursObj[index][i].addEventListener("click", (e)=> {
             for (const textCour of textObj[index2]) {
@@ -82,9 +106,7 @@ for(a = 1; a < 7; a++) {
                 index2=5;
                 console.log('fonctionne');
               }
-            else {
-                index2=0;
-              }
+        
             } else {
               if ((nb >= 400 && nb < 1099)) {
                 index2=1;
@@ -106,9 +128,7 @@ for(a = 1; a < 7; a++) {
                 index2=5;
                 console.log('fonctionne');
               }
-            else {
-                index2=0;
-              }
+           
             }    
               console.log(index2);
         });
@@ -118,22 +138,3 @@ for(a = 1; a < 7; a++) {
    
 } 
 
-function effectClic(bidule) {
-    console.log(bidule);
-  
-    //textObj[index2][i].style.opacity = "1";
-   
-}
-  
-
-
-
-//    for (let i = 0; i < coursObj[index].length; i++) {
-//         console.log(coursObj[index]);
-//         coursObj[index][i].addEventListener("click", (e)=> {
-//             for (const textCour of textObj[index]) {
-//                 textCour.style.opacity = "0";
-//             }
-//             textObj[index][i].style.opacity = "1";
-//         })
-// }

@@ -13,8 +13,12 @@
  */
 $pageTitle = the_title('','',false);
 $pageTitleCut = strtolower(substr($pageTitle,0,4)) ;
+if (is_page(8)) {
+	get_header('parcours');
+} else  {
+	get_header();
+}
 
-get_header();
 ?>
 
 	<main id="primary" class="site-main">

@@ -119,6 +119,10 @@ if ($the_query2->have_posts()) :
     </div>
     
 </article>
+<div class="fleche">
+    <div class="fleche-gauche fleches" id="<-"><-</div>
+    <div class="fleche-droite fleches" id="->">-></div>
+</div>
 <div class="cours-ate">
         <div class="ate-wrap">
             <div class="logo">Stage en avance ?</div>
