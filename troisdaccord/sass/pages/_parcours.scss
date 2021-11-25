@@ -1,8 +1,6 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
-
     .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
         width: 100vw;
         display: flex;
@@ -12,6 +10,7 @@
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
             width: 60%;
             position: relative;
+            color: $noir;
             
             .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
                 position: absolute;
@@ -91,7 +90,6 @@
             }
         }
        
-       
         .bouton-cours{
             width: 160px;
             height: 60px;
@@ -147,42 +145,7 @@
             padding: 2% 0% 2% 0%;
         }
 
-        .fleche {
-            position: absolute;
-            top: 0;
-            width: 95vw;
-            height: 100vh;
-            left: 2%;
-            .fleche-gauche, .fleche-droite {
-                z-index: 99999;
-                height: 55px;
-                width: 55px;
-                border-radius: 50%;
-                border: 2px solid black;
-                position: absolute;
-                top: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-                transition: 0.5s ease;
-                font-size: 24px;
-                font-weight: bolder;
-                &:hover {
-                    background-color: $accent_mauve;
-                    color: white;
-                    cursor: pointer;
-                }
-            }
-            .fleche-droite {
-                right: 0;
-            }
-        }
-
   @include tablet {
-      .fleche {
-          display: none !important;
-      }
     .progress-bar {
         display: none !important;
     }
@@ -190,9 +153,13 @@
         flex-direction: column !important;
     }
     .bouton-cours {
-        p {
-            display: none;
-        }
+        display: flex;
+    }
+    .cours-ate, .ate-wrap {
+        position: fixed;
+        bottom: 10px !important;
+        right: 10px;
+        z-index: 9999999999999;
     }
     .sessions {
         height: 100vh !important;
@@ -201,7 +168,8 @@
         display: none !important;
     }
     .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4,.sigle-cours5{
-        height: 80% !important;
+        height: 60% !important;
+        margin-top: 70px;
     }
     .sigle-cours6 {
     height: 100% !important;
@@ -209,19 +177,41 @@
     .bouton-cours {
         margin-top: 40px;
     }
+
     }
     .text-cours1, .text-cours2,.text-cours3,.text-cours4,.text-cours5,.text-cours6 {
         line-height: 1.1 !important;
+        h1 {
+            font-size: 1.5em !important;
+        }
+        
     }
     .menu-menu-1-container {
         display: none !important;
     }
 
-    /*.bouton-cours {
+    .bouton-cours {
+        width: auto;
+        
+        .wp-block-column {
+            margin-left: 0;
+        }
+
+        .wp-block-column:first-of-type {
+            display: none !important;
+        }
+
+        margin-left: 0 !important;
         .wp-block-columns {
             margin: auto;
             width: 50px;
             height: 50px;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 50px;
+                height: 50px;
+            }
         }
-    }*/
+    }
   }
