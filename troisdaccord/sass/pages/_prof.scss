@@ -1,2 +1,66 @@
 //https://stackoverflow.com/questions/32917628/css-box-2-5d-pop-out-shadow-effect
 
+
+.prof-wrapper {
+    display: flex;
+    flex-direction: row;
+    .prof-wrap {
+        display: inherit;
+        flex-direction: row !important;
+        display: none;
+        height: 50vh;
+        color: black;
+        h1 {
+            margin-top: 0;
+            text-align: right;
+            font-size: 3rem;
+        }
+        &:first-of-type {
+            display: flex;
+        }
+        .prof-img {
+            margin-right: 5vw !important;
+            width: 30vw;
+            margin-top: 5vh;
+            img {
+                box-shadow: 16px 16px 0px 5px rgba(0, 0, 0, 0.5)
+            }
+        }
+    }
+}
+.prof-row {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    align-items: flex-end;
+    .prof-img-bas {
+        width: 60rem;
+        img {
+            height: 100%;
+            &:hover {
+            transition: all 0.3s ease;
+            transform: translate(10px, -10px);
+            box-shadow: -1px 1px 0px $accent_orange, -2px 2px 0px $accent_orange, -3px 3px 0px $accent_orange, -4px 4px 0px $accent_orange, -5px 5px 0px $accent_orange, -6px 6px 0px $accent_orange, -7px 7px 0px $accent_orange, -8px 8px 0px $accent_orange, -9px 9px 0px $accent_orange, -10px 10px 0px $accent_orange, -11px 11px 0px $accent_orange, -12px 12px 0px $accent_orange;
+            margin-right: 10px;
+            }
+        }
+    }
+}
+.prof {
+    background-color: #f9f6da;
+    .prof-haut {
+        height: 48vh;
+        margin: 0 5vw;
+    }
+}
+
+li.page_item.page-item-14.current_page_item a {
+    border: $charcoal dashed 2px;
+    padding: 5px;
+}
+
+.prof-content {
+    padding: 1vh; 
+    width: 50vw;
+    text-align: justify;
+}

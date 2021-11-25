@@ -12,7 +12,7 @@
  * @package 3Daccord
  */
 $pageTitle = the_title('','',false);
-$pageTitleCut = substr($pageTitle,0,4);
+$pageTitleCut = strtolower(substr($pageTitle,0,4)) ;
 
 get_header();
 ?>
@@ -20,9 +20,9 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
-echo $pageTitleCut;
+
 		
-		get_template_part( 'template-parts/content', $pageTitleCut);
+		get_template_part('/template-parts/content', $pageTitleCut);
 	
 
 

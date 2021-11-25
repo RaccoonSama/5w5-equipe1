@@ -1,24 +1,35 @@
+
 const scrollContainer = document.getElementById('cours-vertical');
 const scrollPoint = document.getElementById('scrollPoint');
 var nb =0;
 var newWidth = 16.6;
 
+
 scrollContainer.addEventListener("wheel", (evt) => {
+  nb += evt.deltaY;
+  console.log(nb);
+
+  if (window.screen.width >= 1016) {
     evt.preventDefault();
-    nb += evt.deltaY;
     if (nb > 0) {
-        nb = 0;
-    }
+      nb = 0;
+  }
+   
         
         if (nb <= 0 && nb >= -2500) {
         newWidth ++;
         scrollContainer.style.transform = "translateX(" + nb/5 + "vw)";
-        scrollPoint.style.width = "" + -1*(nb/27.3) + "vw";
-        console.log(nb);
+        scrollPoint.style.width = "" + -1*(nb/25) + "vw";
+        
     }
-
+  }else {
+    if (nb <= 0) {
+      nb = 0;
+  } else if (nb >= 4600) {
+    nb = 4600;
+  }
+  }
 });
-
 
 
 var coursObj = [];
@@ -31,7 +42,7 @@ var index = -1;
 var index2 = 0;
 
 
-for(a = 1; a < 3; a++) { 
+for(a = 1; a < 7; a++) { 
     window['var_'+a] = document.querySelectorAll('.cours-session-' + a); 
     coursObj.push(window['var_'+a] = document.querySelectorAll('.cours-session-' + a) );
     window['var2_'+a] = document.querySelectorAll('.cours-session-' + a); 
@@ -39,7 +50,7 @@ for(a = 1; a < 3; a++) {
 
     index++;
     
-
+ 
        
     for (let i = 0; i < coursObj[index].length; i++) {
        console.log(coursObj[index])
@@ -49,13 +60,55 @@ for(a = 1; a < 3; a++) {
                 textCour.style.opacity = "0";
             }
             textObj[index2][i].style.opacity = "1"; 
-            if (nb <= -400) {
+            if (window.screen.width >= 1016) {
+            if ((nb <= -400 && nb > -899)) {
                 index2=1;
+                console.log('fonctionne');
+              }
+              else if (nb <= -900 && nb > -1399) {
+                index2=2;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1400 && nb > -1899) {
+                index2=3;
+                console.log('fonctionne');
+              }
+              else if (nb <= -1900 && nb > -2399) {
+                index2=4;
+                console.log('fonctionne');
+              }
+              else if (nb <= -2400) {
+                index2=5;
                 console.log('fonctionne');
               }
             else {
                 index2=0;
-              }    
+              }
+            } else {
+              if ((nb >= 400 && nb < 1099)) {
+                index2=1;
+                console.log('fonctionne');
+              }
+              else if (nb >= 1100 && nb < 2099) {
+                index2=2;
+                console.log('fonctionne');
+              }
+              else if (nb >= 2100 && nb < 2999) {
+                index2=3;
+                console.log('fonctionne');
+              }
+              else if (nb >= 3000 && nb < 3599) {
+                index2=4;
+                console.log('fonctionne');
+              }
+              else if (nb >= 3600) {
+                index2=5;
+                console.log('fonctionne');
+              }
+            else {
+                index2=0;
+              }
+            }    
               console.log(index2);
         });
        

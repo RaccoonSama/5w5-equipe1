@@ -2,7 +2,7 @@
 
 
 $the_query = new WP_Query(array(
-    'category_name' => 'categorie',
+    'category_name' => 'resume',
     'post_status' => 'publish',
     'posts_per_page' => 2,
      'orderby' => 'date',
@@ -13,18 +13,17 @@ $the_query = new WP_Query(array(
  if ($the_query->have_posts()) : 
      while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="section-accueil-wrapper">
-        <?php the_post_thumbnail()?>
+      
         <div class="txt-btn-accueil">
          <div class="content-section-accueil"><?php the_content(); ?></div>
-         <div class="btn-placer"><button class="btn-section">Section <?php the_title(); ?> </button></div>
+         <div class="btn-placer"><button class="btn-section"><a href="<?php get_template_directory_uri() . the_title();?>">Section <?php the_title(); ?> </a> </button></div>
          </div>
          </div>
     <?php
      endwhile; 
      wp_reset_postdata(); 
 ?>
-<div class="bg-section1"><img src="<?php echo get_bloginfo('template_url')?>/media/img-section.svg" alt=""></div>
-<div class="bg-section2"><img src="<?php echo get_bloginfo('template_url')?>/media/cube.svg" alt="demi-cube"></div>
+
 <?php
  else : ?>
     <p><?php __('No category'); ?></p>
