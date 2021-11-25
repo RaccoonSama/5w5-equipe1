@@ -1738,9 +1738,6 @@ footer .footer-wave img {
   .text-cours1 h1, .text-cours2 h1, .text-cours3 h1, .text-cours4 h1, .text-cours5 h1, .text-cours6 h1 {
     font-size: 1.5em !important;
   }
-  .menu-menu-1-container {
-    display: none !important;
-  }
   .bouton-cours {
     width: auto;
     margin-left: 0 !important;
