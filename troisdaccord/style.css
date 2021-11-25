@@ -2226,4 +2226,45 @@ body {
 #primary-menu ul li a:visited {
   color: #000;
 }
+
+.fleche {
+  position: absolute;
+  top: 0;
+  width: 95vw;
+  height: 100vh;
+  left: 2%;
+}
+
+.fleche .fleche-gauche, .fleche .fleche-droite {
+  z-index: 99999;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 0.5s ease;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.fleche .fleche-gauche:hover, .fleche .fleche-droite:hover {
+  background-color: #128282;
+  color: white;
+  cursor: pointer;
+}
+
+.fleche .fleche-droite {
+  right: 0;
+}
+
+@media only screen and (max-width: 65em) {
+  .fleche {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

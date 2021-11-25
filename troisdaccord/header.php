@@ -8,26 +8,8 @@
  *
  * @package 3Daccord
  */
-// global $post;
-// $post_slug = $post->post_name;
-// $the_query = new WP_Query(array(
-	
-// 	'name' => $post_slug,
-//     'post_status' => 'publish',
-//     'posts_per_page' => 1,
-//      'orderby' => 'date',
-//      'order'   => 'ASC',
-// 	 'post_type' => 'post'
-// ));
 
-echo the_title("", "", false);
-$the_query = new WP_Query(array(
-    'category_name' => the_title("", "", false),
-    'post_status' => 'publish',
-    'posts_per_page' => 10,
-     'orderby' => 'date',
-     'order'   => 'ASC'
-));
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>

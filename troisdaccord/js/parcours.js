@@ -59,7 +59,7 @@ gauche.addEventListener("click", ()=> {
   }
 });
 droite.addEventListener("click", ()=> {
-  if (index2 < 6) {
+  if (index2 < 5) {
     valDebut -= 100;
     scrollContainer.style.transform = "translateX(" + valDebut +"vw)";
     index2++;
@@ -76,11 +76,7 @@ for(a = 1; a < 7; a++) {
 
     index++;
     
-<<<<<<< HEAD
- 
-=======
   
->>>>>>> 07fe07ef7869766c5754e4c53c220923cc358b16
        
     for (let i = 0; i < coursObj[index].length; i++) {
      
@@ -92,35 +88,6 @@ for(a = 1; a < 7; a++) {
             textObj[index2][i].style.opacity = "1"; 
             if (window.screen.width >= 1016) {
             if ((nb <= -400 && nb > -899)) {
-<<<<<<< HEAD
-                index2=1;
-                console.log('fonctionne');
-              }
-              else if (nb <= -900 && nb > -1399) {
-                index2=2;
-                console.log('fonctionne');
-              }
-              else if (nb <= -1400 && nb > -1899) {
-                index2=3;
-                console.log('fonctionne');
-              }
-              else if (nb <= -1900 && nb > -2399) {
-                index2=4;
-                console.log('fonctionne');
-              }
-              else if (nb <= -2400) {
-                index2=5;
-                console.log('fonctionne');
-              }
-            else {
-                index2=0;
-              }
-            } else {
-              if ((nb >= 400 && nb < 1099)) {
-                index2=1;
-                console.log('fonctionne');
-              }
-=======
                 index2=1;
                 console.log('fonctionne');
               }
@@ -146,7 +113,6 @@ for(a = 1; a < 7; a++) {
                 index2=1;
                 console.log('fonctionne');
               }
->>>>>>> 07fe07ef7869766c5754e4c53c220923cc358b16
               else if (nb >= 1100 && nb < 2099) {
                 index2=2;
                 console.log('fonctionne');
@@ -163,13 +129,7 @@ for(a = 1; a < 7; a++) {
                 index2=5;
                 console.log('fonctionne');
               }
-<<<<<<< HEAD
-            else {
-                index2=0;
-              }
-=======
            
->>>>>>> 07fe07ef7869766c5754e4c53c220923cc358b16
             }    
               console.log(index2);
         });

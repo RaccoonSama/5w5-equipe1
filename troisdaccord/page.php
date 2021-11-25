@@ -24,10 +24,6 @@ if (is_page(8)) {
 	<main id="primary" class="site-main">
 
 		<?php
-<<<<<<< HEAD
-
-=======
->>>>>>> 07fe07ef7869766c5754e4c53c220923cc358b16
 		
 		get_template_part('/template-parts/content', $pageTitleCut);
 	
