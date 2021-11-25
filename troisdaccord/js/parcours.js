@@ -129,13 +129,9 @@ for(a = 1; a < 7; a++) {
                 index2=5;
                 console.log('fonctionne');
               }
-           
             }    
               console.log(index2);
         });
-       
     }
-    
-   
 } 
 

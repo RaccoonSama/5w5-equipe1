@@ -178,7 +178,7 @@
     height: 100% !important;
     justify-content: flex-start !important;
     .bouton-cours {
-        margin-top: 40px;
+        margin-top: 35px;
     }
 
     }
@@ -202,6 +202,7 @@
 
         .wp-block-column:first-of-type {
             display: none !important;
+            width: 110px !important;
         }
 
         margin-left: 0 !important;

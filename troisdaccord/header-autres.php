@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'troisdaccord' ); ?></a>
 
-	<header id="masthead" class="site-header autres">
+	<header id="masthead" class="site-header autres <?php the_title();?>">
 		<div class="site-branding">
 			<?php
 			

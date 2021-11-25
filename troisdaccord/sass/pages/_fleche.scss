@@ -9,20 +9,30 @@
         height: 55px;
         width: 55px;
         border-radius: 50%;
-        border: 2px solid black;
+        border: 2px solid $noir;
         position: absolute;
-        top: 50%;
+        top: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
-        transition: 0.5s ease;
+        background-color: $blanc;
+        transition: 0.15s ease;
         font-size: 24px;
         font-weight: bolder;
         &:hover {
             background-color: $accent_mauve;
-            color: white;
+            color: $blanc;
             cursor: pointer;
+            svg{
+                fill: $blanc;
+            }
+        }
+        &:active{
+            background-color: $accent_orange;
+        }
+        svg{
+            width: 55%;
+            height: 55%;
         }
     }
     .fleche-droite {
