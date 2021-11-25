@@ -40,10 +40,9 @@ $the_query3 = new WP_Query(array(
 ?>
 
 <article class="proj">  
-    <div class="proj-carou1">
     <?php
 if ($the_query->have_posts()) : ?>
-    <div class="proj-wrapper" id="scrollpointprojets"> 
+    <div class="proj-wrapper" id="scrollingprojets"> 
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="proj-wrap">
@@ -73,6 +72,9 @@ if ($the_query->have_posts()) : ?>
         <?php 
     endif; ?>
     </div>
+    <div class="progress-bar">
+        <div class="progress-point" id="scrollPoint"></div>
+    </div>
     <div class="proj-carou2">
     <?php
 if ($the_query3->have_posts()) : ?>
@@ -91,5 +93,4 @@ if ($the_query3->have_posts()) : ?>
         <?php 
     endif; ?>
     </div> 
-
 </article>
