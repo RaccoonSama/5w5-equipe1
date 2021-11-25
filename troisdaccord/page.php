@@ -20,10 +20,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
-<<<<<<< HEAD
 
-=======
->>>>>>> 67a58bccba66142427efb1ca285fd648fd0ab1f1
 		
 		get_template_part('/template-parts/content', $pageTitleCut);
 	

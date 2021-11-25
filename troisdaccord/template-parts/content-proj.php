@@ -27,6 +27,15 @@ $the_query3 = new WP_Query(array(
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
+// code pour younes
+$the_query3 = new WP_Query(array(
+    'category_name' => 'proj-carou2',
+    'post_status' => 'publish',
+    'posts_per_page' => 16,
+     'orderby' => 'date',
+     'order'   => 'ASC'
+));
+//
 
 ?>
 
@@ -65,7 +74,7 @@ if ($the_query->have_posts()) : ?>
     endif; ?>
     </div>
     <div class="proj-carou2">
-    <?php 
+    <?php
 if ($the_query3->have_posts()) : ?>
     <div class="proj-wrapper"> 
     <?php

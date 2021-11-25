@@ -184,16 +184,3 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
-
-
-// function vie_etudiante_posts($query) {
-// 	if ( is_page('Vie étudiante') && $query->is_main_query()) {
-// 		$query->set(  'category_name','proj-etudiant1');
-// 		$query->set( 'post_status' , 'publish');
-// 		$query->set(  'posts_per_page' , 4);
-// 		$query->set('orderby' , 'date');
-// 		$query->set('order' , 'ASC');
-// 	}
-// }
-// add_action( 'pre_get_posts', 'vie_etudiante_posts' );
