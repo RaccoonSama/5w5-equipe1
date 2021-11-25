@@ -888,6 +888,7 @@ footer .section-footer-wrapper2 .content-section-footer2 {
   background-color: #343434;
   height: 58px;
   width: 58px;
+  position: relative;
 }
 
 footer .section-footer-wrapper2 .content-section-footer2 .border-dot {
@@ -898,6 +899,28 @@ footer .section-footer-wrapper2 .content-section-footer2 .border-dot {
   border-radius: 50%;
   position: absolute;
   border: 2px dashed black;
+  transition: 0.25s all ease;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2:hover {
+  cursor: pointer;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2:hover .border-dot {
+  left: 0px;
+}
+
+footer .section-footer-wrapper2 .content-section-footer2:active {
+  background-color: #000;
 }
 
 footer .footer-wave {
@@ -1555,7 +1578,7 @@ footer .footer-wave img {
 
 .article-parcours {
   overflow-x: hidden;
-  height: 700px;
+  height: 750px;
   z-index: 999;
   background-color: #BACCBA;
 }
@@ -1674,7 +1697,7 @@ footer .footer-wave img {
   padding: 2% 0% 2% 0%;
 }
 
-@media only screen and (max-width: 63.5em) {
+@media only screen and (max-width: 65em) {
   .progress-bar {
     display: none !important;
   }
@@ -1706,6 +1729,13 @@ footer .footer-wave img {
   .menu-menu-1-container {
     display: none !important;
   }
+  /*.bouton-cours {
+        .wp-block-columns {
+            margin: auto;
+            width: 50px;
+            height: 50px;
+        }
+    }*/
 }
 
 .vie-wrap {
@@ -1925,10 +1955,12 @@ li.page_item.page-item-14.current_page_item a {
 .futur {
   display: flex;
   flex-direction: row;
-  background-color: #CCE2E0;
+  background-color: #C6D8DB;
   justify-content: space-around;
   color: #000;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .futur .metier, .futur .employeur {
@@ -1938,16 +1970,16 @@ li.page_item.page-item-14.current_page_item a {
 
 .futur .metier-wrapper {
   display: grid;
-  width: 50vw;
-  height: 30rem;
-  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: ". ." ". ." ". ." ". .";
 }
 
 .futur .metier-wrapper .metier-wrap {
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: #E9E9E9;
+  border: 1px solid #000;
   padding-left: 10px;
-  height: auto;
-  min-height: 80px;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -1956,8 +1988,51 @@ li.page_item.page-item-14.current_page_item a {
 .futur .metier-wrapper .metier-wrap:hover {
   transition: all 0.3s ease;
   transform: translate(10px, -10px);
-  box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
+  box-shadow: -1px 1px 0px #343434, -2px 2px 0px #343434, -3px 3px 0px #343434, -4px 4px 0px #343434, -5px 5px 0px #343434, -6px 6px 0px #343434, -7px 7px 0px #343434, -8px 8px 0px #343434, -9px 9px 0px #343434, -10px 10px 0px #343434, -11px 11px 0px #343434, -12px 12px 0px #343434;
   cursor: pointer;
+}
+
+.futur .emploi-wrapper li {
+  cursor: pointer;
+  list-style-type: square;
+}
+
+.futur .emploi-wrapper h2 {
+  display: inline-block;
+  color: #128282;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  transition: 0.1s all ease;
+}
+
+.futur .emploi-wrapper h2 a {
+  color: inherit;
+}
+
+.futur .emploi-wrapper h2:active {
+  color: #ED7B1D;
+}
+
+.futur .emploi-wrapper h1 {
+  margin-left: -75px;
+}
+
+.futur .empoi-content p {
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 65em) {
+  .futur div {
+    width: 90vw;
+  }
+  .metier-wrapper {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .metier-wrapper .metier-wrap {
+    margin: 5px !important;
+  }
 }
 
 .conteneur-light-box {
@@ -1980,7 +2055,6 @@ li.page_item.page-item-14.current_page_item a {
   position: relative;
   background-color: #FFF;
   width: 65vw;
-  height: 55vh;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.65);
   display: flex;
   flex-direction: column;
@@ -2011,6 +2085,7 @@ li.page_item.page-item-14.current_page_item a {
 .conteneur-light-box .light-box p {
   width: 80%;
   margin-left: 10%;
+  z-index: 9999;
 }
 
 .conteneur-light-box .light-box .barres {

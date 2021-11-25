@@ -10,7 +10,7 @@
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 @mixin tablet {
-	@media only screen and (max-width:63.5em) { 
+	@media only screen and (max-width:65em) { 
 	@content;
 	}
   }

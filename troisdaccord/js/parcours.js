@@ -4,6 +4,7 @@ const scrollPoint = document.getElementById('scrollPoint');
 var nb =0;
 var newWidth = 16.6;
 
+  
 
 scrollContainer.addEventListener("wheel", (evt) => {
   nb += evt.deltaY;

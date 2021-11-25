@@ -1,37 +1,93 @@
 .futur {
     display: flex;
     flex-direction: row;
-    background-color: #CCE2E0;
+    background-color: $bleu_pale;
     justify-content: space-around;
     color: $noir;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
     .metier, .employeur {
         position: relative;
         z-index: 999;
     }
     
     .metier-wrapper {
-            display: grid;
-            width: 50vw;
-            height: 30rem;
-            grid-template-columns: repeat(auto-fill,minmax(20vw, 1fr));
-    .metier-wrap {
-        background-color: rgba(0, 0, 0, 0.267);
-        padding-left: 10px;
-        height: auto;
-        min-height: 80px;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        &:hover {
-            transition: all 0.3s ease;
-            transform: translate(10px, -10px);
-            box-shadow: -1px 1px 0px $accent_orange, -2px 2px 0px $accent_orange, -3px 3px 0px $accent_orange, -4px 4px 0px $accent_orange, -5px 5px 0px $accent_orange, -6px 6px 0px $accent_orange, -7px 7px 0px $accent_orange, -8px 8px 0px $accent_orange, -9px 9px 0px $accent_orange, -10px 10px 0px $accent_orange, -11px 11px 0px $accent_orange, -12px 12px 0px $accent_orange;
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            gap: 5px 5px; 
+            grid-template-areas: 
+                ". ."
+                ". ."
+                ". ."
+                ". ."; 
+
+        .metier-wrap {
+            background-color: $gris_pale;
+            border: 1px solid $noir;
+            padding-left: 10px;
+            //min-width: 200px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                transition: all 0.3s ease;
+                transform: translate(10px, -10px);
+                box-shadow: -1px 1px 0px $charcoal, -2px 2px 0px $charcoal, -3px 3px 0px $charcoal, -4px 4px 0px $charcoal, -5px 5px 0px $charcoal, -6px 6px 0px $charcoal, -7px 7px 0px $charcoal, -8px 8px 0px $charcoal, -9px 9px 0px $charcoal, -10px 10px 0px $charcoal, -11px 11px 0px $charcoal, -12px 12px 0px $charcoal;
+                cursor: pointer;
+            }   
+        }
+    }
+
+    .emploi-wrapper {
+
+        li {
             cursor: pointer;
+            list-style-type: square;
+        }
+        h2 {
+            display: inline-block;
+            color: $accent_mauve;
+            padding: 0;
+            margin: 0;
+            margin-top: 5px;
+            transition: 0.1s all ease;
+
+            a {
+                color: inherit;
+            }       
         }
 
-        
+        h2:active{
+            color: $accent_orange;
+        }
+
+        h1{
+            margin-left: -75px;
+        }
+    }
+
+    .empoi-content{
+        p{
+            margin: 0 !important;
+        }
     }
 }
+
+@include tablet {
+    .futur div {
+        width: 90vw;
+    }
+
+    .metier-wrapper{
+        display: flex !important;
+        flex-direction: column;
+
+        .metier-wrap {
+            margin: 5px !important;
+        }
+    }
 }
 
