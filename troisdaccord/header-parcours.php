@@ -20,14 +20,6 @@
 // 	 'post_type' => 'post'
 // ));
 
-echo the_title("", "", false);
-$the_query = new WP_Query(array(
-    'category_name' => the_title("", "", false),
-    'post_status' => 'publish',
-    'posts_per_page' => 10,
-     'orderby' => 'date',
-     'order'   => 'ASC'
-));
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -48,42 +40,17 @@ $the_query = new WP_Query(array(
 		<div class="site-branding">
 			<?php
 			
-			if ( is_front_page() && is_home() ) :
+		
 				?>
 				<div class="header-wrapper">
-				<img src="<?php echo get_bloginfo('template_url')?>/media/logo-tim.svg" alt="logo-tim" class="header-pic">
-				<h1 class="site-title">Techniques <br> D’intégration <br> Multimédia </h1>
+				<h1 class="site-title other"><?php the_title(); ?></h1>
 				<img src="<?php echo get_bloginfo('template_url')?>/media/triangle-header.svg" alt="logo-triangle" class="header-triangle">
 				<img src="<?php echo get_bloginfo('template_url')?>/media/grille.svg" alt="logo-triangle" class="header-grid">
 
 
 				</div>
-				<?php 
-			else :
-				// if ($the_query->have_posts()) :
-				// 	while ($the_query->have_posts()) : $the_query->the_post(); 
-				
-					?>
-				
-				
-				<!-- <div class="header-not-main">
-					<div class="title">
-						<h1><?php// wp_title("");?></h1>
-					</div>
-					<div class="img-subtitle"> 
-					<?php // the_content();?>
-					</div>
-				</div> -->
-				<?php
-				//  endwhile; 
-				//  wp_reset_postdata(); 
-				// endif;
-			endif;
 			
-			// if ( $troisdaccord_description || is_customize_preview() ) :
-			// 	?>
-			 	<!-- <p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
-			 <?php //endif; ?>
+			 
 		</div><!-- .site-branding -->
 
 		<div id="site-navigation" class="main-navigation">

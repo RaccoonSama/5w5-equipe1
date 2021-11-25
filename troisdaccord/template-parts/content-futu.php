@@ -50,7 +50,11 @@ if ($the_query2->have_posts()) : ?>
         while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
         <li class="emploi-wrap">
            
+<<<<<<< HEAD
             <div class="empoi-content"><h2><?php the_title();?></h2></div>
+=======
+            <div class="empoi-content"><h2><?php the_content();?></h2></div>
+>>>>>>> 07fe07ef7869766c5754e4c53c220923cc358b16
 </li>
             <?php
         endwhile; 
