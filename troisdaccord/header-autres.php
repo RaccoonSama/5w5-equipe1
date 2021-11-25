@@ -8,7 +8,6 @@
  *
  * @package 3Daccord
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -33,7 +32,7 @@
 				?>
 				<div class="header-wrapper">
 				<h1 class="site-title other"><?php the_title(); ?></h1>
-				<img src="<?php echo get_bloginfo('template_url')?>/media/3d_<?php the_title();?>.svg" alt="logo-triangle" class="header-triangle">
+				<img src="<?php echo get_bloginfo('template_url')?>/media/3d_<?= $post->post_name;?>.svg" alt="logo-triangle" class="header-triangle">
 
 
 				</div>
