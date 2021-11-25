@@ -62,7 +62,7 @@
     }
         .cours-ate {
             position: relative;
-            top: -32.5vh;
+            top: -40.5vh;
             z-index: 1000;
             .ate-wrap {
                 position: absolute;
@@ -145,7 +145,10 @@
             padding: 2% 0% 2% 0%;
         }
 
+       
+
   @include tablet {
+   
     .progress-bar {
         display: none !important;
     }

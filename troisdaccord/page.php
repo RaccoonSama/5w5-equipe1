@@ -13,8 +13,8 @@
  */
 $pageTitle = the_title('','',false);
 $pageTitleCut = strtolower(substr($pageTitle,0,4)) ;
-if (is_page(8)) {
-	get_header('parcours');
+if (!is_home()) {
+	get_header('autres');
 } else  {
 	get_header();
 }
