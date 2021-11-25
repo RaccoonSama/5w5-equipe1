@@ -8,17 +8,6 @@
  *
  * @package 3Daccord
  */
-// global $post;
-// $post_slug = $post->post_name;
-// $the_query = new WP_Query(array(
-	
-// 	'name' => $post_slug,
-//     'post_status' => 'publish',
-//     'posts_per_page' => 1,
-//      'orderby' => 'date',
-//      'order'   => 'ASC',
-// 	 'post_type' => 'post'
-// ));
 
 ?>
 <!doctype html>
@@ -36,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'troisdaccord' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header autres">
 		<div class="site-branding">
 			<?php
 			
@@ -44,8 +33,7 @@
 				?>
 				<div class="header-wrapper">
 				<h1 class="site-title other"><?php the_title(); ?></h1>
-				<img src="<?php echo get_bloginfo('template_url')?>/media/triangle-header.svg" alt="logo-triangle" class="header-triangle">
-				<img src="<?php echo get_bloginfo('template_url')?>/media/grille.svg" alt="logo-triangle" class="header-grid">
+				<img src="<?php echo get_bloginfo('template_url')?>/media/3d_<?php the_title();?>.svg" alt="logo-triangle" class="header-triangle">
 
 
 				</div>
