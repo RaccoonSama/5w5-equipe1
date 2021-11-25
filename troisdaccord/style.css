@@ -2115,7 +2115,7 @@ body {
   padding: 0 1vw;
   overflow-x: scroll;
   background-color: #C7C3C9;
-  height: 75vh;
+  height: 750px;
   width: 300vw;
   transition: 0.5s ease;
 }
@@ -2141,5 +2141,19 @@ figure {
   width: 300px;
   justify-content: center;
   opacity: 0.9;
+}
+
+.progress-bar {
+  background-color: #FFF3E8;
+  width: 100vw;
+  margin: 0 auto;
+  height: 15px;
+}
+
+.progress-bar .progress-point {
+  position: relative;
+  background-color: #D87225;
+  width: 3.33vw;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

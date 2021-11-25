@@ -14,5 +14,6 @@ scrollContainer2.addEventListener("wheel", (evt) => {
     }
     evt.preventDefault();
     scrollContainer2.style.transform = "translateX(" + nb2/5 + "vw)";
+    scrollPoint.style.width = "" + -1*(nb2/10) + "vw";
 
 });

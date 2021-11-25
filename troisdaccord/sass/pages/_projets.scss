@@ -40,7 +40,7 @@
     padding: 0 1vw;
     overflow-x: scroll;
     background-color: $mauve;
-    height: 75vh;
+    height: 750px;
     width: 300vw;
     transition: 0.5s ease;
 
@@ -67,5 +67,18 @@
     width: 300px;
     justify-content: center;
     opacity: 0.9;
+}
+
+.progress-bar {
+    background-color: $beige;
+    width: 100vw;
+    margin: 0 auto;
+    height: 15px;
+    .progress-point {
+        position: relative;
+        background-color: $accent_orange_fonce;
+        width: 3.33vw;
+        height:100%;
+    }
 }
 
