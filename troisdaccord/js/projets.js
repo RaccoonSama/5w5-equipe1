@@ -9,11 +9,11 @@ scrollContainer2.addEventListener("wheel", (evt) => {
     if(nb2 >= 0) {
         nb2 = 0;
     }
-    if(nb2 <= -1000) {
-        nb2 = -1000;
+    if(nb2 <= -2000) {
+        nb2 = -2000;
     }
     evt.preventDefault();
-    scrollContainer2.style.transform = "translateX(" + nb2/5 + "vw)";
-    scrollPoint.style.width = "" + -1*(nb2/10) + "vw";
+    scrollContainer2.style.transform = "translateX(" + nb2/10 + "vw)";
+    scrollPoint.style.width = "" + -1*(nb2/20) + "vw";
 
 });

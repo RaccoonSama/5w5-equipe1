@@ -2115,7 +2115,7 @@ body {
   padding: 0 1vw;
   overflow-x: scroll;
   background-color: #C7C3C9;
-  height: 750px;
+  height: 68.3vh;
   width: 300vw;
   transition: 0.5s ease;
 }
@@ -2124,23 +2124,35 @@ body {
   min-width: 33vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 13vh 0;
 }
 
-.proj-wrapper .proj-wrap h1 {
+.proj-wrapper .proj-wrap .proj-content {
+  display: inline-block;
+}
+
+.proj-wrapper .proj-wrap .proj-content h1 {
   color: white;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  margin: 0;
+  position: relative;
+  top: 18vh;
+  z-index: 999;
+  text-shadow: 1px 1px black;
 }
 
-.proj-wrapper .proj-wrap p {
+.proj-wrapper .proj-wrap .proj-content p {
   display: none;
 }
 
 figure {
-  width: 300px;
   justify-content: center;
   opacity: 0.9;
+  margin-bottom: 0;
+  width: 250px;
+  height: 250px;
 }
 
 .progress-bar {
@@ -2156,4 +2168,7 @@ figure {
   width: 3.33vw;
   height: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+article {
+  height: 30%;
+}
