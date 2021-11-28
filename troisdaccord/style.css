@@ -1740,6 +1740,7 @@ body {
   display: none;
   height: 50vh;
   color: black;
+  margin-bottom: 5vh;
 }
 
 .prof-wrapper .prof-wrap h1 {
@@ -1765,16 +1766,12 @@ body {
 .prof-row {
   display: flex;
   flex-direction: row;
+  transition: 0.5s ease;
   width: 200vw;
-  align-items: flex-end;
 }
 
 .prof-row .prof-img-bas {
   width: 60rem;
-}
-
-.prof-row .prof-img-bas img {
-  height: 100%;
 }
 
 .prof-row .prof-img-bas img:hover {
@@ -1789,7 +1786,6 @@ body {
 }
 
 .prof .prof-haut {
-  height: 48vh;
   margin: 0 5vw;
 }
 

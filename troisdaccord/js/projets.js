@@ -18,13 +18,12 @@ scrollContainer2.addEventListener("wheel", (evt) => {
 
 });
 
-const lol = document.getElementById("scrollingprojets")
 const MyNodeList = document.querySelectorAll('.proj-wrap');
 
 document.addEventListener('mousemove', function (e) {
     for (let i = 0; i < MyNodeList.length; i++) {
-        var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
-        var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+        var xAxis = (window.innerWidth / 2 - e.pageX) / -60;
+        var yAxis = (window.innerHeight / 2 - e.pageY) / 30;
         MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
       }
 });

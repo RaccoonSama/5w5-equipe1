@@ -50,5 +50,9 @@ if ($the_query->have_posts()) : ?>
         <?php 
     endif; ?>
     </div>
+    <div class="progress-bar">
+        <div class="progress-point" id="scrollPoint"></div>
+    </div>
+    </div>
  
 </article>
