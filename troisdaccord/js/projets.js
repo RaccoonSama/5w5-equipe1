@@ -17,3 +17,14 @@ scrollContainer2.addEventListener("wheel", (evt) => {
     scrollPoint.style.width = "" + -1*(nb2/20) + "vw";
 
 });
+
+const lol = document.getElementById("scrollingprojets")
+const MyNodeList = document.querySelectorAll('.proj-wrap');
+
+document.addEventListener('mousemove', function (e) {
+    for (let i = 0; i < MyNodeList.length; i++) {
+        var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
+        var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+        MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+      }
+});

@@ -38,14 +38,13 @@ $the_query3 = new WP_Query(array(
 //
 
 ?>
-
 <article class="proj">  
     <?php
 if ($the_query->have_posts()) : ?>
     <div class="proj-wrapper" id="scrollingprojets"> 
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <div class="proj-wrap">
+        <div class="proj-wrap" onmouseover="mouseOver()" onmouseout="mouseOut()">
             <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?></div>
          </div>
             <?php
@@ -93,3 +92,4 @@ if ($the_query3->have_posts()) : ?>
     endif; ?>
     </div> 
 </article>
+

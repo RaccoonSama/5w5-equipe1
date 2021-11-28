@@ -2172,3 +2172,48 @@ figure {
 article {
   height: 30%;
 }
+
+.proj-wrap {
+  pointer-events: none;
+  transform: translateZ(0);
+  padding: 30px;
+  margin: auto;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  position: relative;
+}
+
+.proj-wrap:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: -50px;
+}
+
+.proj-wrap .proj-content {
+  margin: auto;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.proj-wrap h1 {
+  transform: translateZ(100px);
+}
+
+.proj-wrap p {
+  transform: translateZ(50px);
+  display: block;
+}
+
+.proj-wrap p.related {
+  transform: translateZ(80px);
+  font-style: italic;
+}
+
+.proj-wrap a {
+  color: #69c6b8;
+  pointer-events: auto;
+}
