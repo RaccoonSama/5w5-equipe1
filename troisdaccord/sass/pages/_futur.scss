@@ -11,6 +11,7 @@
     .metier, .employeur {
         position: relative;
         z-index: 999;
+        margin-top: 1%;
     }
     
     .metier-wrapper {
@@ -28,7 +29,6 @@
             background-color: $gris_pale;
             border: 1px solid $noir;
             padding-left: 10px;
-            //min-width: 200px;
             margin: 20px;
             display: flex;
             align-items: center;
@@ -84,9 +84,25 @@
     .metier-wrapper{
         display: flex !important;
         flex-direction: column;
+        margin: 0 auto;
 
         .metier-wrap {
-            margin: 5px !important;
+            margin: 1% 0px !important;
+            padding: 0px;
+            
+        }
+    }
+
+    .emploi-wrapper {  
+
+        margin: 0;
+        padding-left: 20px;
+        h1{
+            margin-left: 0px !important;
+        }
+
+        li div {
+            width: 100%; 
         }
     }
 }

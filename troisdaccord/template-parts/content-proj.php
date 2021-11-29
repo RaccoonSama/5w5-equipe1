@@ -9,21 +9,21 @@
 $the_query = new WP_Query(array(
     'category_name' => 'proj-carou',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 $the_query2 = new WP_Query(array(
     'category_name' => 'projet-grid',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 $the_query3 = new WP_Query(array(
     'category_name' => 'proj-carou2',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
