@@ -9,21 +9,21 @@
 $the_query = new WP_Query(array(
     'category_name' => 'proj-carou',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 $the_query2 = new WP_Query(array(
     'category_name' => 'projet-grid',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 $the_query3 = new WP_Query(array(
     'category_name' => 'proj-carou2',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
@@ -31,7 +31,7 @@ $the_query3 = new WP_Query(array(
 $the_query3 = new WP_Query(array(
     'category_name' => 'proj-carou2',
     'post_status' => 'publish',
-    'posts_per_page' => 16,
+    'posts_per_page' => 18,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
@@ -44,9 +44,10 @@ if ($the_query->have_posts()) : ?>
     <div class="proj-wrapper" id="scrollingprojets"> 
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
-        <div class="proj-wrap" onmouseover="mouseOver()" onmouseout="mouseOut()">
-            <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?></div>
-         </div>
+        <div class="proj-wrap">
+            <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?><div class="shadow"></div></div>
+            
+</div>
             <?php
         endwhile; 
         wp_reset_postdata(); 

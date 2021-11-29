@@ -1768,6 +1768,7 @@ body {
   flex-direction: row;
   transition: 0.5s ease;
   width: 200vw;
+  overflow: visible;
 }
 
 .prof-row .prof-img-bas {
@@ -2117,7 +2118,7 @@ body {
 }
 
 .proj-wrapper .proj-wrap {
-  min-width: 33vw;
+  min-width: 20vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -2137,6 +2138,7 @@ body {
   top: 18vh;
   z-index: 999;
   text-shadow: 1px 1px black;
+  pointer-events: none;
 }
 
 .proj-wrapper .proj-wrap .proj-content p {
@@ -2148,7 +2150,18 @@ figure {
   opacity: 0.9;
   margin-bottom: 0;
   width: 250px;
-  height: 250px;
+}
+
+figure :hover {
+  transform: scale(1.1);
+}
+
+figure img {
+  transition: all 0.5s ease;
+}
+
+.shadow {
+  box-shadow: 5px 40px 15px 5px #000000;
 }
 
 .progress-bar {
@@ -2170,14 +2183,13 @@ article {
 }
 
 .proj-wrap {
-  pointer-events: none;
   transform: translateZ(0);
-  padding: 30px;
   margin: auto;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .proj-wrap:after {
@@ -2192,24 +2204,9 @@ article {
 .proj-wrap .proj-content {
   margin: auto;
   text-align: center;
-  transform-style: preserve-3d;
 }
 
 .proj-wrap h1 {
   transform: translateZ(100px);
 }
-
-.proj-wrap p {
-  transform: translateZ(50px);
-  display: block;
-}
-
-.proj-wrap p.related {
-  transform: translateZ(80px);
-  font-style: italic;
-}
-
-.proj-wrap a {
-  color: #69c6b8;
-  pointer-events: auto;
-}
+/*# sourceMappingURL=style.css.map */
