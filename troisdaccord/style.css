@@ -1713,13 +1713,10 @@ footer .footer-wave img {
     position: fixed;
     bottom: 10px !important;
     right: 10px;
-    z-index: 9999999999999;
+    z-index: 9999999;
   }
   .sessions {
     height: 100vh !important;
-  }
-  #primary-menu {
-    display: none !important;
   }
   .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5 {
     height: 60% !important;
@@ -1955,6 +1952,7 @@ body {
 .futur .metier, .futur .employeur {
   position: relative;
   z-index: 999;
+  margin-top: 1%;
 }
 
 .futur .metier-wrapper {
@@ -1977,7 +1975,7 @@ body {
 .futur .metier-wrapper .metier-wrap:hover {
   transition: all 0.3s ease;
   transform: translate(10px, -10px);
-  box-shadow: -1px 1px 0px #343434, -2px 2px 0px #343434, -3px 3px 0px #343434, -4px 4px 0px #343434, -5px 5px 0px #343434, -6px 6px 0px #343434, -7px 7px 0px #343434, -8px 8px 0px #343434, -9px 9px 0px #343434, -10px 10px 0px #343434, -11px 11px 0px #343434, -12px 12px 0px #343434;
+  box-shadow: -1px 1px 0px #128282, -2px 2px 0px #128282, -3px 3px 0px #128282, -4px 4px 0px #128282, -5px 5px 0px #128282, -6px 6px 0px #128282, -7px 7px 0px #128282, -8px 8px 0px #128282, -9px 9px 0px #128282, -10px 10px 0px #128282, -11px 11px 0px #128282, -12px 12px 0px #128282;
   cursor: pointer;
 }
 
@@ -2018,19 +2016,31 @@ body {
   .metier-wrapper {
     display: flex !important;
     flex-direction: column;
+    margin: 0 auto;
   }
   .metier-wrapper .metier-wrap {
-    margin: 5px !important;
+    margin: 1% 0px !important;
+    padding: 0px;
+  }
+  .emploi-wrapper {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .emploi-wrapper h1 {
+    margin-left: 0px !important;
+  }
+  .emploi-wrapper li div {
+    width: 100%;
   }
 }
 
 .conteneur-light-box {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
   top: 0;
-  z-index: 1000;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

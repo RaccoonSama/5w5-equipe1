@@ -11,6 +11,7 @@
     .metier, .employeur {
         position: relative;
         z-index: 999;
+        margin-top: 1%;
     }
     
     .metier-wrapper {
@@ -28,14 +29,13 @@
             background-color: $gris_pale;
             border: 1px solid $noir;
             padding-left: 10px;
-            //min-width: 200px;
             margin: 20px;
             display: flex;
             align-items: center;
             &:hover {
                 transition: all 0.3s ease;
                 transform: translate(10px, -10px);
-                box-shadow: -1px 1px 0px $charcoal, -2px 2px 0px $charcoal, -3px 3px 0px $charcoal, -4px 4px 0px $charcoal, -5px 5px 0px $charcoal, -6px 6px 0px $charcoal, -7px 7px 0px $charcoal, -8px 8px 0px $charcoal, -9px 9px 0px $charcoal, -10px 10px 0px $charcoal, -11px 11px 0px $charcoal, -12px 12px 0px $charcoal;
+                box-shadow: -1px 1px 0px $accent_mauve, -2px 2px 0px $accent_mauve, -3px 3px 0px $accent_mauve, -4px 4px 0px $accent_mauve, -5px 5px 0px $accent_mauve, -6px 6px 0px $accent_mauve, -7px 7px 0px $accent_mauve, -8px 8px 0px $accent_mauve, -9px 9px 0px $accent_mauve, -10px 10px 0px $accent_mauve, -11px 11px 0px $accent_mauve, -12px 12px 0px $accent_mauve;
                 cursor: pointer;
             }   
         }
@@ -84,9 +84,25 @@
     .metier-wrapper{
         display: flex !important;
         flex-direction: column;
+        margin: 0 auto;
 
         .metier-wrap {
-            margin: 5px !important;
+            margin: 1% 0px !important;
+            padding: 0px;
+            
+        }
+    }
+
+    .emploi-wrapper {  
+
+        margin: 0;
+        padding-left: 20px;
+        h1{
+            margin-left: 0px !important;
+        }
+
+        li div {
+            width: 100%; 
         }
     }
 }
