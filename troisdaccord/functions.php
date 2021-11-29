@@ -152,7 +152,8 @@ function troisdaccord_scripts() {
 	if (is_page(10)) {
 		wp_enqueue_script( 'troisdaccord-vie', get_template_directory_uri() . '/js/vie.js', array('jquery'), false, true );
 	}
-	
+
+	wp_enqueue_script( 'troisdaccord-prof', get_template_directory_uri() . '/js/carrouselprofesseurs.js', array('jquery'), false, true );
 
 	wp_enqueue_script( 'troisdaccord-light-box', get_template_directory_uri() . '/js/light-box.js', array('jquery'), false, true );
 
@@ -190,6 +191,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+<<<<<<< HEAD
 
 
 
@@ -202,3 +204,5 @@ function header_posts($query) {
 	
 }
 add_action( 'pre_get_posts', 'header_posts' );
+=======
+>>>>>>> younes
