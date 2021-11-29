@@ -2,7 +2,7 @@
 const scrollContainer = document.getElementById('cours-vertical');
 const scrollPoint = document.getElementById('scrollPoint');
 var nb =0;
-var nb2 =0;
+
 var newWidth = 16.6;
 
   
@@ -32,6 +32,7 @@ scrollContainer.addEventListener("wheel", (evt) => {
   }
   }
 });
+
 
 
 

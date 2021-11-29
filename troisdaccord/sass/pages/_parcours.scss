@@ -162,13 +162,10 @@
         position: fixed;
         bottom: 10px !important;
         right: 10px;
-        z-index: 9999999999999;
+        z-index: 9999999;
     }
     .sessions {
         height: 100vh !important;
-    }
-    #primary-menu {
-        display: none !important;
     }
     .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4,.sigle-cours5{
         height: 60% !important;

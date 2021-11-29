@@ -1,117 +1,152 @@
-.vie-wrap{
-    display: flex;
-    overflow: hidden;
-   width:85%;
-   height: auto;
-   margin-left: 10vw;
-   &:first-of-type {
 
-    flex-direction: row;
-    .vie-img {
-        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-    }
-    .vie-ombre {
-        top: 10%;
-        left: 3%;
-        z-index: -99;
-        width: 40rem;
-        height: 17rem;
-        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-    }
-   }
-   &:nth-of-type(2) {
-    height: 20rem;
+// .vie-wrap{
+//     display: flex;
+//    width:85%;
+//    height: auto;
+//    margin-left: 10vw;
+//    &:first-of-type {
 
-       justify-content: left;
+//     flex-direction: row;
+//     .vie-img-wrap {
+//         box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+//         border: 1px solid red;
+//     }
+    
+//    }
+//    &:nth-of-type(2) {
+//     justify-content: left;
+//     flex-direction: row-reverse;
+//     .vie-img-wrap {
+//         box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+//         border: 1px solid red;
+//     }
+ 
+//    }
+// .vie-img-wrap {
+//     .vie-img {
+//         width: 40rem;
+//         height: 17rem;
+//     }
+  
+// }
    
-    flex-direction: row-reverse;
-    .vie-img {
-        clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-        transform: scaleX(-1);
-    }
-    .vie-ombre {
-        top: 10%;
-        right: 8%;
-        width: 40rem;
-        z-index: -99;
-        height: 17rem;
-        clip-path: polygon(25% 1%, 100% 0, 100% 100%, 0% 100%);
-    }
-   }
-.vie-img-wrap {
-position: relative;
-
-    .vie-img {
-        width: 40rem;
-        height: 17rem;
-    }
-    .vie-ombre {
-        position: absolute;
-        background-color: #00000057;
-    } 
-}
-    .vie-content {
-        margin-top: -25px;
-        margin-left: 15px;
-        width: 35rem;
-        p:last-of-type {
-            margin-left: -35px;
-        }
-    }
-}
+// }
 
 .vie {
-    height: 43rem;
     background-color: rgba(128, 128, 128, 0.363);
+    padding-top: 20px ;
+    overflow-x: hidden;
+    .vie-haut {
+    
+        width: 300vw;
+        transition: 0.5s ease;
+        height: 35rem;
+    }
+    .vie-wrapper {
+        
+        display: grid; 
+        grid-template-columns: 100vw 100vw 100vw; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "vie-1 vie-2 vie-3"
+          "vie-4 vie-5 ."; 
+    }
+
+    .vie-wrap {
+        &:first-of-type {
+            grid-area: vie-1;
+        }
+        &:nth-of-type(2) {
+            grid-area: vie-4;
+        }
+        &:nth-of-type(3) {
+            grid-area: vie-2;
+        }
+        &:nth-of-type(4) {
+            grid-area: vie-5;
+        }
+        &:last-of-type {
+            grid-area: vie-3;
+        }
+    }
+
+    .vie-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        margin-left: 7vw;
+        height: 15rem !important;
+     
+        justify-content: space-evenly;
+        .vie-img {
+            width: 25rem;
+            height: 100%;
+            img {
+                height: 100%;
+                box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+            }
+        }
+        &:first-of-type {
+            .vie-content {
+                text-align: right;
+        }
+        }
+    
+        &:nth-of-type(2) {
+            flex-direction: row-reverse;
+        }
+    }
 }
 body {
     margin: 0 !important;
 }
 @media (max-width: 1172px) {
-   .vie-wrap {
-       display: flex !important;
-       flex-direction: column !important;
-       height: auto !important;
-   }
-   .vie-wrapper {
-       display: flex;
-       flex-direction: column !important;
-       justify-content: center !important;
-       align-items: center !important;
-   }
+    .vie-wrapper {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr !important; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "vie-1"
+          "vie-4"
+          "vie-3"
+          "vie-2"
+          "vie-5" !important; 
+       }
 }
 @include phone {
+    .vie-haut {
+        width: 100vw !important;
+    }
     .vie-wrapper {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        flex-direction: column;
+        flex-direction: column !important;
     }
- .vie-haut{
-    overflow: visible !important;
- }  
+ 
  .vie-wrap {
      width: 100% !important;
-    position: static;
      margin: 25px 0  !important;
      display: flex !important;
      justify-content: center !important;
-    height: auto !important;
      flex-direction: column !important;
-     position: relative !important;
+    
     .vie-img {
-        position: relative !important;
-        clip-path: none !important;
+       
+        
         width: 90% !important;
         margin: 0 auto;
+        img {
+            box-shadow: none !important;
+        }
     }
-    .vie-ombre {
-        display: none;
-    }
+  
     .vie-content {
         
         width: 80% !important;
-        margin: 0 auto!important;
+   
         position: relative !important;
        
         p {
@@ -124,8 +159,4 @@ body {
      display: none;
  }
  
-}
-.vie {
-    height: auto !important;
-    width: auto !important;
 }

@@ -9,24 +9,23 @@
 $the_query = new WP_Query(array(
     'category_name' => 'proj-etudiant1',
     'post_status' => 'publish',
-    'posts_per_page' => 2,
+    'posts_per_page' => 5,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
 
 ?>
 
-<article class="vie">  
-    <div class="vie-haut">
+<article class="vie" >  
+    <div class="vie-haut" id="vie-scroll">
     <?php
 if ($the_query->have_posts()) : ?>
-    <div class="vie-wrapper"> 
+    <div class="vie-wrapper" > 
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="vie-wrap">
             <div class="vie-img-wrap">
             <div class="vie-img"><?php the_post_thumbnail();?></div>
-            <div class="vie-ombre"></div>
             </div>
 
             <div class="vie-content"><h1><?php  the_title();?></h1><?php the_content();?></div>
