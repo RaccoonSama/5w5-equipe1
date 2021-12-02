@@ -6,10 +6,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: $vert;
         
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
-            width: 50%;
+            width: 60%;
             position: relative;
             color: $noir;
             
@@ -17,19 +16,24 @@
                 position: absolute;
                 transition: 0.5s ease;
                 opacity: 0;
-
+                
+                p {
+                    margin-left: 10%;
+                }
             }
             .opactiy-text {
                 opacity: 1;
             }
         }
     }
-    article {
+
+    .article-parcours {
         overflow-x: hidden;
         height: 750px;
         z-index: 999;
         background-color: $vert;
     }
+
     .parcours-container-full {
         display: flex;
         flex-direction: row;
@@ -126,6 +130,24 @@
                     fill: white;
                 }
             }
+<<<<<<< HEAD
+=======
+        }
+
+        .bouton-cours:active{
+            transition: none;
+            background-color: $accent_orange;
+            
+        }
+
+        .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5{
+            height: 30rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2% 0% 2% 0%;
+        }
+>>>>>>> main
 
             .bouton-cours:active{
                 transition: none;
@@ -222,5 +244,9 @@
     }
 =======
     }
+<<<<<<< HEAD
+  }
+>>>>>>> main
+=======
   }
 >>>>>>> main
