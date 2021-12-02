@@ -1324,7 +1324,7 @@ footer .footer-wave img {
 }
 
 .section-accueil-wrapper:first-of-type {
-  height: 40rem;
+  height: 40vw;
   background-color: #BACCBA;
   padding-left: 30px;
   padding-right: 30px;
@@ -1473,6 +1473,12 @@ footer .footer-wave img {
   .bg-section1 img {
     right: 25%;
     bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 65em) {
+  .section-accueil-wrapper:first-of-type {
+    height: 50vw;
   }
 }
 
