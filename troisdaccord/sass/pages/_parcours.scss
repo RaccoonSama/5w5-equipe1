@@ -1,38 +1,44 @@
-    ::-webkit-scrollbar {
-        display: none;
-    }
-        .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
-            width: 100vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+::-webkit-scrollbar {
+    display: none;
+}
+    .session-1, .session-2, .session-3, .session-4, .session-5, .session-6 {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: $vert;
+        
+        .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
+            width: 50%;
+            position: relative;
+            color: $noir;
             
-            .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
-                width: 60%;
-                position: relative;
-                color: $noir;
-                
-                .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
-                    position: absolute;
-                    transition: 0.5s ease;
-                    opacity: 0;
-                    
-                    p {
-                        margin-left: 10%;
-                    }
-                }
-                .opactiy-text {
-                    opacity: 1;
-                }
+            .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
+                position: absolute;
+                transition: 0.5s ease;
+                opacity: 0;
+
+            }
+            .opactiy-text {
+                opacity: 1;
             }
         }
-
-        .article-parcours {
-            overflow-x: hidden;
-            height: 750px;
-            z-index: 999;
-            background-color: $vert;
-        }
+    }
+    article {
+        overflow-x: hidden;
+        height: 750px;
+        z-index: 999;
+        background-color: $vert;
+    }
+    .parcours-container-full {
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        width: 600vw;
+        transition: 0.5s ease;
+        position: relative;
+        z-index: 999;
+    }
 
         .parcours-container-full {
             display: flex;
@@ -212,4 +218,9 @@
                 }
             }
         }
+<<<<<<< HEAD
     }
+=======
+    }
+  }
+>>>>>>> main

@@ -154,7 +154,7 @@
 		}
 	}
 }
-.menu-menu-1-container {
+#primary-menu {
 	height: 4rem;
 	
 	ul {
@@ -177,53 +177,6 @@ li {
 }
 }
 }
-@include phone {
-	.header-wrapper {
-		display: flex;
-		flex-direction: column !important;
-		img:nth-of-type(2) {
-			display: none !important;
-		}
-		img:nth-of-type(1) {
-				width: 60% !important;
-				z-index: 9999 !important;
-		}
-		h1 {
-			text-align: center !important;
-			font-size: 7vw !important;
-			z-index: 9999 !important;
-		}
-		.header-grid {
-		
-			width: 80% !important;
-			left: 10% !important;
-		
-		}
-	}
-	header {
-		position: relative !important;
-	}
-.main-navigation {
-width: 10rem;
-}
-	#site-navigation {
-		button {
-			margin: 0 !important;
-		}
-		position: fixed !important;
-		z-index: 99999;
-		left: 0 !important;
-		.nav-menu {
-			height: 35rem;
-			margin: 0;
-			display: flex !important;
-			flex-direction: column !important;
-			li  {
-				font-size: 16px !important;
-			}
-		}
-	}
-}
 
 /*********FOOOTER *********************/
 
@@ -236,8 +189,6 @@ footer
 		padding-left: 5%;
 		display: flex;
 		align-items: center;
-		position: relative;
-		z-index: 99;
 		img {
 			height: 64px;
 			padding-right: 40px;
@@ -260,8 +211,6 @@ footer
 		justify-content: space-around;
 		width: 70%;
 		padding-bottom: 20px;
-		position: relative;
-		z-index: 99;
 		.content-section-footer2 {
 			position: relative;
 			display: flex;
@@ -313,28 +262,11 @@ footer
 		margin-top: -11rem;
 		width: 350px;
 		float: right;
-	//	z-index: -2;
 		img {
 			right: 0;
 			height: 100%;
 			width: 350px;
 			position: absolute;
 		}
-	}
-}
-
-@include phone {
-	.info-college {
-		flex-direction: column !important;
-	}
-	.section-footer-wrapper2 {
-		width: 100% !important;
-	}
-	.adresse {
-		border: none !important;
-		text-align: center;
-	}
-	img {
-		border: none !important;
 	}
 }
