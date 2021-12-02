@@ -42,30 +42,10 @@
 				</div>
 				<?php 
 			else :
-				// if ($the_query->have_posts()) :
-				// 	while ($the_query->have_posts()) : $the_query->the_post(); 
-				
-					?>
-				
-				
-				<!-- <div class="header-not-main">
-					<div class="title">
-						<h1><?php// wp_title("");?></h1>
-					</div>
-					<div class="img-subtitle"> 
-					<?php // the_content();?>
-					</div>
-				</div> -->
-				<?php
-				//  endwhile; 
-				//  wp_reset_postdata(); 
-				// endif;
+			
 			endif;
 			
-			// if ( $troisdaccord_description || is_customize_preview() ) :
-			// 	?>
-			 	<!-- <p class="site-description"><?php //echo $troisdaccord_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p> -->
-			 <?php //endif; ?>
+			 ?>
 		</div><!-- .site-branding -->
 
 		<div id="site-navigation" class="main-navigation">

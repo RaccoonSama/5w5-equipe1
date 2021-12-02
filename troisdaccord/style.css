@@ -1788,6 +1788,7 @@ footer .footer-wave img {
 }
 
 .vie .vie-wrap:nth-of-type(3) {
+  flex-direction: row-reverse;
   grid-area: vie-2;
 }
 
@@ -1804,7 +1805,7 @@ footer .footer-wave img {
   flex-direction: row;
   width: 85vw;
   margin-left: 7vw;
-  height: 15rem !important;
+  height: 15rem;
   justify-content: space-evenly;
 }
 
@@ -1816,6 +1817,11 @@ footer .footer-wave img {
 .vie .vie-wrap .vie-img img {
   height: 100%;
   box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+  transition: 0.5s ease;
+}
+
+.vie .vie-wrap .vie-img img:hover {
+  box-shadow: none;
 }
 
 .vie .vie-wrap:first-of-type .vie-content {
@@ -1838,37 +1844,49 @@ body {
     gap: 0px 0px;
     grid-template-areas: "vie-1" "vie-4" "vie-3" "vie-2" "vie-5" !important;
   }
+  .vie-wrap {
+    margin: 3%;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .vie-haut {
-    width: 100vw !important;
+    height: auto !important;
   }
   .vie-wrapper {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "vie-1" "vie-2" "vie-3" "vie-4" "vie-5";
   }
   .vie-wrap {
-    width: 100% !important;
-    margin: 25px 0  !important;
-    display: flex !important;
-    justify-content: center !important;
-    flex-direction: column !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 0px 0px !important;
+    grid-template-areas: "vie-img-wrap" "vie-content" !important;
+    margin: 0 auto;
   }
-  .vie-wrap .vie-img {
+  .vie-img-wrap {
+    grid-area: vie-img-wrap;
+  }
+  .vie-content {
+    grid-area: vie-content;
+  }
+  .vie-img {
     width: 90% !important;
     margin: 0 auto;
   }
-  .vie-wrap .vie-img img {
+  .vie-img img {
     box-shadow: none !important;
   }
-  .vie-wrap .vie-content {
-    width: 80% !important;
-    position: relative !important;
+  .vie-content {
+    width: 90% !important;
+    margin: 0 auto;
   }
-  .vie-wrap .vie-content p {
+  .vie-content p {
     margin: 0 !important;
   }
   .not-home {
