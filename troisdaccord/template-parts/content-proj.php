@@ -45,7 +45,8 @@ if ($the_query->have_posts()) : ?>
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="proj-wrap">
-            <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?><div class="shadow"></div></div>
+            <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?></div>
+            <div class="shadow"></div>
             
 </div>
             <?php

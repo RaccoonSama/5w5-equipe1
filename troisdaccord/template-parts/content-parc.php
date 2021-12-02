@@ -37,7 +37,7 @@ $args = array(
     ); 
 ?>
 
-<article>
+<article class="article-parcours">
     <div class="parcours-container-full" id="cours-vertical">
     
       
