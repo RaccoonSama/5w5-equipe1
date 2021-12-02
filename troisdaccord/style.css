@@ -1911,7 +1911,7 @@ body {
 }
 
 .prof-wrapper .prof-wrap .prof-img img {
-  box-shadow: 16px 16px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 16px 16px 0px 5px rgba(0, 0, 0, 0.561);
 }
 
 .prof-row {
@@ -2427,11 +2427,8 @@ body {
 }
 
 .proj-wrapper .proj-wrap {
-  min-width: 20vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 13vh 0;
+  margin: 13vh;
+  min-width: 2rem;
 }
 
 .proj-wrapper .proj-wrap .proj-content {
@@ -2455,13 +2452,6 @@ body {
 }
 
 .proj figure {
-  justify-content: center;
-  opacity: 0.9;
-  margin-bottom: 0;
-  width: 250px;
-}
-
-.proj figure figure {
   transform: translateZ(0);
   margin: auto;
   transform-style: preserve-3d;
@@ -2469,9 +2459,13 @@ body {
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  margin-bottom: 0;
+  width: 250px;
 }
 
-.proj figure figure:after {
+.proj figure:after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -2480,17 +2474,17 @@ body {
   bottom: -50px;
 }
 
-.proj figure figure :hover {
+.proj figure :hover {
   transform: scale(1.1);
 }
 
-.proj figure figure img {
+.proj figure img {
   transition: all 0.5s ease;
 }
 
 .proj .shadow {
   box-shadow: 5px 40px 15px 5px #000000;
-  width: 250px;
+  min-width: 2rem;
 }
 
 .proj .proj .progress-bar {
@@ -2518,5 +2512,12 @@ body {
 
 .proj h1 {
   transform: translateZ(100px);
+}
+
+@media only screen and (max-width: 65em) {
+  .proj-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
