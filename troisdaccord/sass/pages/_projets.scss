@@ -86,6 +86,8 @@
     opacity: 0.9;
     margin-bottom: 0;
     width: 250px;
+    -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+box-shadow: 0px 0px 15px 5px #000000;
 
     &:after {
       content: " ";
@@ -99,6 +101,9 @@
 
     :hover {
       transform: scale(1.1);
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+box-shadow: 0px 0px 15px 5px #000000;
     }
 
     img {
@@ -111,6 +116,7 @@
     box-shadow: 5px 40px 15px 5px #000000;
     min-width: 2rem;
     width: 240px;
+    display: none;
   }
 
   .proj {
