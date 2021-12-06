@@ -722,7 +722,6 @@ textarea {
 /**************** HEADER ***************************************************************/
 .site-header {
   height: 100%;
-  padding-bottom: 8.3%;
   background-color: #ECECE0;
   display: flex;
   flex-direction: column-reverse;
@@ -1174,12 +1173,17 @@ footer .footer-wave img {
   margin-bottom: 1.5em;
 }
 
+.site-header {
+  width: 100vw;
+}
+
 .error404.hfeed {
   width: 75vw;
   margin: auto;
   font-size: 2rem;
   color: black;
   background-color: #f8eee0;
+  display: flex;
 }
 
 .error404.hfeed #page p, .error404.hfeed #page h1 {
@@ -1192,7 +1196,7 @@ footer .footer-wave img {
   height: 200px;
   position: relative;
   perspective: 1000px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #cube {
@@ -1291,6 +1295,23 @@ footer .footer-wave img {
 
 ul li {
   z-index: 3;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #cercle, #cercle1, #cercle2, #cercle3 {
+    display: none;
+  }
+  .site-header {
+    width: 100vw;
+  }
+  .menu-menu-1-container ul {
+    flex-direction: column;
+    height: 50vh !important;
+    margin: 0;
+  }
+  .menu-menu-1-container ul li {
+    font-size: 16px;
+  }
 }
 
 .section-accueil-wrapper {
@@ -2644,3 +2665,4 @@ body {
     transform: none;
   }
 }
+/*# sourceMappingURL=style.css.map */
