@@ -32,7 +32,6 @@
 	position: relative;
 	z-index: 999;
 	.header-wrapper {
-        //padding-bottom: 10%;
 		padding-top:3.5% ; 
 		position: relative;
 		display: flex;
@@ -111,9 +110,9 @@ ul {
 		h1 {
 			font-size: 5em;		
 			font-family: 'Inter', sans-serif;
-			color: black;
+			color: $noir;
 			position: absolute;
-			bottom: -2px;
+			bottom: 24px;
 			height: 75px;
 		}
 		img {
