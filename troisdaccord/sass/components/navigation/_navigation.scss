@@ -238,10 +238,14 @@ footer
 		align-items: center;
 		position: relative;
 		z-index: 99;
-		img {
+		svg {
 			height: 64px;
 			padding-right: 40px;
 			border-right: 1px solid #343434;
+
+			.cls-2 {
+				stroke: none;
+			}
 		}
 		.adresse {
 			padding: 20px;
@@ -334,7 +338,7 @@ footer
 		border: none !important;
 		text-align: center;
 	}
-	img {
+	svg {
 		border: none !important;
 	}
 }

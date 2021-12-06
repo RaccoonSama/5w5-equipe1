@@ -851,10 +851,14 @@ footer .info-college {
   z-index: 99;
 }
 
-footer .info-college img {
+footer .info-college svg {
   height: 64px;
   padding-right: 40px;
   border-right: 1px solid #343434;
+}
+
+footer .info-college svg .cls-2 {
+  stroke: none;
 }
 
 footer .info-college .adresse {
@@ -950,7 +954,7 @@ footer .footer-wave img {
     border: none !important;
     text-align: center;
   }
-  img {
+  svg {
     border: none !important;
   }
 }
@@ -1300,7 +1304,6 @@ ul li {
 
 .section-accueil-wrapper .btn-placer {
   position: relative;
-  z-index: 99999;
   display: flex;
   justify-content: center;
 }
@@ -1313,11 +1316,19 @@ ul li {
 }
 
 .section-accueil-wrapper button a {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  z-index: 99999;
+  z-index: 999;
   color: black;
+}
+
+.section-accueil-wrapper .content-section-accueil .cls-1 {
+  fill: #C6D8DB;
+}
+
+.section-accueil-wrapper .content-section-accueil .cls-2 {
+  fill: none !important;
 }
 
 .section-accueil-wrapper button:hover {
@@ -1355,30 +1366,13 @@ ul li {
 
 .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
   flex-grow: 0;
+  flex-basis: 0;
   width: 40vw;
-}
-
-@media only screen and (min-width: 54.25em) {
-  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
-    margin-top: 2%;
-  }
-}
-
-.section-accueil-wrapper:first-of-type .wp-block-columns svg {
-  position: absolute;
-  bottom: 10px;
-  width: 80vw;
-  left: 7%;
+  height: fit-content;
 }
 
 .section-accueil-wrapper:first-of-type p {
   margin-left: 5%;
-}
-
-@media only screen and (min-width: 54.25em) {
-  .section-accueil-wrapper:first-of-type p {
-    line-height: 1.8rem;
-  }
 }
 
 .section-accueil-wrapper:first-of-type button {
@@ -1387,7 +1381,6 @@ ul li {
 
 .section-accueil-wrapper:first-of-type img {
   position: relative;
-  z-index: 999;
   width: 50%;
   height: 50%;
   box-shadow: -16px 16px 0px 5px #00000088;
@@ -1402,7 +1395,7 @@ ul li {
 }
 
 .section-accueil-wrapper:nth-of-type(2) {
-  background-color: #EECABA;
+  background-color: #FFE8E8;
   padding: 30px;
   height: auto;
 }
