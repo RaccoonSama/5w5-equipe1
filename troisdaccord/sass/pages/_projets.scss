@@ -33,7 +33,7 @@
 
 .proj-carou1 {
   height: 50vh;
-} 
+}
 
 .proj-wrapper {
   display: flex;
@@ -41,107 +41,158 @@
   overflow-x: scroll;
   background-color: $mauve;
   height: 68.3vh;
-  width: 300vw;
+  width: 600vw;
   transition: 0.5s ease;
 
   .proj-wrap {
-      min-width: 20vw;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 13vh 0;
-  
-      .proj-content {
-          display: inline-block;
-          
+    margin: 13vh;
+    min-width: 2rem;
+
+
+    .proj-content {
+      display: inline-block;
+
       h1 {
-          color: white;
-          text-align: center;
-          font-size: 1.25em;
-          margin: 0;
-          position: relative;
-          top: 18vh;
-          z-index: 999;
-          text-shadow: 1px 1px black;
-          pointer-events: none;
-      }
-
-       p {
-             display: none;
-       }
-      }
-  }
-  
-}
-
-.proj {
-    figure {
-      justify-content: center;
-      opacity: 0.9;
-      margin-bottom: 0;
-      width: 250px;
-      figure{
-        transform: translateZ(0);
-        margin: auto;
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
-        display: flex;
+        color: white;
+        text-align: center;
+        font-size: 1.25em;
+        margin: 0;
         position: relative;
-        align-items: center;
-        
-        &:after{
-          content:" ";
-          position: absolute;
-          width: 100%;
-          height: 10px;
-          left:0;
-          bottom:-50px;
-          
-        }
-        :hover {
-          transform: scale(1.1);
-        }
-        img {
-          transition: all 0.5s ease;
-        }
+        top: 18vh;
+        z-index: 999;
+        text-shadow: 1px 1px black;
+        pointer-events: none;
+      }
+
+      p {
+        display: none;
+      }
+    }
   }
-}
-
-.shadow {
--webkit-box-shadow: 5px 40px 15px 5px #000000; 
-box-shadow: 5px 40px 15px 5px #000000;
-width: 250px;
-
 
 }
+
 .proj {
-.progress-bar {
-    background-color: $beige;
-    width: 100vw;
-    margin: 0 auto;
-    height: 15px;
-    .progress-point {
+
+  figure {
+    transform: translateZ(0);
+    margin: auto;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    margin-bottom: 0;
+    width: 250px;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      left: 0;
+      bottom: -50px;
+
+    }
+
+    :hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      transition: all 0.5s ease;
+    }
+  }
+
+  .shadow {
+    -webkit-box-shadow: 5px 40px 15px 5px #000000;
+    box-shadow: 5px 40px 15px 5px #000000;
+    min-width: 2rem;
+    width: 240px;
+  }
+
+  .proj {
+    .progress-bar {
+      background-color: $beige;
+      width: 100vw;
+      margin: 0 auto;
+      height: 15px;
+
+      .progress-point {
         position: relative;
         background-color: $accent_orange_fonce;
         width: 3.33vw;
-        height:100%;
+        height: 100%;
+      }
     }
-}
-}
+  }
 
-.proj {
-article {
-    height: 30%;
-}
-}
-  
-  .proj-content{
-      margin: auto;
-      text-align:center;
-
+  .proj {
+    article {
+      height: 30%;
     }
-  
-  h1{
+  }
+
+  .proj-content {
+    margin: auto;
+    text-align: center;
+
+  }
+
+  h1 {
     transform: translateZ(100px);
+  }
+}
+
+@include tablet {
+  .proj-wrapper {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    margin: 0;
+    height: 600vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(0vw) !important;
+
+    .proj-wrap {
+      margin: 3vh 10vw;
+      height: 50vh;
+    }
+  }
+
+
+  .proj {
+    .progress-bar {
+      display: none;
+
+      .progress-point {
+        display: none;
+      }
+    }
+
+    .figure {
+      width: 400px;
+
+      :hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+@include phone {
+  .proj-wrapper {
+    display: flex;
+    height: 1200vh;
+    width: 100vw;
+    justify-content: space-evenly;
+
+    figure:hover {
+      transform: none;
+    }
   }
 }
