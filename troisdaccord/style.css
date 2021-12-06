@@ -2422,7 +2422,7 @@ body {
   overflow-x: scroll;
   background-color: #C7C3C9;
   height: 68.3vh;
-  width: 300vw;
+  width: 600vw;
   transition: 0.5s ease;
 }
 
@@ -2485,6 +2485,7 @@ body {
 .proj .shadow {
   box-shadow: 5px 40px 15px 5px #000000;
   min-width: 2rem;
+  width: 240px;
 }
 
 .proj .proj .progress-bar {
@@ -2518,6 +2519,40 @@ body {
   .proj-wrapper {
     display: flex;
     flex-direction: column;
+    pointer-events: none;
+    margin: 0;
+    height: 600vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(0vw) !important;
+  }
+  .proj-wrapper .proj-wrap {
+    margin: 3vh 10vw;
+    height: 50vh;
+  }
+  .proj .progress-bar {
+    display: none;
+  }
+  .proj .progress-bar .progress-point {
+    display: none;
+  }
+  .proj .figure {
+    width: 400px;
+  }
+  .proj .figure :hover {
+    transform: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 37.5em) {
+  .proj-wrapper {
+    display: flex;
+    height: 1200vh;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .proj-wrapper figure:hover {
+    transform: none;
+  }
+}

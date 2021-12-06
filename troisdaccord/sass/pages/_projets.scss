@@ -41,7 +41,7 @@
     overflow-x: scroll;
     background-color: $mauve;
     height: 68.3vh;
-    width: 300vw;
+    width: 600vw;
     transition: 0.5s ease;
 
     .proj-wrap {
@@ -108,6 +108,7 @@
 -webkit-box-shadow: 5px 40px 15px 5px #000000; 
 box-shadow: 5px 40px 15px 5px #000000;
 min-width: 2rem;
+width: 240px;
 }
 .proj {
   .progress-bar {
@@ -145,11 +146,47 @@ min-width: 2rem;
     .proj-wrapper {
     display: flex;
     flex-direction: column;
+    pointer-events: none;
+    margin: 0;
+    height: 600vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center; 
+    transform: translateX(0vw) !important;
+    .proj-wrap {
+      margin: 3vh 10vw;
+      height: 50vh;
+    }
+    }
+
+
+    .proj {
+      .progress-bar {
+        display: none;
+        .progress-point {
+            display: none;
+        }
+    }
+      .figure {
+        width: 400px;
+        :hover {
+          transform: none;
+        }
+      }
     }
   }
 
   @include phone {
-    
+    .proj-wrapper {
+    display: flex;
+    height: 1200vh;
+    width: 100vw;
+    justify-content: space-evenly;
+
+    figure:hover {
+      transform: none;
+    }
+    }
   }
   
   
