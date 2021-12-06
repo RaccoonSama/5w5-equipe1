@@ -152,8 +152,12 @@ function troisdaccord_scripts() {
 	if (is_page(10)) {
 		wp_enqueue_script( 'troisdaccord-vie', get_template_directory_uri() . '/js/vie.js', array('jquery'), false, true );
 	}
+	if (is_page(14)) {
+		wp_enqueue_script( 'troisdaccord-prof', get_template_directory_uri() . '/js/prof.js', array('jquery'), false, true );
+		wp_enqueue_script( 'troisdaccord-carrouselprofesseurs', get_template_directory_uri() . '/js/carrouselprofesseurs.js', array('jquery'), false, true );
+	}
 
-	wp_enqueue_script( 'troisdaccord-prof', get_template_directory_uri() . '/js/carrouselprofesseurs.js', array('jquery'), false, true );
+
 
 	wp_enqueue_script( 'troisdaccord-light-box', get_template_directory_uri() . '/js/light-box.js', array('jquery'), false, true );
 

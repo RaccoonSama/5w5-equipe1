@@ -30,3 +30,9 @@ for (let i = 0; i < boutonATE.length; i++) {
   lightbox[i].style.zIndex = 1001;
 })  
 }
+
+
+
+
+//accueil woooooooooooooooooooooo
+var lightboxAccueil = document.querySelector('');
