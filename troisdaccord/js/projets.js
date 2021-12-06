@@ -9,21 +9,29 @@ scrollContainer2.addEventListener("wheel", (evt) => {
     if(nb2 >= 0) {
         nb2 = 0;
     }
-    if(nb2 <= -1000) {
-        nb2 = -1000;
+    if(nb2 <= -2000) {
+        nb2 = -2000;
     }
     evt.preventDefault();
-    scrollContainer2.style.transform = "translateX(" + nb2/10 + "vw)";
-    scrollPoint.style.width = "" + -1*(nb2/10) + "vw";
+    scrollContainer2.style.transform = "translateX(" + nb2/4.5 + "vw)";
+    scrollPoint.style.width = "" + -1*(nb2/20) + "vw";
 
 });
 
 const MyNodeList = document.querySelectorAll('.proj-content');
 
-document.addEventListener('mousemove', function (e) {
-    for (let i = 0; i < MyNodeList.length; i++) {
-        var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
-        var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
-        MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
-      }
-});
+if (window.width > 1000) {
+Hover3d();
+}
+
+function Hover3d() {
+    document.addEventListener('mousemove', function (e) {
+        for (let i = 0; i < MyNodeList.length; i++) {
+            var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
+            var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+            MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+          }
+    });
+}
+
+
