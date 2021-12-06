@@ -27,20 +27,28 @@ $the_query3 = new WP_Query(array(
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
+// code pour younes
+$the_query3 = new WP_Query(array(
+    'category_name' => 'proj-carou2',
+    'post_status' => 'publish',
+    'posts_per_page' => 18,
+     'orderby' => 'date',
+     'order'   => 'ASC'
+));
+//
 
 ?>
-
 <article class="proj">  
-    <div class="proj-carou1">
     <?php
 if ($the_query->have_posts()) : ?>
-    <div class="proj-wrapper"> 
+    <div class="proj-wrapper" id="scrollingprojets"> 
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="proj-wrap">
-            <div class="proj-img"><?php the_post_thumbnail();?></div>
-            <div class="proj-content"><h1><?php  the_title();?></h1><?php the_content();?></div>
-         </div>
+            <div class="proj-content"><?php the_post_thumbnail();?><h1><?php  the_title();?></h1><?php the_content();?></div>
+            <div class="shadow"></div>
+            
+</div>
             <?php
         endwhile; 
         wp_reset_postdata(); 
@@ -64,8 +72,11 @@ if ($the_query->have_posts()) : ?>
         <?php 
     endif; ?>
     </div>
+    <div class="progress-bar">
+        <div class="progress-point" id="scrollPoint"></div>
+    </div>
     <div class="proj-carou2">
-    <?php 
+    <?php
 if ($the_query3->have_posts()) : ?>
     <div class="proj-wrapper"> 
     <?php
@@ -82,5 +93,5 @@ if ($the_query3->have_posts()) : ?>
         <?php 
     endif; ?>
     </div> 
-
 </article>
+
