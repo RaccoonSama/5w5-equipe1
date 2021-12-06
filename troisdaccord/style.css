@@ -851,10 +851,14 @@ footer .info-college {
   z-index: 99;
 }
 
-footer .info-college img {
+footer .info-college svg {
   height: 64px;
   padding-right: 40px;
   border-right: 1px solid #343434;
+}
+
+footer .info-college svg .cls-2 {
+  stroke: none;
 }
 
 footer .info-college .adresse {
@@ -950,7 +954,7 @@ footer .footer-wave img {
     border: none !important;
     text-align: center;
   }
-  img {
+  svg {
     border: none !important;
   }
 }
@@ -1300,7 +1304,8 @@ ul li {
 
 .section-accueil-wrapper .btn-placer {
   position: relative;
-  z-index: 99999;
+  display: flex;
+  justify-content: center;
 }
 
 .section-accueil-wrapper button {
@@ -1311,11 +1316,19 @@ ul li {
 }
 
 .section-accueil-wrapper button a {
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
-  z-index: 99999;
+  z-index: 999;
   color: black;
+}
+
+.section-accueil-wrapper .content-section-accueil .cls-1 {
+  fill: #C6D8DB;
+}
+
+.section-accueil-wrapper .content-section-accueil .cls-2 {
+  fill: none !important;
 }
 
 .section-accueil-wrapper button:hover {
@@ -1328,7 +1341,7 @@ ul li {
 }
 
 .section-accueil-wrapper:first-of-type {
-  height: 40rem;
+  height: auto;
   background-color: #BACCBA;
   padding-left: 30px;
   padding-right: 30px;
@@ -1336,16 +1349,14 @@ ul li {
 
 .section-accueil-wrapper:first-of-type .txt-btn-accueil {
   position: relative;
+  height: 100%;
   z-index: 999;
 }
 
 .section-accueil-wrapper:first-of-type .wp-block-columns {
-  position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
   display: flex;
-  flex-direction: column !important;
 }
 
 .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image {
@@ -1354,45 +1365,28 @@ ul li {
 }
 
 .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
-  margin-top: 10%;
+  flex-grow: 0;
+  flex-basis: 0;
   width: 40vw;
-}
-
-@media only screen and (min-width: 54.25em) {
-  .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image img {
-    margin-top: 2%;
-  }
-}
-
-.section-accueil-wrapper:first-of-type .wp-block-columns svg {
-  position: absolute;
-  bottom: 10px;
-  width: 80vw;
-  left: 7%;
+  height: fit-content;
 }
 
 .section-accueil-wrapper:first-of-type p {
-  width: 50%;
   margin-left: 5%;
-}
-
-@media only screen and (min-width: 54.25em) {
-  .section-accueil-wrapper:first-of-type p {
-    line-height: 1.8rem;
-  }
 }
 
 .section-accueil-wrapper:first-of-type button {
-  margin-left: 5%;
+  margin: 4%;
 }
 
 .section-accueil-wrapper:first-of-type img {
   position: relative;
-  z-index: 999;
   width: 50%;
   height: 50%;
   box-shadow: -16px 16px 0px 5px #00000088;
   margin-top: 2%;
+  align-self: center;
+  flex-shrink: 0;
   transition: 0.5s ease;
 }
 
@@ -1401,9 +1395,9 @@ ul li {
 }
 
 .section-accueil-wrapper:nth-of-type(2) {
-  background-color: #EECABA;
+  background-color: #FFE8E8;
   padding: 30px;
-  height: 50rem;
+  height: auto;
 }
 
 .section-accueil-wrapper:nth-of-type(2) img {
@@ -1450,33 +1444,13 @@ ul li {
 .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
   position: absolute;
   right: 50px;
-  top: 100%;
+  top: 55%;
 }
 
-@media only screen and (min-width: 69.5em) {
+@media only screen and (max-width: 65em) {
   .section-accueil-wrapper:nth-of-type(2) .btn-placer button {
-    top: 55%;
-  }
-}
-
-.bg-section1 {
-  position: relative;
-  width: 100%;
-  height: 52rem;
-  top: -104rem;
-}
-
-.bg-section1 img {
-  position: absolute;
-  width: 55%;
-  right: 5%;
-  bottom: 10%;
-}
-
-@media only screen and (min-width: 61.875em) {
-  .bg-section1 img {
-    right: 25%;
-    bottom: 10%;
+    top: 75%;
+    right: 10px;
   }
 }
 
@@ -1486,7 +1460,6 @@ ul li {
     flex-direction: column-reverse !important;
     align-items: center;
     justify-content: start;
-    height: 110vh !important;
   }
   .section-accueil-wrapper:first-of-type h1 {
     text-align: center;
@@ -1512,9 +1485,8 @@ ul li {
     position: static !important;
   }
   .section-accueil-wrapper:first-of-type img {
-    width: 20rem !important;
-    height: 25% !important;
     margin-bottom: 10rem;
+    height: 100%;
   }
   .section-accueil-wrapper:first-of-type .txt-btn-accueil {
     display: flex;
@@ -1529,9 +1501,11 @@ ul li {
   }
   .section-accueil-wrapper:first-of-type .txt-btn-accueil:first-of-type button {
     margin: 0 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .section-accueil-wrapper:nth-of-type(2) {
-    height: 140vh !important;
+  .section-accueil-wrapper:first-of-type .btn-placer {
+    margin: 20px;
   }
   .section-accueil-wrapper:nth-of-type(2) .content-section-accueil {
     flex-direction: column !important;
@@ -1587,6 +1561,16 @@ ul li {
   height: 750px;
   z-index: 999;
   background-color: #BACCBA;
+}
+
+.parcours-container-full {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  width: 600vw;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 999;
 }
 
 .parcours-container-full {
@@ -1678,6 +1662,19 @@ ul li {
 
 .bouton-cours:hover svg {
   fill: white;
+}
+
+.bouton-cours:active {
+  transition: none;
+  background-color: #ED7B1D;
+}
+
+.sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5 {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 0% 2% 0%;
 }
 
 .bouton-cours:active {
@@ -2223,7 +2220,7 @@ body {
   margin: 0;
   height: 100%;
   font-size: 3.5vw;
-  line-height: 1.1;
+  line-height: 1.7;
   margin-left: 5%;
   z-index: 999;
 }
