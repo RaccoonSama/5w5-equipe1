@@ -1369,6 +1369,7 @@ ul li {
   flex-basis: 0;
   width: 40vw;
   height: fit-content;
+  cursor: pointer;
 }
 
 .section-accueil-wrapper:first-of-type p {
@@ -1810,6 +1811,12 @@ ul li {
   justify-content: space-evenly;
 }
 
+.vie .vie-wrap p {
+  width: 70%;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
 .vie .vie-wrap .vie-img {
   width: 25rem;
   height: 100%;
@@ -1827,6 +1834,10 @@ ul li {
 
 .vie .vie-wrap:first-of-type .vie-content {
   text-align: right;
+}
+
+.vie .vie-wrap:first-of-type .vie-content p {
+  float: right;
 }
 
 .vie .vie-wrap:nth-of-type(2) {
@@ -2158,6 +2169,14 @@ body {
   background-color: #ED7B1D;
 }
 
+.Grille .contenu-lightbox {
+  width: 55% !important;
+}
+
+.Grille .contenu-lightbox img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 65em) {
   .texte-titre {
     font-size: 1em !important;
@@ -2291,7 +2310,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: black;
   position: absolute;
-  bottom: -2px;
+  bottom: 24px;
   height: 75px;
 }
 

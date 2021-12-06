@@ -35,4 +35,10 @@ for (let i = 0; i < boutonATE.length; i++) {
 
 
 //accueil woooooooooooooooooooooo
-var lightboxAccueil = document.querySelector('');
+var lightboxAccueil = document.querySelector('.content-section-accueil .wp-block-columns .wp-block-column:last-of-type');
+console.log(lightbox);
+
+lightboxAccueil.addEventListener("click",()=> {
+  lightbox[0].style.opacity = 1;
+  lightbox[0].style.zIndex = 1001;
+})
