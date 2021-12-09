@@ -667,16 +667,17 @@ textarea {
 .menu-toggle {
   background: none;
   color: inherit;
-  border: 2 px solid #000;
+  border: 1px solid #000;
+  border-left: none;
   padding: 10px;
   font: inherit;
   cursor: pointer;
   outline: none;
   background-color: #128282;
-  height: 120px;
-  width: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  height: 75px;
+  width: 40px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -764,7 +765,7 @@ textarea {
 .menu-menu-1-container ul {
   height: 100%;
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -808,19 +809,29 @@ textarea {
     position: relative !important;
   }
   .main-navigation {
-    width: 10rem;
+    width: 0vw;
+    box-shadow: none !important;
   }
-  #site-navigation .main-navigation.toggled {
-    background-color: red !important;
+  #site-navigation.toggled {
+    background-color: #FFF3E8;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75) !important;
+    width: 50vw;
+    height: 460px;
+    border-bottom-right-radius: 50px;
   }
   #site-navigation {
-    position: fixed !important;
-    z-index: 99999;
-    left: 0 !important;
-    padding-bottom: 10px;
+    position: fixed;
+    z-index: 99999 !important;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    transition: 0.8s all ease;
   }
   #site-navigation button {
     margin: 0 !important;
+  }
+  #site-navigation button .cls-1 {
+    fill: none !important;
   }
   #site-navigation .nav-menu {
     height: 35rem;
@@ -829,8 +840,11 @@ textarea {
     flex-direction: column !important;
     position: relative;
     animation-name: slideIn;
-    transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
-    transition-delay: 100ms;
+    transition: all 400ms ease;
+    transition-delay: 200ms;
+  }
+  #site-navigation .nav-menu li:first-child {
+    margin-top: 20px;
   }
   #site-navigation .nav-menu li {
     font-size: 16px !important;
@@ -838,10 +852,16 @@ textarea {
     width: 100%;
     padding-left: 15px;
     border: 1px solid #000;
+    border-left: none;
     font-family: 'Libre Baskerville', serif;
     height: 40px;
     display: flex;
     align-items: center;
+    margin-top: 30px;
+  }
+  #site-navigation .nav-menu li:hover, #site-navigation .nav-menu li:active, #site-navigation .nav-menu li:focus {
+    cursor: pointer;
+    background-color: #128282;
   }
   #site-navigation .show {
     width: 0%;
@@ -850,10 +870,12 @@ textarea {
   @keyframes slideIn {
     0% {
       width: 0%;
+      transform: scale(0.3);
       opacity: 0;
     }
     100% {
       width: 50%;
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -968,8 +990,6 @@ footer .footer-wave img {
 
 @media only screen and (max-width: 37.5em) {
   #site-navigation {
-    background-color: #FFF3E8;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
     height: fit-content;
     z-index: 10902318492384092 !important;
   }
@@ -1652,7 +1672,6 @@ ul li {
 .article-parcours {
   overflow-x: hidden;
   height: 750px;
-  z-index: 999;
   background-color: #BACCBA;
 }
 
@@ -1663,7 +1682,7 @@ ul li {
   width: 600vw;
   transition: 0.5s ease;
   position: relative;
-  z-index: 999;
+  z-index: 29;
 }
 
 .parcours-container-full {
@@ -1673,7 +1692,6 @@ ul li {
   width: 600vw;
   transition: 0.5s ease;
   position: relative;
-  z-index: 999;
 }
 
 .not-home {
@@ -1807,7 +1825,7 @@ ul li {
     position: fixed;
     bottom: 10px !important;
     right: 10px;
-    z-index: 9999999;
+    z-index: 9999;
   }
   .sessions {
     height: 90vh !important;
@@ -2180,7 +2198,6 @@ body {
 
 .futur .metier, .futur .employeur {
   position: relative;
-  z-index: 999;
   margin-top: 1%;
 }
 
@@ -2323,11 +2340,17 @@ body {
 
 .conteneur-light-box .light-box .barres svg {
   position: absolute;
-  opacity: 0.5;
   bottom: 0;
   right: 0;
   width: 300px;
   height: 300px;
+}
+
+.conteneur-light-box .light-box .barres svg .cls-1, .conteneur-light-box .light-box .barres svg .cls-2 {
+  fill: black;
+  opacity: 0.3;
+  outline: none;
+  stroke: none;
 }
 
 .conteneur-light-box .light-box .bouton-fermer {

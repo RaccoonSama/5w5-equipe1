@@ -30,7 +30,7 @@
     .article-parcours {
         overflow-x: hidden;
         height: 750px;
-        z-index: 999;
+        //z-index: 999;
         background-color: $vert;
     }
 
@@ -41,7 +41,7 @@
         width: 600vw;
         transition: 0.5s ease;
         position: relative;
-        z-index: 999;
+        z-index: 29;
     }
 
         .parcours-container-full {
@@ -51,7 +51,6 @@
             width: 600vw;
             transition: 0.5s ease;
             position: relative;
-            z-index: 999;
         }
 
         .not-home {
@@ -186,7 +185,7 @@
             position: fixed;
             bottom: 10px !important;
             right: 10px;
-            z-index: 9999999;
+            z-index: 9999;
         }
         .sessions {
             height: 90vh !important;

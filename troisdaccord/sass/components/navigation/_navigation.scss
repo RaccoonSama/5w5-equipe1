@@ -80,16 +80,17 @@
 .menu-toggle {
 	background: none;
 	color: inherit;
-	border: 2 px solid $noir;
+	border: 1px solid $noir;
+	border-left: none;
 	padding: 10px;
 	font: inherit;
 	cursor: pointer;
 	outline: none;
 	background-color: $accent_mauve;
-	height: 120px;
-	width: 50px;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
+	height: 75px;
+	width: 40px;
+	border-top-right-radius: 45px;
+	border-bottom-right-radius: 45px;
 
 }
 
@@ -174,7 +175,7 @@
 	ul {
 		height: 100%;
 		margin: 0 auto;
-		width: 80%;
+		width: 75%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -218,65 +219,89 @@
 	header {
 		position: relative !important;
 	}
+
 .main-navigation {
-width: 10rem;
+	width: 0vw;
+	box-shadow: none !important;
 }
-	#site-navigation .main-navigation.toggled{
-		background-color: red !important;
-	}
-	#site-navigation {
-		button {
-			margin: 0 !important;
-		}
-		position: fixed !important;
-		z-index: 99999;
-		left: 0 !important;
-		padding-bottom: 10px;
-		.nav-menu {
-			height: 35rem;
-			margin: 0;
-			display: flex !important;
-			flex-direction: column !important;
-			//transition: 0.3s ease;
-			position: relative;
-			animation-name: slideIn;
-			transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
-			transition-delay: 100ms;
-			
-			li  {
-				font-size: 16px !important;
-				background-color: $burger_gris;
-				width: 100%;
-				padding-left: 15px;
-				border: 1px solid $noir;
-				font-family:'Libre Baskerville', serif;
-				height: 40px;
-				display: flex;
-				align-items: center;
-			}
-			
-		}
-		.show {
-				width: 0%;
-				opacity: 0;
+
+#site-navigation.toggled{
+	background-color: $beige;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) !important; 
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) !important;
+	width: 50vw;
+	height: 460px;
+	border-bottom-right-radius: 50px;
+}
+#site-navigation {
+	position: fixed;
+	z-index: 99999 !important;
+	left: 0;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	transition: 0.8s all ease;
+
+	button {
+		margin: 0 !important;
+		.cls-1 {
+			fill: none !important;
 		}
 	}
+	
+	.nav-menu {
+		height: 35rem;
+		margin: 0;
+		display: flex !important;
+		flex-direction: column !important;
+		position: relative;
+		animation-name: slideIn;
+		transition: all 400ms ease;
+		transition-delay: 200ms;
+		
+		li:first-child {
+			margin-top: 20px
+		}
+		li  {
+			font-size: 16px !important;
+			background-color: $burger_gris;
+			width: 100%;
+			padding-left: 15px;
+			border: 1px solid $noir;
+			border-left: none;
+			font-family:'Libre Baskerville', serif;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			margin-top: 30px;
+		}
+		li:hover, li:active, li:focus{
+			cursor: pointer;
+			background-color: $accent_mauve;
+		}
+		
+	}
+	.show {
+			width: 0%;
+			opacity: 0;
+	}
+}
 
 
 
 	@keyframes slideIn {
 		0% {
-		  width: 0%;
-		  // transform: scale(.3);
-		  opacity: 0;
+			width: 0%;
+			transform: scale(.3);
+			opacity: 0;
 		}
 		
 		100% {
-		  width: 50%;
-		  // transform:scale(1);
-		  opacity: 1;
+			width: 50%;
+			transform:scale(1);
+			opacity: 1;
 		}
-	  }
+	}
+	
 }
 
 /*********FOOOTER *********************/
@@ -371,7 +396,6 @@ footer
 		margin-top: -11rem;
 		width: 350px;
 		float: right;
-	//	z-index: -2;
 		img {
 			right: 0;
 			height: 100%;
@@ -383,9 +407,6 @@ footer
 
 @include phone {
 	#site-navigation{
-		background-color: $beige;
-		-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); 
-		box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 		height: fit-content;
 		z-index: 10902318492384092 !important;
 	}
