@@ -3,7 +3,7 @@ const lightbox = document.querySelectorAll(".conteneur-light-box");
 const boutonMetier = document.querySelectorAll(".metier-wrap");
 const boutonATE = document.querySelectorAll(".ate-wrap");
 const groupLightBox = document.querySelectorAll(".group-lightbox");
-console.log(groupLightBox);
+
 for (let i = 0; i < boutonFerme.length; i++) {
 boutonFerme[i].addEventListener("click", function() {
     lightbox[i].style.opacity = 0;
@@ -36,7 +36,7 @@ for (let i = 0; i < boutonATE.length; i++) {
 
 //accueil woooooooooooooooooooooo
 var lightboxAccueil = document.querySelector('.content-section-accueil .wp-block-columns .wp-block-column:last-of-type');
-console.log(lightbox);
+
 
 lightboxAccueil.addEventListener("click",()=> {
   lightbox[0].style.opacity = 1;

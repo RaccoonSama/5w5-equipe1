@@ -217,11 +217,38 @@ width: 10rem;
 			margin: 0;
 			display: flex !important;
 			flex-direction: column !important;
+			//transition: 0.3s ease;
+			position: relative;
+			animation-name: slideIn;
+			transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
+			transition-delay: 100ms;
+			
 			li  {
 				font-size: 16px !important;
 			}
+			
 		}
+		.show {
+				width: 0%;
+				opacity: 0;
+			}
 	}
+
+
+
+	@keyframes slideIn {
+		0% {
+		  width: 0%;
+		  // transform: scale(.3);
+		  opacity: 0;
+		}
+		
+		100% {
+		  width: 50%;
+		  // transform:scale(1);
+		  opacity: 1;
+		}
+	  }
 }
 
 /*********FOOOTER *********************/
