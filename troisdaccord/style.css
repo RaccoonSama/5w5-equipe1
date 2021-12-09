@@ -2264,7 +2264,7 @@ body {
   color: #000;
   transition: 0.3s ease;
   opacity: 0;
-  z-index: 998;
+  z-index: -998;
 }
 
 .conteneur-light-box .light-box {
@@ -2533,7 +2533,7 @@ body {
     width: 100% !important;
   }
   .autres .header-wrapper h1 {
-    position: static !important;
+    position: relative !important;
     width: 100%;
     font-size: 5em !important;
   }
@@ -2625,7 +2625,6 @@ body {
   top: 18vh;
   z-index: 999;
   text-shadow: 1px 1px black;
-  pointer-events: none;
 }
 
 .proj-wrapper .proj-wrap .proj-content p {
