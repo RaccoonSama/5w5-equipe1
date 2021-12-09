@@ -2487,37 +2487,6 @@ body {
   }
 }
 
-/*
-.proj-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300vw;
-    overflow-x: hidden;
-
-    .proj-wrap {
-        width: 33vw;
-
-        .proj-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1vh 3vw;
-        }
-        h1 {
-            color: white;
-        }
-            p {
-                text-align: justify;
-                display: none;
-            }
-            figure {
-                width: 300px;
-                justify-content: center;
-                opacity: 0.9;
-            }
-  }
-}
-*/
 .proj-carou1 {
   height: 50vh;
 }
@@ -2529,7 +2498,7 @@ body {
   background-color: #C7C3C9;
   height: 68.3vh;
   width: 600vw;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .proj-wrapper .proj-wrap {
@@ -2591,21 +2560,14 @@ body {
   transition: all 0.5s ease;
 }
 
-.proj .shadow {
-  box-shadow: 5px 40px 15px 5px #000000;
-  min-width: 2rem;
-  width: 240px;
-  display: none;
-}
-
-.proj .proj .progress-bar {
+.proj .progress-bar {
   background-color: #FFF3E8;
   width: 100vw;
-  margin: 0 auto;
+  margin: 0 !important;
   height: 15px;
 }
 
-.proj .proj .progress-bar .progress-point {
+.proj .progress-bar .progress-point {
   position: relative;
   background-color: #D87225;
   width: 3.33vw;
@@ -2626,29 +2588,36 @@ body {
 }
 
 @media only screen and (max-width: 65em) {
-  .proj-wrapper {
-    display: flex;
-    flex-direction: column;
+  .proj .proj-wrapper {
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30vh 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". ." ". ." ". ." ". ." ". ." ". ." ". ." ". ." ". .";
+    flex-wrap: wrap;
     pointer-events: none;
-    margin: 0;
-    height: 600vh;
     width: 100vw;
-    justify-content: space-evenly;
-    align-items: center;
-    transform: translateX(0vw) !important;
+    height: 800vh;
+    transform: translateX(0) !important;
+    transition: none;
   }
-  .proj-wrapper .proj-wrap {
-    margin: 3vh 10vw;
-    height: 50vh;
+  .proj .proj-wrapper .proj-wrap {
+    display: flex;
+    margin: 0;
+  }
+  .proj .proj-wrapper .proj-wrap .proj-content {
+    transform: rotateX(0) rotateY(0);
+  }
+  .proj .proj-wrapper .proj-wrap h1 {
+    font-size: 20px;
   }
   .proj .progress-bar {
     display: none;
   }
   .proj .progress-bar .progress-point {
     display: none;
-  }
-  .proj .figure {
-    width: 400px;
   }
   .proj .figure :hover {
     transform: none;
@@ -2657,13 +2626,26 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .proj-wrapper {
-    display: flex;
-    height: 1200vh;
+    display: flex !important;
+    flex-direction: column;
+    gap: 0 !important;
+    flex-direction: column;
     width: 100vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    height: 1000vh !important;
   }
-  .proj-wrapper figure:hover {
+  .proj-wrapper .proj-wrap {
+    margin: auto;
+  }
+  .proj-wrapper .proj-wrap h1 {
+    top: 20vh !important;
+    font-size: 20px !important;
+    text-align: center;
+  }
+  .proj-wrapper .proj-wrap figure {
+    width: 250px !important;
+  }
+  .proj-wrapper .proj-wrap figure :hover {
     transform: none;
   }
 }
-/*# sourceMappingURL=style.css.map */

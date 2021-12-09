@@ -26,8 +26,20 @@ const MyNodeList = document.querySelectorAll('.proj-content');
             if (window.innerWidth > 1040) {
                 MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
             }
+
               }
         });
+
+const MyNodeList2 = document.querySelectorAll('.proj-content');
+        function AjusterHover3DWindowWidth() {
+            if (window.innerWidth < 1040) {
+                for (let j = 0; j < MyNodeList2.length; j++) {
+                MyNodeList2[j].style.transform = 'rotateX(0) rotateY(0)';
+            }
+          }
+        }
+          
+          window.addEventListener('resize', AjusterHover3DWindowWidth);
         
 
 
