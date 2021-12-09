@@ -91,6 +91,15 @@
     }
 }
 
+.Grille {
+    .contenu-lightbox {
+        width: 55% !important;
+        img {
+            width: 100%;
+        }
+    }
+}
+
 @include tablet {
     .texte-titre {
         font-size: 1em !important;

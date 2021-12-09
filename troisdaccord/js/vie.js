@@ -3,21 +3,21 @@ var nbVie =0;
 
 
 scrollVie.addEventListener("wheel", (evt) => {
-//   nbVie += evt.deltaY;
-//   console.log(nbVie);
-//   evt.preventDefault();
+  nbVie += evt.deltaY;
+  console.log(nbVie);
+
   
-//   if (window.screen.width >= 1016) {
-//     evt.preventDefault();
-//     if (nbVie > 0) {
-//       nbVie = 0;
-//   } else if (nbVie < -600) {
-//       nbVie = -600;
-//   }
+  if (window.screen.width >= 1016) {
+    evt.preventDefault();
+    if (nbVie > 0) {
+      nbVie = 0;
+  } else if (nbVie < -600) {
+      nbVie = -600;
+  }
   
-//   scrollVie.style.transform = "translateX(" + nbVie/3 + "vw)";
-//   scrollPoint.style.width = "" + -1*(nbVie/6) + "vw";
-// }
+  scrollVie.style.transform = "translateX(" + nbVie/3 + "vw)";
+  scrollPoint.style.width = "" + -1*(nbVie/6) + "vw";
+}
 
   
   
