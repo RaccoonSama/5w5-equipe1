@@ -29,7 +29,8 @@
         top: 18vh;
         z-index: 999;
         text-shadow: 1px 1px black;
-        pointer-events: none;
+        cursor: pointer;
+        // pointer-events: none;
       }
 
       p {
@@ -133,7 +134,7 @@ box-shadow: 0px 0px 15px 5px #000000;
           ". .";
       
       flex-wrap: wrap;
-      pointer-events: none;
+      // pointer-events: none;
       width: 100vw;
       height: 500vh;
       transform: translateX(0) !important;
