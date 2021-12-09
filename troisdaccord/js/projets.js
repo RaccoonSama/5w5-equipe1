@@ -19,19 +19,28 @@ scrollContainer2.addEventListener("wheel", (evt) => {
 });
 
 const MyNodeList = document.querySelectorAll('.proj-content');
+        document.addEventListener('mousemove', function (e) {
+            for (let i = 0; i < MyNodeList.length; i++) {
+                var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
+                var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+            if (window.innerWidth > 1040) {
+                MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+            }
 
-if (window.width > 1000) {
-Hover3d();
-}
+              }
+        });
 
-function Hover3d() {
-    document.addEventListener('mousemove', function (e) {
-        for (let i = 0; i < MyNodeList.length; i++) {
-            var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
-            var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
-            MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+const MyNodeList2 = document.querySelectorAll('.proj-content');
+        function AjusterHover3DWindowWidth() {
+            if (window.innerWidth < 1040) {
+                for (let j = 0; j < MyNodeList2.length; j++) {
+                MyNodeList2[j].style.transform = 'rotateX(0) rotateY(0)';
+            }
           }
-    });
-}
+        }
+          
+          window.addEventListener('resize', AjusterHover3DWindowWidth);
+        
+
 
 

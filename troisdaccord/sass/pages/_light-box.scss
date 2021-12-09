@@ -11,7 +11,7 @@
     color: $noir;
     transition: 0.3s ease;
     opacity: 0;
-    z-index: 998;
+    z-index: -998;
     .light-box {
         position: relative;
         background-color: $blanc;
