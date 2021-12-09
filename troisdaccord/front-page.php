@@ -4,7 +4,7 @@
 $the_query = new WP_Query(array(
     'category_name' => 'resume',
     'post_status' => 'publish',
-    'posts_per_page' => 5,
+    'posts_per_page' => 2,
      'orderby' => 'date',
      'order'   => 'ASC'
 ));
