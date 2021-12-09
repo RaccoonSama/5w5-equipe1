@@ -782,11 +782,11 @@ textarea {
 }
 
 .menu-menu-1-container ul li a {
-  color: black;
+  color: #000;
 }
 
 .menu-menu-1-container ul li a:visited {
-  color: black;
+  color: #000;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1779,7 +1779,7 @@ ul li {
     z-index: 9999999;
   }
   .sessions {
-    height: 100vh !important;
+    height: 90vh !important;
   }
   .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4, .sigle-cours5 {
     height: 60% !important;
@@ -1819,6 +1819,12 @@ ul li {
   .bouton-cours .wp-block-columns svg {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sessions {
+    height: 130vh !important;
   }
 }
 

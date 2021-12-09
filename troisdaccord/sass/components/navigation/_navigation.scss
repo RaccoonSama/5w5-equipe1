@@ -157,24 +157,24 @@
 	height: 4rem;
 	
 	ul {
-height: 100%;
-margin: 0 auto;
-width: 90%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-weight: bold;
+		height: 100%;
+		margin: 0 auto;
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
 
-li {
-	font-size: 2vw;
-	a {
-		color: black;
+		li {
+			font-size: 2vw;
+			a {
+				color: $noir;
+			}
+			a:visited {
+				color: $noir;
+			}
+		}
 	}
-	a:visited {
-		color: black;
-	}
-}
-}
 }
 @include phone {
 	.header-wrapper {
