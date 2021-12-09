@@ -1938,17 +1938,20 @@ body {
   transition: 0.5s ease;
   width: 200vw;
   overflow: visible;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
-.prof-row .prof-img-bas {
-  height: 130px;
+.prof-row .prof-img-bas img {
+  width: 12vw;
+  pointer-events: visible;
 }
 
 .prof-row .prof-img-bas img:hover {
+  pointer-events: none;
   transition: all 0.3s ease;
   transform: translate(10px, -10px);
   box-shadow: -1px 1px 0px #ED7B1D, -2px 2px 0px #ED7B1D, -3px 3px 0px #ED7B1D, -4px 4px 0px #ED7B1D, -5px 5px 0px #ED7B1D, -6px 6px 0px #ED7B1D, -7px 7px 0px #ED7B1D, -8px 8px 0px #ED7B1D, -9px 9px 0px #ED7B1D, -10px 10px 0px #ED7B1D, -11px 11px 0px #ED7B1D, -12px 12px 0px #ED7B1D;
-  margin-right: 10px;
 }
 
 .prof {
@@ -1980,6 +1983,7 @@ body {
     flex-direction: row;
     pointer-events: none;
     flex-wrap: wrap;
+    transition: none;
   }
   .prof .prof-row .prof-img-bas {
     width: 50vw;
@@ -1990,7 +1994,7 @@ body {
     align-items: center;
   }
   .prof .prof-row .prof-img-bas img {
-    width: 40vw;
+    width: 30vw;
   }
   .prof .progress-bar {
     display: none;
@@ -2593,13 +2597,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 30vh 0px;
+    gap: 15vh 0px;
     grid-auto-flow: row;
     grid-template-areas: ". ." ". ." ". ." ". ." ". ." ". ." ". ." ". ." ". .";
     flex-wrap: wrap;
     pointer-events: none;
     width: 100vw;
-    height: 800vh;
+    height: 500vh;
     transform: translateX(0) !important;
     transition: none;
   }
@@ -2649,3 +2653,4 @@ body {
     transform: none;
   }
 }
+/*# sourceMappingURL=style.css.map */

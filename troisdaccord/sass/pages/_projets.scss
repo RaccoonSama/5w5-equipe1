@@ -119,7 +119,7 @@ box-shadow: 0px 0px 15px 5px #000000;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 30vh 0px;
+        gap: 15vh 0px;
         grid-auto-flow: row;
         grid-template-areas:
           ". ."
@@ -135,7 +135,7 @@ box-shadow: 0px 0px 15px 5px #000000;
       flex-wrap: wrap;
       pointer-events: none;
       width: 100vw;
-      height: 800vh;
+      height: 500vh;
       transform: translateX(0) !important;
       transition: none;
 
