@@ -54,7 +54,6 @@
 
 	li {
 		position: relative;
-
 		&:hover > a,
 		&.focus > a {
 		}
@@ -76,6 +75,22 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+.menu-toggle {
+	background: none;
+	color: inherit;
+	border: 2 px solid $noir;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+	background-color: $accent_mauve;
+	height: 120px;
+	width: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+
 }
 
 @media screen and (min-width: 37.5em) {
@@ -154,12 +169,12 @@
 	}
 }
 .menu-menu-1-container {
-	height: 4rem;
+	height: 100%;
 	
 	ul {
 		height: 100%;
 		margin: 0 auto;
-		width: 90%;
+		width: 80%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -167,6 +182,7 @@
 
 		li {
 			font-size: 2vw;
+			
 			a {
 				color: $noir;
 			}
@@ -205,6 +221,9 @@
 .main-navigation {
 width: 10rem;
 }
+	#site-navigation .main-navigation.toggled{
+		background-color: red !important;
+	}
 	#site-navigation {
 		button {
 			margin: 0 !important;
@@ -212,6 +231,7 @@ width: 10rem;
 		position: fixed !important;
 		z-index: 99999;
 		left: 0 !important;
+		padding-bottom: 10px;
 		.nav-menu {
 			height: 35rem;
 			margin: 0;
@@ -225,13 +245,21 @@ width: 10rem;
 			
 			li  {
 				font-size: 16px !important;
+				background-color: $burger_gris;
+				width: 100%;
+				padding-left: 15px;
+				border: 1px solid $noir;
+				font-family:'Libre Baskerville', serif;
+				height: 40px;
+				display: flex;
+				align-items: center;
 			}
 			
 		}
 		.show {
 				width: 0%;
 				opacity: 0;
-			}
+		}
 	}
 
 
@@ -354,6 +382,13 @@ footer
 }
 
 @include phone {
+	#site-navigation{
+		background-color: $beige;
+		-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); 
+		box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+		height: fit-content;
+		z-index: 10902318492384092 !important;
+	}
 	.info-college {
 		flex-direction: column !important;
 	}

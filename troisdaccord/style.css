@@ -546,30 +546,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-}
-
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
 }
 
 input[type="text"],
@@ -685,6 +664,21 @@ textarea {
   display: block;
 }
 
+.menu-toggle {
+  background: none;
+  color: inherit;
+  border: 2 px solid #000;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  background-color: #128282;
+  height: 120px;
+  width: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
@@ -764,13 +758,13 @@ textarea {
 }
 
 .menu-menu-1-container {
-  height: 4rem;
+  height: 100%;
 }
 
 .menu-menu-1-container ul {
   height: 100%;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -816,10 +810,14 @@ textarea {
   .main-navigation {
     width: 10rem;
   }
+  #site-navigation .main-navigation.toggled {
+    background-color: red !important;
+  }
   #site-navigation {
     position: fixed !important;
     z-index: 99999;
     left: 0 !important;
+    padding-bottom: 10px;
   }
   #site-navigation button {
     margin: 0 !important;
@@ -836,6 +834,14 @@ textarea {
   }
   #site-navigation .nav-menu li {
     font-size: 16px !important;
+    background-color: #ECECE0;
+    width: 100%;
+    padding-left: 15px;
+    border: 1px solid #000;
+    font-family: 'Libre Baskerville', serif;
+    height: 40px;
+    display: flex;
+    align-items: center;
   }
   #site-navigation .show {
     width: 0%;
@@ -961,6 +967,12 @@ footer .footer-wave img {
 }
 
 @media only screen and (max-width: 37.5em) {
+  #site-navigation {
+    background-color: #FFF3E8;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+    height: fit-content;
+    z-index: 10902318492384092 !important;
+  }
   .info-college {
     flex-direction: column !important;
   }
