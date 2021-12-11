@@ -141,8 +141,7 @@
             }
        } 
     img:hover {
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.561);
-       
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.561);      
     }
         .content-section-accueil {
             display: flex;
@@ -177,6 +176,169 @@
                 }
             }
         }
+    }
+  
+
+    &:nth-of-type(4) {
+        background-color: $mauve;
+        height: auto;
+        padding: 30px;
+        flex-direction: row-reverse;
+
+        .btn-placer {
+            justify-content: flex-end;
+
+            @include phone {
+                justify-content: center; 
+            }
+        }
+
+            .content-section-accueil {
+            display: flex;
+            flex-direction: row-reverse;
+
+            @include phone {
+                flex-direction: column;
+            }
+
+                .txt-title-projets {
+                    width: 100%;
+                    margin-left: 5vw;
+
+                    @include phone {
+                        margin-left: 0;
+                    }
+
+                    h1 {
+                        text-align: right;
+                    }
+                    p {
+                        margin-right: 5%;
+                        text-align: right;
+                    }
+
+                    @include phone {
+                        h1{
+                            text-align: center;
+                        }
+                        p {
+                            text-align: left;
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                .wp-block-image {
+                    flex-basis: 100%;
+                    img {
+                        position: relative;
+                        z-index: 9999;
+                        box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+                        transition: 0.5s ease;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    img:hover {
+                        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.561);      
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+            background-color: $jaunetrespale;
+        }
+        &:nth-of-type(5) {
+            background-color: $bleu_pale;
+        }
+
+        &:nth-of-type(3), &:nth-of-type(5) {
+        height: auto;
+        padding: 30px;
+        flex-direction: row-reverse;
+
+        .btn-placer {
+            justify-content: flex-start;
+
+            @include phone {
+                justify-content: center;
+            }
+        }
+
+            .content-section-accueil {
+            display: flex;
+            flex-direction: row;
+
+            @include phone {
+                flex-direction: column;
+            }
+
+                .txt-title-futur{
+                    width: 100%;
+                    margin-right: 5vw;
+                    @include phone {
+                        margin-left: 0;
+                    }
+
+                    h1 {
+                        text-align: left;
+                    }
+                    p {
+                        margin-left: 5%;
+                        text-align: left;
+                        @include phone {
+                            margin-left: 0;    
+                        }
+                    }
+                    @include phone {
+                        h1{
+                            text-align: center; 
+                        }
+                        p {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                .txt-title-prof {
+                    margin-right: 5vw;
+                    width: 100%;
+                    @include phone {
+                        margin-left: 0;
+                    }
+
+                    h1 {
+                        @include phone {
+                            text-align: center;
+                        }
+                    }
+                    p {
+                        margin-left: 5%;
+
+                        @include phone {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                .wp-block-image {
+                    flex-basis: 100%;
+                    img {
+                        position: relative;
+                        z-index: 9999;
+                        box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
+                        transition: 0.5s ease;
+                        max-width: 100%;
+                        height: auto;
+                        @include phone {
+                            margin-bottom: 5vh;
+                        }
+                    }
+                    img:hover {
+                        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.561);      
+                    }
+                }
+            }
     }
 }
 

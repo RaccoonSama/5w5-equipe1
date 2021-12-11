@@ -45,18 +45,20 @@
         img {
             width: 12vw;
             pointer-events: visible;
+            
             &:hover {
-                pointer-events: none;
                 transition: all 0.3s ease;
                 transform: translate(10px, -10px);
                 box-shadow: -1px 1px 0px $accent_orange, -2px 2px 0px $accent_orange, -3px 3px 0px $accent_orange, -4px 4px 0px $accent_orange, -5px 5px 0px $accent_orange, -6px 6px 0px $accent_orange, -7px 7px 0px $accent_orange, -8px 8px 0px $accent_orange, -9px 9px 0px $accent_orange, -10px 10px 0px $accent_orange, -11px 11px 0px $accent_orange, -12px 12px 0px $accent_orange;
+
+
             }
         }
     }
 }
 
 .prof {
-    background-color: #f9f6da;
+    background-color: $jaunetrespale;
 
     .prof-haut {
         margin: 0 5vw;
@@ -73,7 +75,6 @@
 .prof-content {
     padding: 1vh;
     width: 50vw;
-    text-align: justify;
 }
 
 @include tablet {
@@ -146,10 +147,15 @@
                     }
                 }
             }
-            .prof-wrap:first-of-type {
+            /*.prof-wrap:first-of-type {
                 flex-direction: column !important; 
                 align-items: center;
-            }
+            } */
+
+            .prof-wrap {
+                flex-direction: column !important; 
+                align-items: center;
+            } 
             
         }
         .prof-row {
@@ -158,6 +164,7 @@
             flex-direction: row;
             pointer-events: none;
             flex-wrap: wrap;
+            padding-top: 50vh;
 
             .prof-img-bas {
                 width: 100vw;
