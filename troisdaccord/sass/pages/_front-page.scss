@@ -187,15 +187,27 @@
 
         .btn-placer {
             justify-content: flex-end;
+
+            @include phone {
+                justify-content: center; 
+            }
         }
 
             .content-section-accueil {
             display: flex;
             flex-direction: row-reverse;
 
+            @include phone {
+                flex-direction: column;
+            }
+
                 .txt-title-projets {
                     width: 100%;
                     margin-left: 5vw;
+
+                    @include phone {
+                        margin-left: 0;
+                    }
 
                     h1 {
                         text-align: right;
@@ -203,6 +215,16 @@
                     p {
                         margin-right: 5%;
                         text-align: right;
+                    }
+
+                    @include phone {
+                        h1{
+                            text-align: center;
+                        }
+                        p {
+                            text-align: left;
+                            margin-right: 0;
+                        }
                     }
                 }
 
@@ -254,6 +276,9 @@
                 .txt-title-futur{
                     width: 100%;
                     margin-right: 5vw;
+                    @include phone {
+                        margin-left: 0;
+                    }
 
                     h1 {
                         text-align: left;
@@ -270,7 +295,7 @@
                             text-align: center; 
                         }
                         p {
-                            text-align: justify;   
+                            margin-right: 0;
                         }
                     }
                 }
@@ -278,6 +303,22 @@
                 .txt-title-prof {
                     margin-right: 5vw;
                     width: 100%;
+                    @include phone {
+                        margin-left: 0;
+                    }
+
+                    h1 {
+                        @include phone {
+                            text-align: center;
+                        }
+                    }
+                    p {
+                        margin-left: 5%;
+
+                        @include phone {
+                            margin-left: 0;
+                        }
+                    }
                 }
 
                 .wp-block-image {

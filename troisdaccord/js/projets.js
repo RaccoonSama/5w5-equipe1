@@ -4,6 +4,7 @@ const scrollContainer2 = document.getElementById('scrollingprojets');
 var nb2 = 0;
 
 scrollContainer2.addEventListener("wheel", (evt) => {
+    if (window.innerWidth > 1040) {
 
     nb2 += evt.deltaY;
     if(nb2 >= 0) {
@@ -16,6 +17,7 @@ scrollContainer2.addEventListener("wheel", (evt) => {
     scrollContainer2.style.transform = "translateX(" + nb2/4.5 + "vw)";
     scrollPoint.style.width = "" + -1*(nb2/20) + "vw";
 
+}
 });
 
 const MyNodeList = document.querySelectorAll('.proj-content');
