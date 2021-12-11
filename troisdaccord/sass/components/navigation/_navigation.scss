@@ -36,14 +36,6 @@
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -52,22 +44,9 @@
 		}
 	}
 
-	li {
-		position: relative;
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
 	a {
 		display: block;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
 	}
 }
 
@@ -238,7 +217,7 @@
 	left: 0;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	transition: 0.8s all ease;
+	transition: 1s all ease;
 
 	button {
 		margin: 0 !important;
@@ -255,7 +234,7 @@
 		position: relative;
 		animation-name: slideIn;
 		transition: all 400ms ease;
-		transition-delay: 200ms;
+		transition-delay: 300ms;
 		
 		li:first-child {
 			margin-top: 20px
@@ -296,7 +275,7 @@
 		
 		100% {
 			width: 50%;
-			transform:scale(1);
+			transform:scale(2);
 			opacity: 1;
 		}
 	}
