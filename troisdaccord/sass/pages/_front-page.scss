@@ -5,7 +5,7 @@
         font-weight: 600;
         line-height: 1.8;
         font-size: 1.1rem;
-        z-index: 100 !important;
+        z-index: 2 !important;
     }
 
     .btn-placer {
@@ -23,7 +23,7 @@
             width: 100%;
             height: 100%;
             text-decoration: none;
-            z-index: 999;
+            z-index: 2;
             color: black;
         }
     }
@@ -57,7 +57,7 @@
         .txt-btn-accueil {
             position: relative;
             height: 100%;
-            z-index: 999;
+            z-index: 2;
         }
 
         .wp-block-columns {
@@ -116,7 +116,7 @@
        position: relative;
        img {
            position: relative;
-           z-index: 9999;
+           z-index: 2;
             box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
             transition: 0.5s ease;
             
@@ -126,7 +126,7 @@
            right: 0px;
            bottom: 0px;
            width: 50%;
-           z-index: 1;
+           z-index: 2;
            .cls-1 {
                fill: #B8D3D0 !important;
            }
@@ -151,7 +151,7 @@
                 width: 70%;
                 text-align: right;
                 height: 40%;
-                z-index: 1000;
+                z-index: 2;
 
                 p {
                     width: 80%;
@@ -166,7 +166,7 @@
         .btn-placer {
             
             button {
-                z-index: 1001;
+                z-index: 2;
                 position: absolute;
                 right: 50px;
                 top: 45%;
@@ -232,7 +232,7 @@
                     flex-basis: 100%;
                     img {
                         position: relative;
-                        z-index: 9999;
+                        z-index: 2;
                         box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
                         transition: 0.5s ease;
                         max-width: 100%;
@@ -325,7 +325,7 @@
                     flex-basis: 100%;
                     img {
                         position: relative;
-                        z-index: 9999;
+                        z-index: 2;
                         box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);
                         transition: 0.5s ease;
                         max-width: 100%;
