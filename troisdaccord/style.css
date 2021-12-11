@@ -1638,6 +1638,11 @@ ul li {
   }
 }
 
+.section-accueil-wrapper:nth-of-type(3) .content-section-accueil .txt-title-prof, .section-accueil-wrapper:nth-of-type(5) .content-section-accueil .txt-title-prof {
+  margin-right: 5vw;
+  width: 100%;
+}
+
 .section-accueil-wrapper:nth-of-type(3) .content-section-accueil .wp-block-image, .section-accueil-wrapper:nth-of-type(5) .content-section-accueil .wp-block-image {
   flex-basis: 100%;
 }
@@ -2888,4 +2893,3 @@ body {
     transform: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
