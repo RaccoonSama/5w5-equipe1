@@ -6,7 +6,7 @@ const groupLightBox = document.querySelectorAll(".group-lightbox");
 
 for (let i = 0; i < boutonFerme.length; i++) {
 boutonFerme[i].addEventListener("click", function() {
-    lightbox[i].style.opacity = 0;
+    lightbox[i].style.visibility = 0;
     lightbox[i].style.zIndex = 998;
 
   });
@@ -20,7 +20,6 @@ for (let i = 0; i < boutonMetier.length; i++) {
           }
         groupLightBox[i].style.opacity = 1;
         groupLightBox[i].style.zIndex = 1001;
-
     })  
 }
 

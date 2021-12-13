@@ -20,6 +20,12 @@
         box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.65);
         display: flex;
         flex-direction: column;
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         
         h1 {
             margin: 0;
@@ -46,7 +52,6 @@
         p {
             width: 80%;
             margin-left: 10%;
-            z-index: 9999;
         }
 
         .barres {
@@ -119,5 +124,26 @@
         right: 0;
         width: 200px !important;
         height: 200px !important;
+    }
+}
+
+@include phone {
+    .conteneur-light-box {
+        .light-box {
+            p {
+                font-size: 0.8em !important;
+            }
+
+            figure {
+                margin-bottom: 0 !important;
+            }
+            p:last-of-type {
+                display: none;
+            }      
+        }
+
+        .contenu-lightbox {
+            display: none;
+        }
     }
 }
