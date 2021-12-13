@@ -149,7 +149,7 @@ function troisdaccord_scripts() {
 	if (is_page(8)) {
 		wp_enqueue_script( 'troisdaccord-parcours', get_template_directory_uri() . '/js/parcours.js', array('jquery'), false, true );
 	}
-	if (is_page(10)) {
+	if (is_page(661)) {
 		wp_enqueue_script( 'troisdaccord-vie', get_template_directory_uri() . '/js/vie.js', array('jquery'), false, true );
 	}
 	if (is_page(14)) {

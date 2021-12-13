@@ -26,6 +26,23 @@
             }
         }
     }
+    .sessionTitle {
+        position: relative;
+        width: 100%;
+        .containerTitle {
+            position: absolute;
+            font-size:1.5vw;
+            top: 0vh;
+            right: 0;
+            background-color: $beige;
+            padding:10px ;
+                border: 1px solid black;
+                h2 {
+                    margin: 0;
+                }
+
+        }
+    }
 
     .article-parcours {
         overflow-x: hidden;
@@ -246,5 +263,23 @@
     @include phone{
         .sessions {
             height: 130vh !important;
+        }
+        .sessionTitle {
+            position: relative;
+            width: 100%;
+            .containerTitle {
+                position: absolute;
+                font-size:3vw;
+                top: 0vh;
+                left: -30vw;
+                width: fit-content;
+                background-color: $beige;
+                padding:10px ;
+                    border: 1px solid black;
+                    h2 {
+                        margin: 0;
+                    }
+    
+            }
         }
     }

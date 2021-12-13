@@ -72,9 +72,12 @@ foreach ($countchildren as $key => $child) {
 if ($the_query2->have_posts()) : 
     ?>
     <div class="text-cours<?=$noClass;?>"> 
+        <div class="sessionTitle">
+            <div class="containerTitle"><h2>session : <?=$noClass;?></h2></div>
+        </div>
     <?php
         while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
-            
+        
          <div class="text-session-<?=$noClass;?>">
         <h1> <?php the_title(); ?></h1>
          <?php the_content(); ?>

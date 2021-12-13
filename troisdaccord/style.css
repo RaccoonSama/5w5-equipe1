@@ -1859,6 +1859,25 @@ ul li {
   opacity: 1;
 }
 
+.sessionTitle {
+  position: relative;
+  width: 100%;
+}
+
+.sessionTitle .containerTitle {
+  position: absolute;
+  font-size: 1.5vw;
+  top: 0vh;
+  right: 0;
+  background-color: #FFF3E8;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.sessionTitle .containerTitle h2 {
+  margin: 0;
+}
+
 .article-parcours {
   overflow-x: hidden;
   height: 750px;
@@ -2071,6 +2090,23 @@ ul li {
   .sessions {
     height: 130vh !important;
   }
+  .sessionTitle {
+    position: relative;
+    width: 100%;
+  }
+  .sessionTitle .containerTitle {
+    position: absolute;
+    font-size: 3vw;
+    top: 0vh;
+    left: -30vw;
+    width: fit-content;
+    background-color: #FFF3E8;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .sessionTitle .containerTitle h2 {
+    margin: 0;
+  }
 }
 
 .vie {
@@ -2188,7 +2224,6 @@ body {
     height: auto !important;
     display: grid !important;
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr !important;
     gap: 0px 0px !important;
     grid-template-areas: "vie-img-wrap" "vie-content" !important;
     margin: 0 auto;
