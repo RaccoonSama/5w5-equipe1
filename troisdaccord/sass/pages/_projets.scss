@@ -30,7 +30,6 @@
         z-index: 999;
         text-shadow: 1px 1px black;
         cursor: pointer;
-        // pointer-events: none;
       }
 
       p {
@@ -56,7 +55,7 @@
     margin-bottom: 0;
     width: 250px;
     -webkit-box-shadow: 0px 0px 15px 5px #000000; 
-box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 15px 5px #000000;
 
     &:after {
       content: " ";
@@ -72,7 +71,7 @@ box-shadow: 0px 0px 15px 5px #000000;
       transform: scale(1.1);
       cursor: pointer;
       -webkit-box-shadow: 0px 0px 15px 5px #000000; 
-box-shadow: 0px 0px 15px 5px #000000;
+      box-shadow: 0px 0px 15px 5px #000000;
     }
 
     img {
@@ -171,30 +170,30 @@ box-shadow: 0px 0px 15px 5px #000000;
 }
 
 @include phone {
-  
-  .proj-wrapper {
-    display: flex !important;
-    flex-direction: column;
-    gap: 0 !important;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: space-around;
-    height: 1000vh !important;
 
-    .proj-wrap {
-      margin: auto;
+    .proj-wrapper {
+      display: flex !important;
+      flex-direction: column;
+      gap: 0 !important;
+      flex-direction: column;
+      width: 100vw;
+      justify-content: space-around;
+      //height: 900vh !important;
+      
+        .proj-wrap {
+          margin: auto;
 
-    h1 {
-      top: 20vh !important;
-      font-size: 20px !important;
-      text-align: center;
-    }
-    figure {
-      width: 250px !important;
-    :hover {
-      transform: none;
+        h1 {
+          top: 20vh !important;
+          font-size: 20px !important;
+          text-align: center;
+        }
+        figure {
+          width: 250px !important;
+        :hover {
+          transform: none;
+        }
+      }
     }
   }
-  }
-}
 }

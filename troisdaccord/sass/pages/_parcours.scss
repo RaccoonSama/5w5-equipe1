@@ -197,23 +197,22 @@
             height: 90vh !important;
         }
         .sigle-cours1, .sigle-cours2, .sigle-cours3, .sigle-cours4,.sigle-cours5{
-            height: 60% !important;
+            //height: 60% !important;
             margin-top: 70px;
         }
         .sigle-cours6 {
-        height: 100% !important;
-        justify-content: flex-start !important;
-        .bouton-cours {
-            margin-top: 35px;
-        }
+            height: 100% !important;
+            justify-content: flex-start !important;
 
+            .bouton-cours {
+                margin-top: 35px;
+            }
         }
         .text-cours1, .text-cours2,.text-cours3,.text-cours4,.text-cours5,.text-cours6 {
-            line-height: 1.1 !important;
+            line-height: 1.35em !important;
             h1 {
                 font-size: 1.5em !important;
-            }
-            
+            }            
         }
 
         .bouton-cours {
@@ -245,6 +244,6 @@
 
     @include phone{
         .sessions {
-            height: 130vh !important;
+            height: 115vh !important;
         }
     }

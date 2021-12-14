@@ -129,7 +129,7 @@
 			font-size: 3.5vw;
 			line-height: 1.1;
 			margin-left: 5%;
-			z-index: 999;
+			//z-index: 999;
 		}
 		.header-pic {
 			width: 30%;
@@ -137,7 +137,7 @@
 			margin-left: 5%;
 		}
 		.header-triangle {
-			z-index: 999;
+			//z-index: 999;
 			width: 30vw;
 		}
 
@@ -181,12 +181,12 @@
 		}
 		img:nth-of-type(1) {
 				width: 60% !important;
-				z-index: 9999 !important;
+				//z-index: 9999 !important;
 		}
 		h1 {
 			text-align: center !important;
 			font-size: 7vw !important;
-			z-index: 9999 !important;
+			//z-index: 9999 !important;
 		}
 		.header-grid {
 		
@@ -213,11 +213,11 @@
 }
 #site-navigation {
 	position: fixed;
-	z-index: 99999 !important;
+	//z-index: 99999 !important;
 	left: 0;
 	padding-top: 10px;
 	padding-bottom: 30px;
-	transition: 1s all ease;
+	transition: 0.65s all ease;
 
 	button {
 		margin: 0 !important;
@@ -233,8 +233,7 @@
 		flex-direction: column !important;
 		position: relative;
 		animation-name: slideIn;
-		transition: all 400ms ease;
-		transition-delay: 300ms;
+		transition: all 1000ms ease;
 		
 		li:first-child {
 			margin-top: 20px
@@ -259,27 +258,11 @@
 		
 	}
 	.show {
-			width: 0%;
+			width: 0px;
 			opacity: 0;
+			visibility: hidden;
 	}
-}
-
-
-
-	@keyframes slideIn {
-		0% {
-			width: 0%;
-			transform: scale(.3);
-			opacity: 0;
-		}
-		
-		100% {
-			width: 50%;
-			transform:scale(2);
-			opacity: 1;
-		}
-	}
-	
+}	
 }
 
 /*********FOOOTER *********************/

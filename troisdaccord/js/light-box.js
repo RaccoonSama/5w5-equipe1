@@ -1,13 +1,18 @@
+//Boutons X pour fermer les light-box
 const boutonFerme = document.querySelectorAll('.bouton-fermer');
-const lightbox = document.querySelectorAll(".conteneur-light-box");
+//Boutons X des métiers dans futur
 const boutonMetier = document.querySelectorAll(".metier-wrap");
+//Bouton X de l'ATE
 const boutonATE = document.querySelectorAll(".ate-wrap");
+//Groupe de la lightbox
 const groupLightBox = document.querySelectorAll(".group-lightbox");
+//Lightbox
+const lightbox = document.querySelectorAll(".conteneur-light-box");
 
 for (let i = 0; i < boutonFerme.length; i++) {
 boutonFerme[i].addEventListener("click", function() {
-    lightbox[i].style.visibility = 0;
-    lightbox[i].style.zIndex = 998;
+    lightbox[i].style.opacity = 0;
+    lightbox[i].style.zIndex = -998;
 
   });
 }
@@ -15,11 +20,12 @@ for (let i = 0; i < boutonMetier.length; i++) {
         boutonMetier[i].addEventListener("click", function() {
           for (const lightBox of groupLightBox) {
             lightBox.style.opacity = 0;
-            lightBox.style.zIndex = 998;
+            lightBox.style.zIndex = -998;
 
           }
         groupLightBox[i].style.opacity = 1;
         groupLightBox[i].style.zIndex = 1001;
+
     })  
 }
 
