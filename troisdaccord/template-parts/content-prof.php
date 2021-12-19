@@ -41,7 +41,7 @@ if ($the_query->have_posts()) : ?>
     if ($the_query->have_posts()) : ?>
     <?php
         while ($the_query->have_posts()) : $the_query->the_post(); ?>  
-            <div class="prof-img-bas"><?php the_post_thumbnail();?></div>
+            <div class="prof-img-bas"><?php the_post_thumbnail();?></a></div>
             <?php
         endwhile; 
         wp_reset_postdata(); 

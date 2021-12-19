@@ -1839,6 +1839,11 @@ ul li {
   justify-content: space-around;
 }
 
+.session-1 h1, .session-2 h1, .session-3 h1, .session-4 h1, .session-5 h1, .session-6 h1 {
+  font-size: 1.35em;
+  margin-bottom: 5vh;
+}
+
 .session-1 .text-cours1, .session-1 .text-cours2, .session-1 .text-cours3, .session-1 .text-cours4, .session-1 .text-cours5, .session-1 .text-cours6, .session-2 .text-cours1, .session-2 .text-cours2, .session-2 .text-cours3, .session-2 .text-cours4, .session-2 .text-cours5, .session-2 .text-cours6, .session-3 .text-cours1, .session-3 .text-cours2, .session-3 .text-cours3, .session-3 .text-cours4, .session-3 .text-cours5, .session-3 .text-cours6, .session-4 .text-cours1, .session-4 .text-cours2, .session-4 .text-cours3, .session-4 .text-cours4, .session-4 .text-cours5, .session-4 .text-cours6, .session-5 .text-cours1, .session-5 .text-cours2, .session-5 .text-cours3, .session-5 .text-cours4, .session-5 .text-cours5, .session-5 .text-cours6, .session-6 .text-cours1, .session-6 .text-cours2, .session-6 .text-cours3, .session-6 .text-cours4, .session-6 .text-cours5, .session-6 .text-cours6 {
   width: 65%;
   position: relative;
@@ -2003,6 +2008,12 @@ ul li {
   width: 30% !important;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .sigle-cours5 {
+    justify-content: space-around !important;
+  }
+}
+
 .bouton-cours:active {
   transition: none;
   background-color: #ED7B1D;
@@ -2024,6 +2035,12 @@ ul li {
   margin-top: auto;
   margin-bottom: auto;
   padding: 2% 0% 2% 0%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sigle-cours6 {
+    padding-top: 2rem;
+  }
 }
 
 @media only screen and (max-width: 65em) {
@@ -2060,7 +2077,9 @@ ul li {
     line-height: 1.1 !important;
   }
   .text-cours1 h1, .text-cours2 h1, .text-cours3 h1, .text-cours4 h1, .text-cours5 h1, .text-cours6 h1 {
-    font-size: 1.5em !important;
+    font-size: 1.25em !important;
+    text-align: center;
+    line-height: 150%;
   }
   .bouton-cours {
     width: auto;
@@ -2087,8 +2106,11 @@ ul li {
 }
 
 @media only screen and (max-width: 37.5em) {
+  p {
+    line-height: 175%;
+  }
   .sessions {
-    height: 130vh !important;
+    height: 225vh !important;
   }
   .sessionTitle {
     position: relative;
@@ -2309,6 +2331,7 @@ body {
 
 .prof {
   background-color: #f9f6da;
+  overflow-x: hidden;
 }
 
 .prof .prof-haut {
