@@ -7,11 +7,16 @@
         flex-direction: row;
         justify-content: space-around;
         
+        h1 {
+            font-size: 1.35em;
+            margin-bottom: 5vh;
+        }
+        
         .text-cours1, .text-cours2,.text-cours3, .text-cours4,.text-cours5, .text-cours6{
             width: 65%;
             position: relative;
             color: $noir;
-            
+    
             .text-session-1, .text-session-2, .text-session-3, .text-session-4, .text-session-5, .text-session-6{
                 position: absolute;
                 transition: 0.5s ease;
@@ -24,6 +29,23 @@
             .opactiy-text {
                 opacity: 1;
             }
+        }
+    }
+    .sessionTitle {
+        position: relative;
+        width: 100%;
+        .containerTitle {
+            position: absolute;
+            font-size:1.5vw;
+            top: 0vh;
+            right: 0;
+            background-color: $beige;
+            padding:10px ;
+                border: 1px solid black;
+                h2 {
+                    margin: 0;
+                }
+
         }
     }
 
@@ -148,6 +170,10 @@
             flex-direction: row !important;
             flex-wrap: wrap !important;
             width: 30% !important;
+
+            @include phone {
+                justify-content: space-around !important
+            }
         }
 
             .bouton-cours:active{
@@ -172,6 +198,11 @@
                 margin-top: auto;
                 margin-bottom: auto;
                 padding: 2% 0% 2% 0%;
+
+                @include phone {
+                    padding-top: 2rem;
+                }
+
             }
 
         
@@ -211,8 +242,11 @@
         .text-cours1, .text-cours2,.text-cours3,.text-cours4,.text-cours5,.text-cours6 {
             line-height: 1.35em !important;
             h1 {
-                font-size: 1.5em !important;
-            }            
+                font-size: 1.25em !important;
+                text-align: center;
+                line-height: 150%;
+            }
+            
         }
 
         .bouton-cours {
@@ -243,7 +277,28 @@
     }
 
     @include phone{
+        p {
+            line-height: 175%;
+            }
         .sessions {
-            height: 115vh !important;
+            height: 225vh !important;
+        }
+        .sessionTitle {
+            position: relative;
+            width: 100%;
+            .containerTitle {
+                position: absolute;
+                font-size:3vw;
+                top: 0vh;
+                left: -30vw;
+                width: fit-content;
+                background-color: $beige;
+                padding: 10px;
+                    border: 1px solid black;
+                    h2 {
+                        margin: 0;
+                    }
+    
+            }
         }
     }

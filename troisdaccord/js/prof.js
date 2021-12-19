@@ -10,7 +10,9 @@ for (let i = 0; i < imgProf.length; i++) {
             prof.style.opacity = 0;
         }
         profElem[i].style.opacity = 1;
-
+        if (window.innerWidth < 1040) {
+        window.location.assign('https://eddym15.sg-host.com/professeurs/#masthead');
+        }
     })
     
 }
