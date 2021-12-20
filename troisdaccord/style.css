@@ -1413,7 +1413,6 @@ ul li {
   width: 100%;
   height: 100%;
   display: flex;
-  margin-bottom: 5% !important;
 }
 
 .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image {
@@ -2921,7 +2920,7 @@ body {
 .proj-wrapper .proj-wrap .proj-content h1 {
   color: white;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.15em;
   margin: 0;
   position: relative;
   top: 125px;
@@ -3048,11 +3047,13 @@ body {
     flex-direction: column;
     gap: 0 !important;
     flex-direction: column;
-    width: 100vw;
+    width: 200vw !important;
     justify-content: space-around;
+    align-items: center;
+    height: 700vh !important;
   }
   .proj-wrapper .proj-wrap {
-    margin: auto;
+    margin: 0;
   }
   .proj-wrapper .proj-wrap h1 {
     top: 20vh !important;
