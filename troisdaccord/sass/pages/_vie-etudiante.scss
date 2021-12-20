@@ -16,7 +16,7 @@
     
         width: 300vw;
         transition: 0.5s ease;
-        height: 35rem;
+        height: 33rem;
         position: relative;
         z-index: 29;
     }
@@ -59,7 +59,7 @@
         justify-content: space-evenly;
         
         p {
-            width: 70%;
+            width: 90%;
             font-weight: 600;
             line-height: 1.8;
         }
@@ -77,6 +77,11 @@
                 }
             }
         }
+
+        .vie-content {
+            margin-left: 3%;
+        }
+
         &:first-of-type {
             .vie-content {
                 text-align: right;
@@ -167,5 +172,4 @@ body {
  .not-home {
      display: none;
  }
- 
 }

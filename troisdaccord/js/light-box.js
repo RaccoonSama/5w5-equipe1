@@ -6,9 +6,12 @@ const boutonMetier = document.querySelectorAll(".metier-wrap");
 const boutonATE = document.querySelectorAll(".ate-wrap");
 //Groupe de la lightbox
 const groupLightBox = document.querySelectorAll(".group-lightbox");
-//Lightbox
+//Contenur de la lightbox
 const lightbox = document.querySelectorAll(".conteneur-light-box");
+//Lightboxs en soi
+const fenetreLightbox = document.querySelectorAll(".light-box");
 
+//Fermer la lightbox quand on clique sur X
 for (let i = 0; i < boutonFerme.length; i++) {
   //passer a travers tout les boutons present et leurs ajouter une fonction lors d'un click
 boutonFerme[i].addEventListener("click", function() {
@@ -18,6 +21,18 @@ boutonFerme[i].addEventListener("click", function() {
 
   });
 }
+
+//Fermer la lightbox quand on clique à l'extérieur de la lightbox tout simplement
+for (let i = 0; i < lightbox.length; i++) {
+  lightbox[i].addEventListener("click", function(e) {
+      if(!(fenetreLightbox[i].contains(e.target))){
+        lightbox[i].style.opacity = 0;
+        lightbox[i].style.zIndex = -998;
+      }
+    });
+  }
+
+//Apparaître les lightbox de métiers
 for (let i = 0; i < boutonMetier.length; i++) {
   //passer a travers tout les boutons de metiers et leurs ajouter une fonction lors d'un click
         boutonMetier[i].addEventListener("click", function() {
@@ -34,6 +49,7 @@ for (let i = 0; i < boutonMetier.length; i++) {
     })  
 }
 
+//Apparaître la lightbox de l'ate
 for (let i = 0; i < boutonATE.length; i++) {
     //passer a travers tout les boutons de l'ATE et leurs ajouter une fonction lors d'un click
   boutonATE[i].addEventListener("click", function() {
@@ -42,9 +58,6 @@ for (let i = 0; i < boutonATE.length; i++) {
   lightbox[i].style.zIndex = 1001;
 })  
 }
-
-
-
 
 //accueil woooooooooooooooooooooo
 var lightboxAccueil = document.querySelector('.content-section-accueil .wp-block-columns .wp-block-column:last-of-type'); //aller cherche les conteneur html
@@ -63,5 +76,4 @@ for (let e = 0; e < lightboxProjet.length; e++) {
     lightbox[e].style.opacity = 1;
     lightbox[e].style.zIndex = 1001;
   });
-  
 }

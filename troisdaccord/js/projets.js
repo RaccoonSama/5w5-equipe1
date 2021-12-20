@@ -28,7 +28,7 @@ const MyNodeList = document.querySelectorAll('.proj-content'); // aller chercher
                 var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
                 var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
             if (window.innerWidth > 1040) {
-                MyNodeList[i].style.transform = 'rotateY(' + xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+                MyNodeList[i].style.transform = 'rotateY(' + xAxis/1.4 + 'deg) rotateX(' + yAxis/1.4 + 'deg)';
             }
 
               }
