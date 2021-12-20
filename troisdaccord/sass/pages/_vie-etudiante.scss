@@ -4,11 +4,14 @@
     background-color: rgba(128, 128, 128, 0.363);
     padding-top: 20px ;
     overflow-x: hidden;
+    
     .vie-haut {
     
         width: 300vw;
         transition: 0.5s ease;
         height: 35rem;
+        position: relative;
+        z-index: 29;
     }
     .vie-wrapper {
         
@@ -47,6 +50,7 @@
         margin-left: 7vw;
         height: 15rem ;
         justify-content: space-evenly;
+        
         p {
             width: 70%;
             font-weight: 600;
@@ -55,6 +59,8 @@
         .vie-img {
             width: 25rem;
             height: 100%;
+            position: relative;
+            z-index: 99999999;
             img {
                 height: 100%;
                 box-shadow: -16px 16px 0px 5px rgba(0, 0, 0, 0.561);

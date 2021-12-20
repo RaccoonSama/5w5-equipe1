@@ -23,3 +23,26 @@ scrollVie.addEventListener("wheel", (evt) => {
   
   
 });
+
+const gauche = document.getElementById("<-");
+const droite = document.getElementById("->");
+var valDebut = 0;
+var index = 0;
+gauche.addEventListener("click", ()=> {
+  if (index > 0) {
+    index--;
+    valDebut += 100;
+    scrollVie.style.transform = "translateX(" + valDebut +"vw)";
+    console.log("gauche");
+    console.log(index);
+  }
+});
+droite.addEventListener("click", ()=> {
+  if (index < 2) {
+    index++;
+    valDebut -= 100;
+    scrollVie.style.transform = "translateX(" + valDebut +"vw)";
+    console.log("droite");
+    console.log(index);
+  }
+});

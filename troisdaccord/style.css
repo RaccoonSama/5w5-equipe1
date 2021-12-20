@@ -2123,6 +2123,8 @@ ul li {
   width: 300vw;
   transition: 0.5s ease;
   height: 35rem;
+  position: relative;
+  z-index: 29;
 }
 
 .vie .vie-wrapper {
@@ -2172,6 +2174,8 @@ ul li {
 .vie .vie-wrap .vie-img {
   width: 25rem;
   height: 100%;
+  position: relative;
+  z-index: 99999999;
 }
 
 .vie .vie-wrap .vie-img img {
