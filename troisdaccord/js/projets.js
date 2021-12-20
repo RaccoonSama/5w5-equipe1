@@ -14,7 +14,7 @@ scrollContainer2.addEventListener("wheel", (evt) => {
         nb2 = -2000;
     }
     evt.preventDefault();
-    scrollContainer2.style.transform = "translateX(" + nb2/4.5 + "vw)";
+    scrollContainer2.style.transform = "translateX(" + nb2/4 + "vw)";
     scrollPoint.style.width = "" + -1*(nb2/20) + "vw";
 
 }
