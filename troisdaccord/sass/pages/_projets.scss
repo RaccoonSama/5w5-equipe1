@@ -26,7 +26,7 @@
       h1 {
         color: white;
         text-align: center;
-        font-size: 1.25em;
+        font-size: 1.15em;
         margin: 0;
         position: relative;
         top: 125px;
@@ -192,12 +192,14 @@
       flex-direction: column;
       gap: 0 !important;
       flex-direction: column;
-      width: 100vw;
+      width: 200vw !important;
       justify-content: space-around;
+      align-items: center;
       //height: 900vh !important;
+      height: 700vh !important;
       
         .proj-wrap {
-          margin: auto;
+          margin: 0;
 
         h1 {
           top: 20vh !important;

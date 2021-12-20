@@ -18,7 +18,6 @@ if (!is_home()) {
 } else  {
 	get_header();
 }
-
 ?>
 
 	<main id="primary" class="site-main">

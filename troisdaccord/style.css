@@ -1539,7 +1539,6 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5% !important;
 }
 
 .section-accueil-wrapper:first-of-type .wp-block-columns .wp-block-image {
@@ -2436,6 +2435,8 @@ ul li {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   height: 35rem;
+  position: relative;
+  z-index: 29;
 }
 
 .vie .vie-wrapper {
@@ -2508,6 +2509,8 @@ ul li {
 .vie .vie-wrap .vie-img {
   width: 25rem;
   height: 100%;
+  position: relative;
+  z-index: 99999999;
 }
 
 .vie .vie-wrap .vie-img img {
@@ -3420,7 +3423,7 @@ body {
 .proj-wrapper .proj-wrap .proj-content h1 {
   color: white;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.15em;
   margin: 0;
   position: relative;
   top: 125px;
@@ -3578,12 +3581,19 @@ body {
             flex-direction: column;
     gap: 0 !important;
     flex-direction: column;
+<<<<<<< HEAD
     width: 100vw;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+=======
+    width: 200vw !important;
+    justify-content: space-around;
+    align-items: center;
+    height: 700vh !important;
+>>>>>>> main
   }
   .proj-wrapper .proj-wrap {
-    margin: auto;
+    margin: 0;
   }
   .proj-wrapper .proj-wrap h1 {
     top: 20vh !important;

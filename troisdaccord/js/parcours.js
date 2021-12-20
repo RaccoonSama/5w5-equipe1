@@ -27,7 +27,7 @@ scrollContainer.addEventListener("wheel", (evt) => {
   }else {
     if (nb <= 0) {
       nb = 0;
-  } else if (nb >= 4600) {
+  } else if (nb >= 4600 && (window.screen.width >= 601)) {
     nb = 4600;
   }
   }
@@ -109,7 +109,7 @@ for(a = 1; a < 7; a++) {
                 console.log('fonctionne');
               }
         
-            } else {
+            } else if(window.screen.width <= 1017 && window.screen.width >= 601) {
               if ((nb >= 400 && nb < 1099)) {
                 index2=1;
                 console.log('fonctionne');
@@ -130,7 +130,28 @@ for(a = 1; a < 7; a++) {
                 index2=5;
                 console.log('fonctionne');
               }
-            }    
+            } else {
+              if ((nb >= 1400 && nb < 3299)) {
+                index2=1;
+                console.log('fonctionne');
+              }
+              else if (nb >= 3300 && nb < 5099) {
+                index2=2;
+                console.log('fonctionne');
+              }
+              else if (nb >= 5100 && nb < 6999) {
+                index2=3;
+                console.log('fonctionne');
+              }
+              else if (nb >= 7000 && nb < 8899) {
+                index2=4;
+                console.log('fonctionne');
+              }
+              else if (nb >= 8900) {
+                index2=5;
+                console.log('fonctionne');
+              }
+            }
               console.log(index2);
         });
     }
