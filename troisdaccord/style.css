@@ -2095,6 +2095,7 @@ ul li {
   background-color: #FFF3E8;
   padding: 10px;
   border: 1px solid black;
+  margin-top: 5px;
 }
 
 .sessionTitle .containerTitle h2 {
@@ -2434,7 +2435,7 @@ ul li {
   width: 300vw;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  height: 35rem;
+  height: 33rem;
   position: relative;
   z-index: 29;
 }
@@ -3581,16 +3582,13 @@ body {
             flex-direction: column;
     gap: 0 !important;
     flex-direction: column;
-<<<<<<< HEAD
-    width: 100vw;
+    width: 200vw !important;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    width: 200vw !important;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 700vh !important;
->>>>>>> main
   }
   .proj-wrapper .proj-wrap {
     margin: 0;

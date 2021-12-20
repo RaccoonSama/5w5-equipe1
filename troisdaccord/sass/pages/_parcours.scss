@@ -41,11 +41,11 @@
             right: 0;
             background-color: $beige;
             padding:10px ;
-                border: 1px solid black;
-                h2 {
-                    margin: 0;
-                }
-
+            border: 1px solid black;
+            margin-top: 5px;
+            h2 {
+                margin: 0;
+            }
         }
     }
 
@@ -294,11 +294,10 @@
                 width: fit-content;
                 background-color: $beige;
                 padding: 10px;
-                    border: 1px solid black;
-                    h2 {
-                        margin: 0;
-                    }
-    
+                border: 1px solid black;
+                h2 {
+                    margin: 0;
+                }
             }
         }
     }

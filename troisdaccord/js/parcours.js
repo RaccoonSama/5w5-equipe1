@@ -1,6 +1,7 @@
 
 const scrollContainer = document.getElementById('cours-vertical');
 const scrollPoint = document.getElementById('scrollPoint');
+
 var nb =0;
 
 var newWidth = 16.6;
@@ -16,13 +17,17 @@ scrollContainer.addEventListener("wheel", (evt) => {
     if (nb > 0) {
       nb = 0;
   }
-   
+   /*if (nb <= -500){
+    gauche.style.display = "flex";
+   }
+   else if (nb >= -500){
+    gauche.style.display = "none";
+   }*/
         
-        if (nb <= 0 && nb >= -2500) {
-        newWidth ++;
-        scrollContainer.style.transform = "translateX(" + nb/5 + "vw)";
-        scrollPoint.style.width = "" + -1*(nb/25) + "vw";
-        
+      if (nb <= 0 && nb >= -2500) {
+      newWidth ++;
+      scrollContainer.style.transform = "translateX(" + nb/5 + "vw)";
+      scrollPoint.style.width = "" + -1*(nb/25) + "vw"; 
     }
   }else {
     if (nb <= 0) {
@@ -32,8 +37,6 @@ scrollContainer.addEventListener("wheel", (evt) => {
   }
   }
 });
-
-
 
 
 
