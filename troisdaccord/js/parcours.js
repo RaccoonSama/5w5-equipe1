@@ -1,13 +1,14 @@
 
-const scrollContainer = document.getElementById('cours-vertical');
-const scrollPoint = document.getElementById('scrollPoint');
-var nb =0;
+const scrollContainer = document.getElementById('cours-vertical'); //definir le scroll des cours
+const scrollPoint = document.getElementById('scrollPoint'); //definir la barre de scroll
+var nb =0; //valeur du scroll
 
 var newWidth = 16.6;
 
   
 
 scrollContainer.addEventListener("wheel", (evt) => {
+   //ajouter un évènement sur la mollette de la souris afin de faire défiler le conteneur horizontalement
   nb += evt.deltaY;
   console.log(nb);
 
@@ -38,19 +39,17 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 
 
-var coursObj = [];
-var textObj = [];
+var coursObj = []; //definir les cours
+var textObj = [];//definir les textes
 
-// var coursS1 = document.querySelectorAll('.cours-session-1');
-// var textS1 = document.querySelectorAll('.text-session-1');
-const sessions = document.querySelectorAll('.sessions');
-var index = -1;
-var index2 = 0;
+const sessions = document.querySelectorAll('.sessions'); //definir le nombre des session
+var index = -1; //definir l<index 1
+var index2 = 0;//definir l<index 2
 
-const gauche = document.getElementById("<-");
-const droite = document.getElementById("->");
-var valDebut = 0;
-gauche.addEventListener("click", ()=> {
+const gauche = document.getElementById("<-"); //aller chercher la fleche gauche
+const droite = document.getElementById("->");//aller chercher la fleche droite
+var valDebut = 0;//definir la valeur de debut
+gauche.addEventListener("click", ()=> {//definir les limites du scrolls
   if (index2 > 0) {
     valDebut += 100;
     scrollContainer.style.transform = "translateX(" + valDebut +"vw)";
@@ -59,7 +58,7 @@ gauche.addEventListener("click", ()=> {
     console.log(valDebut);
   }
 });
-droite.addEventListener("click", ()=> {
+droite.addEventListener("click", ()=> {//definir les limites du scolls
   if (index2 < 5) {
     valDebut -= 100;
     scrollContainer.style.transform = "translateX(" + valDebut +"vw)";
@@ -70,19 +69,21 @@ droite.addEventListener("click", ()=> {
 });
 
 for(a = 1; a < 7; a++) { 
+  //pour chaque sessions il faut creer des variables dynamique et les stocker dans un array
     window['var_'+a] = document.querySelectorAll('.cours-session-' + a); 
     coursObj.push(window['var_'+a] = document.querySelectorAll('.cours-session-' + a) );
     window['var2_'+a] = document.querySelectorAll('.cours-session-' + a); 
     textObj.push(window['var2_'+a] = document.querySelectorAll('.text-session-' + a) );
-
+    //augmenter l'index
     index++;
     
   
        
     for (let i = 0; i < coursObj[index].length; i++) {
-     
+     //pour chaque objet de cours
        textObj[index][0].style.opacity = "1";
         coursObj[index][i].addEventListener("click", (e)=> {
+          //si l'on clicque sur unobjet de cours
             for (const textCour of textObj[index2]) {
                 textCour.style.opacity = "0";
             }

@@ -1,7 +1,8 @@
-const scrollContainer3 = document.querySelector('.prof-row');
+const scrollContainer3 = document.querySelector('.prof-row'); //définir le conteneur pour scroller
 console.log(scrollContainer3);
 var nb3 = 0;
-scrollContainer3.addEventListener("wheel", (evt) => {
+scrollContainer3.addEventListener("wheel", (evt) => { 
+    //ajouter un évènement sur la mollette de la souris afin de faire défiler le conteneur horizontalement
     if (window.innerWidth > 1040) {
 
     nb3 += evt.deltaY;

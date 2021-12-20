@@ -4,6 +4,7 @@ const scrollContainer2 = document.getElementById('scrollingprojets');
 var nb2 = 0;
 
 scrollContainer2.addEventListener("wheel", (evt) => {
+     //ajouter un évènement sur la mollette de la souris afin de faire défiler le conteneur horizontalement
     if (window.innerWidth > 1040) {
 
     nb2 += evt.deltaY;
@@ -20,8 +21,9 @@ scrollContainer2.addEventListener("wheel", (evt) => {
 }
 });
 
-const MyNodeList = document.querySelectorAll('.proj-content');
+const MyNodeList = document.querySelectorAll('.proj-content'); // aller cherchers les projets
         document.addEventListener('mousemove', function (e) {
+            //faire que les projets suivent les mouvement de la souris
             for (let i = 0; i < MyNodeList.length; i++) {
                 var xAxis = (window.innerWidth / 2 - e.pageX) / -30;
                 var yAxis = (window.innerHeight / 2 - e.pageY) / 15;
