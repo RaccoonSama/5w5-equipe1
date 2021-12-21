@@ -1,14 +1,7 @@
 
-<<<<<<< HEAD
 const scrollContainer = document.getElementById('cours-vertical'); //definir le scroll des cours
 const scrollPoint = document.getElementById('scrollPoint'); //definir la barre de scroll
 var nb =0; //valeur du scroll
-=======
-const scrollContainer = document.getElementById('cours-vertical');
-const scrollPoint = document.getElementById('scrollPoint');
-
-var nb =0;
->>>>>>> tristan
 
 var newWidth = 16.6;
 
@@ -48,15 +41,10 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 
 
-<<<<<<< HEAD
 
 
 var coursObj = []; //definir les cours
 var textObj = [];//definir les textes
-=======
-var coursObj = [];
-var textObj = [];
->>>>>>> tristan
 
 const sessions = document.querySelectorAll('.sessions'); //definir le nombre des session
 var index = -1; //definir l<index 1
